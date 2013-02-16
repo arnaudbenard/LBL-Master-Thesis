@@ -1,0 +1,37 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/Arnaud/Dropbox/LBL/Report/LBL-Master-Thesis",
+			"file_exclude_patterns": [
+				".DS_Store",
+				"*.pdf",
+				"*.aux",
+				"*.glo",
+				"*.idx",
+				"*.log",
+				"*.toc",
+				"*.ist",
+				"*.acn",
+				"*.acr",
+				"*.alg",
+				"*.bbl",
+				"*.blg",
+				"*.dvi",
+				"*.glg",
+				"*.gls",
+				"*.ilg",
+				"*.ind",
+				"*.lof",
+				"*.lot",
+				"*.maf",
+				"*.mtc",
+				"*.mtc1",
+				"*.out",
+				"*.fls",
+				"*.fdb_latexmk",
+				"*.synctex.gz"
+			]
+		}
+	]
+}
