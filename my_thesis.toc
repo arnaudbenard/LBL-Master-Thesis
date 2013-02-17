@@ -8,13 +8,10 @@
 \select@language {english}
 \contentsline {chapter}{List of figures}{xv}{chapter*.6}
 \contentsline {chapter}{List of tables}{xvii}{chapter*.7}
-\contentsline {chapter}{Introduction}{1}{chapter*.8}
-\contentsline {chapter}{\numberline {1}Tables and Figures}{3}{chapter.1}
-\contentsline {section}{\numberline {1.1}Tables}{3}{section.1.1}
-\contentsline {section}{\numberline {1.2}Figures}{4}{section.1.2}
-\contentsline {chapter}{\numberline {2}Mathematics}{9}{chapter.2}
-\contentsline {section}{\numberline {2.1}Very important formulas}{9}{section.2.1}
-\contentsline {chapter}{\numberline {3}Another chapter}{11}{chapter.3}
-\contentsline {chapter}{\numberline {A}An appendix}{13}{appendix.A}
-\contentsline {chapter}{Bibliography}{15}{appendix*.14}
-\contentsline {chapter}{Curriculum Vitae}{17}{section*.15}
+\contentsline {chapter}{\numberline {1}Triangulation}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Hardware}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{3}{section.2.1}
+\contentsline {chapter}{\numberline {A}An appendix}{5}{appendix.A}
+\contentsline {chapter}{Bibliography}{7}{appendix*.9}
+\contentsline {chapter}{Curriculum Vitae}{9}{section*.10}

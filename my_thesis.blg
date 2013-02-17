@@ -4,53 +4,53 @@ The top-level auxiliary file: my_thesis.aux
 A level-1 auxiliary file: head/dedication.aux
 A level-1 auxiliary file: head/preface.aux
 A level-1 auxiliary file: head/abstracts.aux
-A level-1 auxiliary file: main/ch1_introduction.aux
-A level-1 auxiliary file: main/ch2_figures_tables.aux
-A level-1 auxiliary file: main/ch3_math.aux
-A level-1 auxiliary file: main/ch4_more_text.aux
+A level-1 auxiliary file: main/ch1_image_processing.aux
+A level-1 auxiliary file: main/ch2_hardware_optimisation.aux
 A level-1 auxiliary file: tail/appendix.aux
 A level-1 auxiliary file: tail/biblio.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: tail/cv.aux
+I found no \citation commands---while reading file my_thesis.aux
 Database file #1: tail/bibliography.bib
-You've used 1 entry,
+You've used 0 entries,
             2773 wiz_defined-function locations,
-            608 strings with 5201 characters,
-and the built_in function-call counts, 313 in all, are:
-= -- 28
-> -- 10
-< -- 1
-+ -- 4
-- -- 3
-* -- 17
-:= -- 61
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 5
-chr.to.int$ -- 1
-cite$ -- 2
-duplicate$ -- 15
-empty$ -- 24
-format.name$ -- 4
-if$ -- 57
+            600 strings with 5006 characters,
+and the built_in function-call counts, 33 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 10
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 13
-num.names$ -- 4
-pop$ -- 5
+newline$ -- 8
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
-purify$ -- 3
+purify$ -- 0
 quote$ -- 0
-skip$ -- 12
+skip$ -- 1
 stack$ -- 0
-substring$ -- 2
+substring$ -- 0
 swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 11
+type$ -- 0
 warning$ -- 0
-while$ -- 3
+while$ -- 0
 width$ -- 0
-write$ -- 21
+write$ -- 7
+(There was 1 error message)
