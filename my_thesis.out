@@ -3,10 +3,16 @@
 \BOOKMARK [0][-]{chapter*.3}{Abstract \(English/Fran\347ais/Deutsch\)}{}% 3
 \BOOKMARK [0][-]{chapter*.6}{List of figures}{}% 4
 \BOOKMARK [0][-]{chapter*.7}{List of tables}{}% 5
-\BOOKMARK [0][-]{chapter.1}{Triangulation}{}% 6
-\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 7
-\BOOKMARK [0][-]{chapter.2}{Hardware}{}% 8
-\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 9
-\BOOKMARK [0][-]{appendix.A}{An appendix}{}% 10
-\BOOKMARK [0][-]{appendix*.9}{Bibliography}{}% 11
-\BOOKMARK [0][-]{section*.10}{Curriculum Vitae}{}% 12
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 6
+\BOOKMARK [0][-]{chapter.2}{Visualisation of non-gridded data}{}% 7
+\BOOKMARK [1][-]{section.2.1}{sensor data}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{experimental setups}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Image rendering techniques}{chapter.2}% 10
+\BOOKMARK [0][-]{chapter.3}{Z axis limitations}{}% 11
+\BOOKMARK [1][-]{section.3.1}{fast z feedback}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.2}{tilt compensation}{chapter.3}% 13
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 14
+\BOOKMARK [1][-]{section.4.1}{Calcite experiment}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.2}{Soft sample}{chapter.4}% 16
+\BOOKMARK [0][-]{appendix.A}{An appendix}{}% 17
+\BOOKMARK [0][-]{appendix*.9}{Bibliography}{}% 18

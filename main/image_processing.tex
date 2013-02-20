@@ -1,0 +1,41 @@
+%!TEX root = ../my_thesis.tex
+\chapter{Image Processing}
+
+\section{Introduction}
+
+In this chapter, we will analyze different rendering methods and their application in the AFM context. Current AFMs give discrete data about the cantilever's position; therefore, we'll need to use image processing algorithms to generate images. The process of restoring unknown images is called inpainting. Indeed, it was mainly used to restore missing pieces in old paintings or photos. The principle behind inpainting is to fill a patch with its surroundings. A perfect example of inpainting is removing an undesirable object from a picture. We'll see in this chapter how we can apply these algorithms for AFM applications.
+
+\section{Fast scanning}
+\section{BC}
+
+\section{Heat equations}
+
+The heat equation represents the distribution of heat in a region over time.
+
+\begin{equation}\label{eqn:heateq}
+\frac{\partial u}{\partial t} - \alpha \nabla^2 u = 0
+\end{equation}
+
+
+$\alpha$ is the thermal diffusity - that is interpreted as a "thermal inertia modulus" - and $u$ is the temperature over space and time (i.e. $u(x,y,z,t)$). A high thermal implies that the heat moves rapidly.
+
+\section{Triangulation with Delaunay}
+
+The principle behind the Delaunay triangulation is to generate triangles from triplets of point. The goal of the algorithm is to minimize the angles of each triangle. The triangulation is successful if no vertex (i.e. 3-dimensional point) is in the interior of a triangle.
+
+Triangle.c is a powerful library developped by Jonathan Shewchuk to generate Delaunay triangulations. In our case, we'll only use the triangulation program on the first two dimensions of the 3d cloud of points. Indeed, we'll only render triangles on the 2D plane.
+
+The next step is the coloring of the data. We use the z-data to render the color of the image. 
+
+INSERT IMAGE
+
+\section{3D rendering}
+
+In this section we'll talk about different ways to render 3D models with OpenGL (Open Graphics Library). This library is an API (Application Programming Interface) developed by Silicon Graphics to hide the complexities of interfacing with different 3D accelerators.
+
+
+
+
+\subsection{Direct mode}
+
+\subsection{Vertex Buffer Object}

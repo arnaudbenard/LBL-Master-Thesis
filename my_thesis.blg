@@ -4,17 +4,18 @@ The top-level auxiliary file: my_thesis.aux
 A level-1 auxiliary file: head/dedication.aux
 A level-1 auxiliary file: head/preface.aux
 A level-1 auxiliary file: head/abstracts.aux
-A level-1 auxiliary file: main/ch1_image_processing.aux
-A level-1 auxiliary file: main/ch2_hardware_optimisation.aux
+A level-1 auxiliary file: main/introduction.aux
+A level-1 auxiliary file: main/visualisation.aux
+A level-1 auxiliary file: main/zaxis.aux
+A level-1 auxiliary file: main/experiments.aux
 A level-1 auxiliary file: tail/appendix.aux
 A level-1 auxiliary file: tail/biblio.aux
 The style file: plainnat.bst
-A level-1 auxiliary file: tail/cv.aux
 I found no \citation commands---while reading file my_thesis.aux
 Database file #1: tail/bibliography.bib
 You've used 0 entries,
             2773 wiz_defined-function locations,
-            600 strings with 5006 characters,
+            601 strings with 5009 characters,
 and the built_in function-call counts, 33 in all, are:
 = -- 0
 > -- 0
