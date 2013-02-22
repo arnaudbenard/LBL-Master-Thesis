@@ -14,7 +14,9 @@
 \contentsline {section}{\numberline {2.2}experimental setups}{3}{section.2.2}
 \contentsline {section}{\numberline {2.3}Image rendering techniques}{3}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Heat equations}{4}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Triangulation with Delaunay}{4}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}OpenGL}{4}{subsection.2.3.2}
+\contentsline {subsubsection}{Triangulation with Delaunay}{4}{subsection.2.3.2}
+\contentsline {subsubsection}{Direct mode vs VBO}{4}{subsection.2.3.2}
 \contentsline {chapter}{\numberline {3}Z axis limitations}{5}{chapter.3}
 \contentsline {section}{\numberline {3.1}fast z feedback}{5}{section.3.1}
 \contentsline {section}{\numberline {3.2}tilt compensation}{5}{section.3.2}

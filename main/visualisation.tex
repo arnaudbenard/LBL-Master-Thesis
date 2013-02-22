@@ -1,7 +1,7 @@
 %!TEX root = ../my_thesis.tex
 \chapter{Visualisation of non-gridded data}
 
-Most of the current AFM technologies work under the following principle: projecting two-dimensional data on a N by M grid. A system of controllers is needed to position the cantilever at the right spot (center of a grid element). With this method, the actual position on the XY plane is unprecise and directly correlated with the efficiency of the position controller. By taking the acquired z-data and assuming that the cantilever was actually on the right spot, we can construct a two-dimensional image of the surface. One can already see the problems induced by this method: limitation by the controllers(speed and precision). Moreover, putting data on a grid forces the scan pattern to be raster. It is simple to project a raster pattern on a 2D grid. Finally, hysteris problems in the piezos is an additional imprecision in the system. We'll see how we can use position sensors on the XY-plane and different scan pattern to solve this problem.
+Most of the current AFM acquisition softwares work the following way: projecting two-dimensional data on a N by M grid. A system of controllers is needed to position the cantilever at the right spot (center of a grid element). With this method, the actual position on the XY plane is unprecise and directly correlated with the efficiency of the position controller. By taking the acquired z-data and assuming that the cantilever was actually on the right spot, we can construct a two-dimensional image of the surface. One can already see the problems induced by this method: limitation by the controllers(speed and precision). Moreover, putting data on a grid forces the scan pattern to be raster. It is simple to project a raster pattern on a 2D grid. Finally, hysteris problems in the piezos is an additional imprecision in the system. We'll see how we can use position sensors on the XY-plane and different scan pattern to solve this problem.
 
 \section{sensor data}
 
@@ -19,7 +19,11 @@ Most of the current AFM technologies work under the following principle: project
 	- benchmarking
 
 
-Current AFMs give discrete data about the cantilever's position; therefore, we'll need to use image processing algorithms to generate images. The process of restoring unknown images is called inpainting. Indeed, it was mainly used to restore missing pieces in old paintings or photos. The principle behind inpainting is to fill a patch with its surroundings. A perfect example of inpainting is removing an undesirable object from a picture. Also, we can use these algorithms to generate images from a cloud of points.
+Current AFMs give discrete data about the cantilever's position; therefore, we'll need to use image processing algorithms to generate images. The process of restoring unknown images is called inpainting. Indeed, it was mainly used to restore missing pieces in old paintings or photos. The principle behind inpainting is to fill a patch with its surroundings. A perfect example of inpainting is removing an undesirable object from a picture. 
+
+
+
+We can use these algorithms to generate images from a cloud of points.
 
 
 \subsection{Heat equations}
@@ -33,10 +37,22 @@ The heat equation represents the distribution of heat in a region over time.
 
 $\alpha$ is the thermal diffusity - that is interpreted as a "thermal inertia modulus" - and $u$ is the temperature over space and time (i.e. $u(x,y,z,t)$). A high thermal implies that the heat moves rapidly.
 
-\subsection{Triangulation with Delaunay}
+\subsection{OpenGL}
 
+In this section we'll talk about different ways to render 3D models with OpenGL (Open Graphics Library). This library is an API (Application Programming Interface) developed by Silicon Graphics to hide the complexities of interfacing with different 3D accelerators. It is mainly used for 3D modeling in video games and simulations. We've decided to use OpenGL because of it's efficiency to plot 3D models with triangles. Indeed, modern GPUs (graphic processing units) are optimized to render objects from triangles. There are many different methods to plot 3D data with OpenGL, we'll investigate using the "direct mode" and vertex buffer objects.
+
+\subsubsection{Triangulation with Delaunay}
+
+The first problems we'll face when trying to plot our cloud of points is to know how to generate triangles. Indeed, OpenGL can only render triangles from a triplet of points. An unordered list of points will not be optimized by OpenGL into triangles. TWe'll need sophisticated algorithms to obtain those.
 The principle behind the Delaunay triangulation is to generate triangles from triplets of point. The goal of the algorithm is to minimize the angles of each triangle. The triangulation is successful if no vertex (i.e. 3-dimensional point) is in the interior of a triangle.
 
-Triangle.c is a powerful library developped by Jonathan Shewchuk to generate Delaunay triangulations. In our case, we'll only use the triangulation program on the first two dimensions of the 3d cloud of points. Indeed, we'll only render triangles on the 2D plane.
+/IMAGE
+
+Triangle.c is a library developped in C by Jonathan Shewchuk \cite{shewchuk96b} to generate Delaunay triangulations. In our case, we'll only use the triangulation program on the first two dimensions of the 3d cloud of points. Indeed, we'll only render triangles on the 2D plane.
 
 The next step is the coloring of the data. We use the z-data to render the color of the image. 
+
+
+\subsubsection{Direct mode vs VBO}
+
+

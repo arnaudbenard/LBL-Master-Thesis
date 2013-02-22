@@ -9,7 +9,7 @@
 \BOOKMARK [1][-]{section.2.2}{experimental setups}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.3}{Image rendering techniques}{chapter.2}% 10
 \BOOKMARK [2][-]{subsection.2.3.1}{Heat equations}{section.2.3}% 11
-\BOOKMARK [2][-]{subsection.2.3.2}{Triangulation with Delaunay}{section.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.3.2}{OpenGL}{section.2.3}% 12
 \BOOKMARK [0][-]{chapter.3}{Z axis limitations}{}% 13
 \BOOKMARK [1][-]{section.3.1}{fast z feedback}{chapter.3}% 14
 \BOOKMARK [1][-]{section.3.2}{tilt compensation}{chapter.3}% 15
