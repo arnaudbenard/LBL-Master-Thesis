@@ -1,6 +1,8 @@
 %!TEX root = ../my_thesis.tex
 \chapter{Visualisation of non-gridded data}
 
+Most of the current AFM technologies work under the following principle: projecting two-dimensional data on a N by M grid. A system of controllers is needed to position the cantilever at the right spot (center of a grid element). With this method, the actual position on the XY plane is unprecise and directly correlated with the efficiency of the position controller. By taking the acquired z-data and assuming that the cantilever was actually on the right spot, we can construct a two-dimensional image of the surface. One can already see the problems induced by this method: limitation by the controllers(speed and precision). Moreover, putting data on a grid forces the scan pattern to be raster. It is simple to project a raster pattern on a 2D grid. Finally, hysteris problems in the piezos is an additional imprecision in the system. We'll see how we can use position sensors on the XY-plane and different scan pattern to solve this problem.
+
 \section{sensor data}
 
 (problem of hyst solved)
@@ -15,3 +17,26 @@
 \section{Image rendering techniques}
 - OpenGL and heat equations
 	- benchmarking
+
+
+Current AFMs give discrete data about the cantilever's position; therefore, we'll need to use image processing algorithms to generate images. The process of restoring unknown images is called inpainting. Indeed, it was mainly used to restore missing pieces in old paintings or photos. The principle behind inpainting is to fill a patch with its surroundings. A perfect example of inpainting is removing an undesirable object from a picture. Also, we can use these algorithms to generate images from a cloud of points.
+
+
+\subsection{Heat equations}
+
+The heat equation represents the distribution of heat in a region over time.
+
+\begin{equation}\label{eqn:heateq}
+\frac{\partial u}{\partial t} - \alpha \nabla^2 u = 0
+\end{equation}
+
+
+$\alpha$ is the thermal diffusity - that is interpreted as a "thermal inertia modulus" - and $u$ is the temperature over space and time (i.e. $u(x,y,z,t)$). A high thermal implies that the heat moves rapidly.
+
+\subsection{Triangulation with Delaunay}
+
+The principle behind the Delaunay triangulation is to generate triangles from triplets of point. The goal of the algorithm is to minimize the angles of each triangle. The triangulation is successful if no vertex (i.e. 3-dimensional point) is in the interior of a triangle.
+
+Triangle.c is a powerful library developped by Jonathan Shewchuk to generate Delaunay triangulations. In our case, we'll only use the triangulation program on the first two dimensions of the 3d cloud of points. Indeed, we'll only render triangles on the 2D plane.
+
+The next step is the coloring of the data. We use the z-data to render the color of the image. 

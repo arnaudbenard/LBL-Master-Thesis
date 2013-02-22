@@ -8,11 +8,13 @@
 \BOOKMARK [1][-]{section.2.1}{sensor data}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.2}{experimental setups}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.3}{Image rendering techniques}{chapter.2}% 10
-\BOOKMARK [0][-]{chapter.3}{Z axis limitations}{}% 11
-\BOOKMARK [1][-]{section.3.1}{fast z feedback}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.2}{tilt compensation}{chapter.3}% 13
-\BOOKMARK [0][-]{chapter.4}{Results}{}% 14
-\BOOKMARK [1][-]{section.4.1}{Calcite experiment}{chapter.4}% 15
-\BOOKMARK [1][-]{section.4.2}{Soft sample}{chapter.4}% 16
-\BOOKMARK [0][-]{appendix.A}{An appendix}{}% 17
-\BOOKMARK [0][-]{appendix*.9}{Bibliography}{}% 18
+\BOOKMARK [2][-]{subsection.2.3.1}{Heat equations}{section.2.3}% 11
+\BOOKMARK [2][-]{subsection.2.3.2}{Triangulation with Delaunay}{section.2.3}% 12
+\BOOKMARK [0][-]{chapter.3}{Z axis limitations}{}% 13
+\BOOKMARK [1][-]{section.3.1}{fast z feedback}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.2}{tilt compensation}{chapter.3}% 15
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 16
+\BOOKMARK [1][-]{section.4.1}{Calcite experiment}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.2}{Soft sample}{chapter.4}% 18
+\BOOKMARK [0][-]{appendix.A}{An appendix}{}% 19
+\BOOKMARK [0][-]{appendix*.9}{Bibliography}{}% 20
