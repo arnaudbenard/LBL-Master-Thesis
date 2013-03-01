@@ -9,7 +9,10 @@ First, we discuss using sensor data instead of theoretical one and its implicati
  
 Current AFMs run in closed loop: position controllers on the XY axis are needed to steer the tip at the right position. 
 
-Instead of using this method, we will work in open loop and register the data of the position sensors. One of the advantage of using sensor data is that we don't need accurate position controllers: it has no impact on our data. Instead of position the tip on an exact position, we're embracing its inaccuracy. The precision of our system is limited by the sensors and not the feedback on XY.
+Instead of using this method, we will work in open loop and register the data of the position sensors. One of the advantage of using sensor data is that we don't need accurate position controllers: it has no impact on our data. Instead of position the tip on an exact position, we're embracing its inaccuracy. The precision of our system is limited by the sensors and not the feedback on XY. Our current setup (Asylum Research MFP3D) uses capacity sensors.
+
+If we use sensor data, we don't acquire it on specific points on a grid. Therefore we need image processing algorithms to render missing parts of our scan.  The easiest way is to have a linear gradient between the closest points. We will see in the next section how to find these points. We will link these points together with triangles. Another way is to use image processing algorithms.
+
 
 \section{Image rendering techniques}
 
@@ -30,7 +33,7 @@ The heat equation is a PDE that represents the distribution of heat in a region 
 
 $\alpha$ is the thermal diffusivity - that is interpreted as a "thermal inertia modulus" - and $u$ is the temperature over space and time (i.e. $u(x,y,z,t)$). A high thermal diffusivity implies that the heat moves rapidly.
 
-The algorithm has been implemented by Travis Meyer on MATLAB.
+The algorithm has been implemented by Travis Meyer on MATLAB. This algorithm will spread out the information of each point on missing parts of our grid.
 
 \cite{aubert2006mathematical} shows that heat equations are powerful to fill out these patches of missing data, but it smooths data on sharp edges(high frequency data). One of the effect is that edges are blurred out by the algorithm.
 
@@ -48,10 +51,23 @@ The principle behind the Delaunay triangulation is to generate triangles from tr
 
 The algorithm minimizes the angles of each triangle. The triangulation is successful if no vertex (i.e. 3-dimensional point) is in the interior of a triangle.
 
-Triangle.c is a library developed in C by Jonathan Shewchuk \cite{shewchuk96b} to generate Delaunay triangulations. In our case, we'll only use the triangulation program on the first two dimensions of the 3d cloud of points. Indeed, we'll only render triangles on the 2D plane. We use the z-data to render the color of the image.
+Triangle.c is a library developed in C by Jonathan Shewchuk \cite{shewchuk96b} to generate Delaunay triangulations. The Figure ~\ref{triangulation2d} shows the effect of the program on a spiral scan.  We will discuss later about spiral scanning. The input data has 20'000 points and the program generates 38'784 triangles. 
 
-/IMAGE TRIANGLE OFFSET
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.5]{images/triangulation.png}
+    \caption{Delaunay triangulation on spiral scan and closeup}
+  \label{triangulation2d}
+\end{figure}
 
+
+With this method we can connect the points on a 2D plane. In the figure  ~\ref{triangulation3d}  We use the z-axis data to compute the height of each of our point and render 3D models of our scans. To add colors to our data, OpenGL will create a linear gradient between each of the data points.
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.3]{images/delaunay.eps}
+    \caption{Delaunay triangulation: From 2D to 3D}
+  \label{triangulation3d}
+\end{figure}
 
 \subsubsection{Immediate mode vs VBO}
 
