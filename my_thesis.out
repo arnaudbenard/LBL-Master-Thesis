@@ -1,20 +1,20 @@
 \BOOKMARK [0][-]{chapter*.1}{Acknowledgements}{}% 1
 \BOOKMARK [0][-]{chapter*.2}{Preface}{}% 2
-\BOOKMARK [0][-]{chapter*.3}{Abstract \(English/Fran\347ais/Deutsch\)}{}% 3
-\BOOKMARK [0][-]{chapter*.6}{List of figures}{}% 4
-\BOOKMARK [0][-]{chapter*.7}{List of tables}{}% 5
+\BOOKMARK [0][-]{chapter*.3}{Abstract \(English\)}{}% 3
+\BOOKMARK [0][-]{chapter*.4}{List of figures}{}% 4
+\BOOKMARK [0][-]{chapter*.5}{List of tables}{}% 5
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 6
-\BOOKMARK [0][-]{chapter.2}{Visualisation of non-gridded data}{}% 7
-\BOOKMARK [1][-]{section.2.1}{sensor data}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.2}{experimental setups}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.3}{Image rendering techniques}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.3.1}{Heat equations}{section.2.3}% 11
-\BOOKMARK [2][-]{subsection.2.3.2}{OpenGL}{section.2.3}% 12
-\BOOKMARK [0][-]{chapter.3}{Z axis limitations}{}% 13
-\BOOKMARK [1][-]{section.3.1}{fast z feedback}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.2}{tilt compensation}{chapter.3}% 15
+\BOOKMARK [0][-]{chapter.2}{Visualization of non-gridded data}{}% 7
+\BOOKMARK [1][-]{section.2.1}{Sensor data}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{Image rendering techniques}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.1}{Inpainting algorithms}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.2}{OpenGL}{section.2.2}% 11
+\BOOKMARK [0][-]{chapter.3}{Techniques for fast z feedback}{}% 12
+\BOOKMARK [1][-]{section.3.1}{Double PID}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.2}{Tilt compensation}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.2.1}{Experiment}{section.3.2}% 15
 \BOOKMARK [0][-]{chapter.4}{Results}{}% 16
 \BOOKMARK [1][-]{section.4.1}{Calcite experiment}{chapter.4}% 17
 \BOOKMARK [1][-]{section.4.2}{Soft sample}{chapter.4}% 18
 \BOOKMARK [0][-]{appendix.A}{An appendix}{}% 19
-\BOOKMARK [0][-]{appendix*.9}{Bibliography}{}% 20
+\BOOKMARK [0][-]{appendix*.13}{Bibliography}{}% 20
