@@ -16,8 +16,8 @@
 \contentsline {section}{\numberline {3.1}Double PID}{9}{section.3.1}
 \contentsline {section}{\numberline {3.2}Tilt compensation}{9}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Experiment}{9}{subsection.3.2.1}
-\contentsline {chapter}{\numberline {4}Results}{13}{chapter.4}
-\contentsline {section}{\numberline {4.1}Calcite experiment}{13}{section.4.1}
-\contentsline {section}{\numberline {4.2}Soft sample}{13}{section.4.2}
-\contentsline {chapter}{\numberline {A}An appendix}{15}{appendix.A}
-\contentsline {chapter}{Bibliography}{17}{appendix*.13}
+\contentsline {chapter}{\numberline {4}Results}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}Calcite experiment}{11}{section.4.1}
+\contentsline {section}{\numberline {4.2}Soft sample}{11}{section.4.2}
+\contentsline {chapter}{\numberline {A}An appendix}{13}{appendix.A}
+\contentsline {chapter}{Bibliography}{15}{appendix*.13}

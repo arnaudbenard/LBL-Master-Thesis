@@ -10,59 +10,51 @@ A level-1 auxiliary file: main/zaxis.aux
 A level-1 auxiliary file: main/experiments.aux
 A level-1 auxiliary file: tail/appendix.aux
 A level-1 auxiliary file: tail/biblio.aux
-The style file: chicago.bst
+The style file: plainnat.bst
 Database file #1: tail/bibliography.bib
 Warning--entry type for "opengllegacy" isn't style-file defined
 --line 55 of file tail/bibliography.bib
-Warning--no key, author in opengllegacy
-Warning--no author, editor, or organization in opengllegacy
-Warning--to sort, need author or key in opengllegacy
-Warning--no key, author in opengllegacy
-Warning--no author, editor, or organization in opengllegacy
-Warning--no key, author in opengllegacy
-Warning--no author, editor, or organization in opengllegacy
-Warning--no key, author in opengllegacy
-Warning--no author, editor, or organization in opengllegacy
+Warning--empty journal in abobegpu
 Warning--empty institution in opengl1
-You've used 4 entries,
-            2861 wiz_defined-function locations,
-            644 strings with 5648 characters,
-and the built_in function-call counts, 2283 in all, are:
-= -- 194
-> -- 112
-< -- 3
-+ -- 30
-- -- 42
-* -- 177
-:= -- 390
-add.period$ -- 12
-call.type$ -- 4
-change.case$ -- 23
-chr.to.int$ -- 4
-cite$ -- 18
-duplicate$ -- 82
-empty$ -- 173
-format.name$ -- 46
-if$ -- 433
+You've used 6 entries,
+            2773 wiz_defined-function locations,
+            636 strings with 6065 characters,
+and the built_in function-call counts, 2260 in all, are:
+= -- 197
+> -- 90
+< -- 9
++ -- 32
+- -- 26
+* -- 142
+:= -- 350
+add.period$ -- 20
+call.type$ -- 6
+change.case$ -- 25
+chr.to.int$ -- 6
+cite$ -- 14
+duplicate$ -- 126
+empty$ -- 213
+format.name$ -- 36
+if$ -- 479
 int.to.chr$ -- 1
-int.to.str$ -- 0
-missing$ -- 3
-newline$ -- 22
-num.names$ -- 32
-pop$ -- 25
+int.to.str$ -- 1
+missing$ -- 5
+newline$ -- 39
+num.names$ -- 26
+pop$ -- 65
 preamble$ -- 1
-purify$ -- 48
+purify$ -- 20
 quote$ -- 0
-skip$ -- 89
+skip$ -- 97
 stack$ -- 0
-substring$ -- 116
-swap$ -- 31
+substring$ -- 44
+swap$ -- 18
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 70
-warning$ -- 10
-while$ -- 34
+type$ -- 61
+warning$ -- 2
+while$ -- 22
 width$ -- 0
-write$ -- 55
-(There were 11 warnings)
+write$ -- 84
+(There were 3 warnings)

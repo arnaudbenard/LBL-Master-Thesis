@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.11.6)  28 FEB 2013 14:48
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.11.6)  28 FEB 2013 20:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -328,6 +328,14 @@ File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
+(/usr/local/texlive/2011/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count99
+\float@exts=\toks18
+\float@box=\box28
+\@float@everytoks=\toks19
+\@floatcapt=\box29
+)
 (/usr/local/texlive/2011/texmf-dist/tex/latex/fourier/fourier.sty
 Package: fourier 2005/01/01 1.4 fourier-GUTenberg package
 Now handling font encoding FML ...
@@ -611,7 +619,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
 (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count99
+\Gread@gobject=\count100
 ))
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
@@ -648,20 +656,21 @@ Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
 \caption@parindent=\dimen117
 \caption@hangindent=\dimen118
 )
-\c@ContinuedFloat=\count100
+\c@ContinuedFloat=\count101
+Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 )
-\c@KVtest=\count101
+\c@KVtest=\count102
 \sf@farskip=\skip43
 \sf@captopadj=\dimen119
 \sf@capskip=\skip44
 \sf@nearskip=\skip45
-\c@subfigure=\count102
-\c@subfigure@save=\count103
-\c@lofdepth=\count104
-\c@subtable=\count105
-\c@subtable@save=\count106
-\c@lotdepth=\count107
+\c@subfigure=\count103
+\c@subfigure@save=\count104
+\c@lofdepth=\count105
+\c@subtable=\count106
+\c@subtable@save=\count107
+\c@lotdepth=\count108
 \sf@top=\skip46
 \sf@bottom=\skip47
 )
@@ -677,22 +686,22 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen127
 \cmidrulekern=\dimen128
 \defaultaddspace=\dimen129
-\@cmidla=\count108
-\@cmidlb=\count109
+\@cmidla=\count109
+\@cmidlb=\count110
 \@aboverulesep=\dimen130
 \@belowrulesep=\dimen131
-\@thisruleclass=\count110
-\@lastruleclass=\count111
+\@thisruleclass=\count111
+\@lastruleclass=\count112
 \@thisrulewidth=\dimen132
 )
 (/usr/local/texlive/2011/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count112
+\c@lips@count=\count113
 )
 (/usr/local/texlive/2011/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2010/01/10 v2.4 Micro-typography with pdfTeX (RS)
-\MT@toks=\toks18
-\MT@count=\count113
+\MT@toks=\toks20
+\MT@count=\count114
 LaTeX Info: Redefining \lsstyle on input line 1597.
 LaTeX Info: Redefining \lslig on input line 1597.
 \MT@outer@space=\skip48
@@ -716,15 +725,15 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/local/texlive/2011/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count114
-\calc@Bcount=\count115
+\calc@Acount=\count115
+\calc@Bcount=\count116
 \calc@Adimen=\dimen134
 \calc@Bdimen=\dimen135
 \calc@Askip=\skip49
 \calc@Bskip=\skip50
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count116
+\calc@Ccount=\count117
 \calc@Cskip=\skip51
 )
 (/usr/local/texlive/2011/texmf-dist/tex/latex/eso-pic/eso-pic.sty
@@ -740,10 +749,10 @@ Package ifpdf Info: pdfTeX in PDF mode is detected.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2011/03/10 v0.4n Pdfpages driver for pdfTeX (AM)
 )
-\AM@pagebox=\box28
-\AM@toc@title=\toks19
-\c@AM@survey=\count117
-\AM@templatesizebox=\box29
+\AM@pagebox=\box30
+\AM@toc@title=\toks21
+\c@AM@survey=\count118
+\AM@templatesizebox=\box31
 )
 (/usr/local/texlive/2011/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip52
@@ -837,15 +846,15 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
 )
 \@linkdim=\dimen136
-\Hy@linkcounter=\count118
-\Hy@pagecounter=\count119
+\Hy@linkcounter=\count119
+\Hy@pagecounter=\count120
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2011/04/17 v6.82g Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count120
+\Hy@SavedSpaceFactor=\count121
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -857,9 +866,9 @@ Package hyperref Info: Plain pages OFF on input line 4041.
 Package hyperref Info: Backreferencing OFF on input line 4046.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4264.
-\c@Hy@tempcnt=\count121
+\c@Hy@tempcnt=\count122
 LaTeX Info: Redefining \url on input line 4617.
-\Fld@menulength=\count122
+\Fld@menulength=\count123
 \Field@Width=\dimen137
 \Fld@charsize=\dimen138
 Package hyperref Info: Hyper figures OFF on input line 5701.
@@ -871,17 +880,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 5726.
 Package hyperref Info: PDF/A mode OFF on input line 5731.
 LaTeX Info: Redefining \ref on input line 5771.
 LaTeX Info: Redefining \pageref on input line 5775.
-\Hy@abspage=\count123
-\c@Item=\count124
-\c@Hfootnote=\count125
+\Hy@abspage=\count124
+\c@Item=\count125
+\c@Hfootnote=\count126
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2011/04/17 v6.82g Hyperref driver for pdfTeX
-\Fld@listcount=\count126
-\c@bookmark@seq@number=\count127
+\Fld@listcount=\count127
+\c@bookmark@seq@number=\count128
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -890,17 +899,17 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip61
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 88.
+Package hyperref Info: Option `colorlinks' set `true' on input line 89.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2011/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/local/texlive/2011/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
-\pgfutil@everybye=\toks20
+\pgfutil@everybye=\toks22
 )
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box30
+\pgfutil@abb=\box32
 (/usr/local/texlive/2011/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -913,12 +922,12 @@ Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks21
-\pgfkeys@temptoks=\toks22
+\pgfkeys@pathtoks=\toks23
+\pgfkeys@temptoks=\toks24
 
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
-\pgfkeys@tmptoks=\toks23
+\pgfkeys@tmptoks=\toks25
 ))
 \pgf@x=\dimen139
 \pgf@y=\dimen140
@@ -930,10 +939,10 @@ ode.tex
 \pgf@yc=\dimen146
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count128
-\c@pgf@countb=\count129
-\c@pgf@countc=\count130
-\c@pgf@countd=\count131
+\c@pgf@counta=\count129
+\c@pgf@countb=\count130
+\c@pgf@countc=\count131
+\c@pgf@countd=\count132
 
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -951,8 +960,8 @@ File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
-\pgfsyssoftpath@smallbuffer@items=\count132
-\pgfsyssoftpath@bigbuffer@items=\count133
+\pgfsyssoftpath@smallbuffer@items=\count133
+\pgfsyssoftpath@bigbuffer@items=\count134
 )
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -965,11 +974,11 @@ Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen147
-\pgfmath@count=\count134
-\pgfmath@box=\box31
-\pgfmath@toks=\toks24
-\pgfmath@stack@operand=\toks25
-\pgfmath@stack@operation=\toks26
+\pgfmath@count=\count135
+\pgfmath@box=\box33
+\pgfmath@toks=\toks26
+\pgfmath@stack@operand=\toks27
+\pgfmath@stack@operation=\toks28
 )
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
@@ -988,7 +997,7 @@ code.tex)
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
 code.tex)))
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count135
+\c@pgfmathroundto@lastzeros=\count136
 ))
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
@@ -1023,10 +1032,10 @@ File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
 File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
-\pgfpic=\box32
-\pgf@hbox=\box33
-\pgf@layerbox@main=\box34
-\pgf@picture@serial@count=\count136
+\pgfpic=\box34
+\pgf@hbox=\box35
+\pgf@layerbox@main=\box36
+\pgf@picture@serial@count=\count137
 )
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
@@ -1060,7 +1069,7 @@ File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
 e.tex
 File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
 \pgf@max=\dimen170
-\pgf@sys@shading@range@num=\count137
+\pgf@sys@shading@range@num=\count138
 )
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -1069,7 +1078,7 @@ File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
 code.tex
 File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
-\pgfexternal@startupbox=\box35
+\pgfexternal@startupbox=\box37
 ))
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
 de.tex
@@ -1086,7 +1095,7 @@ File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
 e.tex
 File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
-\pgfnodeparttextbox=\box36
+\pgfnodeparttextbox=\box38
 )
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
@@ -1109,8 +1118,8 @@ Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
 Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
 \pgffor@iter=\dimen173
 \pgffor@skip=\dimen174
-\pgffor@stack=\toks27
-\pgffor@toks=\toks28
+\pgffor@stack=\toks29
+\pgffor@toks=\toks30
 ))
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -1119,7 +1128,7 @@ Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
-\pgf@plot@mark@count=\count138
+\pgf@plot@mark@count=\count139
 \pgfplotmarksize=\dimen175
 )
 \tikz@lastx=\dimen176
@@ -1128,21 +1137,21 @@ File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
 \tikz@lastysaved=\dimen179
 \tikzleveldistance=\dimen180
 \tikzsiblingdistance=\dimen181
-\tikz@figbox=\box37
-\tikz@tempbox=\box38
-\tikztreelevel=\count139
-\tikznumberofchildren=\count140
-\tikznumberofcurrentchild=\count141
-\tikz@fig@count=\count142
+\tikz@figbox=\box39
+\tikz@tempbox=\box40
+\tikztreelevel=\count140
+\tikznumberofchildren=\count141
+\tikznumberofcurrentchild=\count142
+\tikz@fig@count=\count143
 
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
-\pgfmatrixcurrentrow=\count143
-\pgfmatrixcurrentcolumn=\count144
-\pgf@matrix@numberofcolumns=\count145
+\pgfmatrixcurrentrow=\count144
+\pgfmatrixcurrentcolumn=\count145
+\pgf@matrix@numberofcolumns=\count146
 )
-\tikz@expandcount=\count146
+\tikz@expandcount=\count147
 
 (/usr/local/texlive/2011/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -1150,17 +1159,17 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 )))
 (/usr/local/texlive/2011/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2007/08/12 v2.8 Sectioning titles
-\ttl@box=\box39
+\ttl@box=\box41
 \beforetitleunit=\skip62
 \aftertitleunit=\skip63
 \ttl@plus=\dimen182
 \ttl@minus=\dimen183
-\ttl@toksa=\toks29
+\ttl@toksa=\toks31
 \titlewidth=\dimen184
 \titlewidthlast=\dimen185
 \titlewidthfirst=\dimen186
 )
-\c@myparts=\count147
+\c@myparts=\count148
 )
 (./head/settings_custom.tex) (./my_thesis.aux (./head/dedication.aux)
 (./head/preface.aux) (./head/abstracts.aux) (./main/introduction.aux)
@@ -1221,21 +1230,21 @@ File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 LaTeX Info: Redefining \degres on input line 18.
 LaTeX Info: Redefining \dots on input line 18.
 LaTeX Info: Redefining \up on input line 18.
-\c@lstlisting=\count148
+\c@lstlisting=\count149
 
 (/usr/local/texlive/2011/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count149
+\scratchcounter=\count150
 \scratchdimen=\dimen187
-\scratchbox=\box40
-\nofMPsegments=\count150
-\nofMParguments=\count151
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count152
+\scratchbox=\box42
+\nofMPsegments=\count151
+\nofMParguments=\count152
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count153
 \MPscratchDim=\dimen188
-\MPnumerator=\count153
-\makeMPintoPDFobject=\count154
-\everyMPtoPDFconversion=\toks31
+\MPnumerator=\count154
+\makeMPintoPDFobject=\count155
+\everyMPtoPDFconversion=\toks33
 ) (/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1266,7 +1275,7 @@ Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-\AtBeginShipoutBox=\box41
+\AtBeginShipoutBox=\box43
 Package hyperref Info: Link coloring ON on input line 18.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1275,7 +1284,7 @@ Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count155
+\c@section@level=\count156
 )
 LaTeX Info: Redefining \ref on input line 18.
 LaTeX Info: Redefining \pageref on input line 18.
@@ -1413,59 +1422,13 @@ Chapter 1.
 Chapter 2.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 8.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 18.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 18.
-
-! Undefined control sequence.
-<argument> \Hy@safe@activesfalse \citeauthoryear 
-                                                 {Aubert and Kornprobst}{Aub...
-l.31 \cite{aubert2006mathematical}
-                                   shows that heat equations are powerful to...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> \Hy@safe@activesfalse \citeauthoryear 
-                                                 {Shewchuk}{Shewchuk}{1996}
-l.48 ... C by Jonathan Shewchuk \cite{shewchuk96b}
-                                                   to generate Delaunay tria...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 [4]
-! Undefined control sequence.
-<argument> \Hy@safe@activesfalse \citeauthoryear 
-                                                 {Kilgard}{Kilgard}{2008}
-l.59 ...ediate mode is appropriate. \cite{opengl1}
-                                                   states that the immediate...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> \Hy@safe@activesfalse \citeauthoryear 
-                                                 {??}{ope}{2012}
-l.65 ...*(2+3+3)) 80 API calls \cite{opengllegacy}
-                                                  . In conclusion, if you wa...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5]
@@ -1477,17 +1440,17 @@ Package epstopdf Info: Source file: <images/memory.eps>
 (epstopdf)                    size: 14410 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/memory-eps-converte
 d-to.pdf images/memory.eps>
-(epstopdf)             \includegraphics on input line 76.
+(epstopdf)             \includegraphics on input line 77.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/memory-eps-converted-to.pdf, id=233, 1122.1925pt x 1013.7875pt>
+<images/memory-eps-converted-to.pdf, id=237, 1122.1925pt x 1013.7875pt>
 File: images/memory-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/memory-eps-converted-to.pdf>
 Package pdftex.def Info: images/memory-eps-converted-to.pdf used on input line 
-76.
+77.
 (pdftex.def)             Requested size: 224.43452pt x 202.7539pt.
-) [6] [7 <./images/memory-eps-converted-to.pdf>]
+) [6 <./images/memory-eps-converted-to.pdf>] [7]
 \openout2 = `main/zaxis.aux'.
 
  (./main/zaxis.tex [8
@@ -1506,13 +1469,14 @@ Package epstopdf Info: Source file: <images/tiltcircles.eps>
 verted-to.pdf images/tiltcircles.eps>
 (epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
-<images/tiltcircles-eps-converted-to.pdf, id=255, 528.97626pt x 514.92375pt>
+<images/tiltcircles-eps-converted-to.pdf, id=260, 528.97626pt x 514.92375pt>
 File: images/tiltcircles-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/tiltcircles-eps-converted-to.pdf>
 Package pdftex.def Info: images/tiltcircles-eps-converted-to.pdf used on input 
 line 29.
 (pdftex.def)             Requested size: 52.90071pt x 51.49538pt.
+ [9 <./images/tiltcircles-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/spiralztiltout.eps>
 (epstopdf)                    date: 2013-02-26 16:27:12
 (epstopdf)                    size: 2221555 bytes
@@ -1525,7 +1489,7 @@ converted-to.pdf images/spiralztiltout.eps>
 (epstopdf)             \includegraphics on input line 56.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/spiralztiltout-eps-converted-to.pdf, id=256, 825.0825pt x 456.70625pt>
+<images/spiralztiltout-eps-converted-to.pdf, id=275, 825.0825pt x 456.70625pt>
 File: images/spiralztiltout-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/spiralztiltout-eps-converted-to.pdf>
@@ -1544,86 +1508,46 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 65.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/tiltcorrectiongraph-eps-converted-to.pdf, id=257, 784.9325pt x 303.1325
+<images/tiltcorrectiongraph-eps-converted-to.pdf, id=276, 784.9325pt x 303.1325
 pt>
 File: images/tiltcorrectiongraph-eps-converted-to.pdf Graphic file (type pdf)
  <use images/tiltcorrectiongraph-eps-converted-to.pdf>
 Package pdftex.def Info: images/tiltcorrectiongraph-eps-converted-to.pdf used o
 n input line 65.
 (pdftex.def)             Requested size: 78.49783pt x 30.31502pt.
-) [9] [10] [11 <./images/tiltcircles-eps-converted-to.pdf> <./images/spiralztil
-tout-eps-converted-to.pdf> <./images/tiltcorrectiongraph-eps-converted-to.pdf>]
+) [10 <./images/spiralztiltout-eps-converted-to.pdf> <./images/tiltcorrectiongr
+aph-eps-converted-to.pdf>]
 \openout2 = `main/experiments.aux'.
 
-
-(./main/experiments.tex [12
+ (./main/experiments.tex
+Chapter 4.
+) [11
 
 
 
 ]
-Chapter 4.
-) [13]
 \openout2 = `tail/appendix.aux'.
 
- (./tail/appendix.tex [14
+ (./tail/appendix.tex [12
 
 
 
 ]
 Appendix A.
-) [15]
+) [13]
 \openout2 = `tail/biblio.aux'.
 
- (./tail/biblio.tex (./my_thesis.bbl [16
+ (./tail/biblio.tex (./my_thesis.bbl [14
 
 
 
 ]
-! Undefined control sequence.
-<argument> \protect \citeauthoryear 
-                                    {??}{ope}{2012}
-l.3 ...iteauthoryear{??}{ope}{2012}]{opengllegacy}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Underfull \hbox (badness 10000) in paragraph at lines 9--14
+\T1/futs/m/n/10.95 (+20) adobe . com / en _ US / as3 / mobile / WS5d37564e2b3bb
+78e5247b9e212ea639b4d7-[]8000 .
+ []
 
-! Undefined control sequence.
-<argument> \protect \citeauthoryear 
-                                    {Aubert and Kornprobst}{Aubert and Kornp...
-l.7   Kornprobst}{2006}]{aubert2006mathematical}
-                                                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> \protect \citeauthoryear 
-                                    {Kilgard}{Kilgard}{2008}
-l.13 ...thoryear{Kilgard}{Kilgard}{2008}]{opengl1}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> \protect \citeauthoryear 
-                                    {Shewchuk}{Shewchuk}{1996}
-l.18 ...ar{Shewchuk}{Shewchuk}{1996}]{shewchuk96b}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-)) [17]
+)) [15]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
  (./my_thesis.aux (./head/dedication.aux) (./head/preface.aux)
@@ -1637,13 +1561,13 @@ Package rerunfilecheck Info: File `my_thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
  ) 
 Here is how much of TeX's memory you used:
- 20705 strings out of 493633
- 356712 string characters out of 3143377
- 572489 words of memory out of 3000000
- 23246 multiletter control sequences out of 15000+200000
- 91080 words of font info for 208 fonts, out of 3000000 for 9000
+ 20753 strings out of 493633
+ 357371 string characters out of 3143377
+ 571925 words of memory out of 3000000
+ 23290 multiletter control sequences out of 15000+200000
+ 91206 words of font info for 208 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 58i,14n,77p,714b,1082s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 58i,14n,77p,768b,1082s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
 exlive/2011/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
 live/2011/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/te
@@ -1654,10 +1578,10 @@ f-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2011/texmf-dist
 /fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2011/texmf-dist/f
 onts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2011/texmf-dist/fon
 ts/type1/public/cm-super/sfss2074.pfb>
-Output written on my_thesis.pdf (33 pages, 547396 bytes).
+Output written on my_thesis.pdf (31 pages, 549267 bytes).
 PDF statistics:
- 364 PDF objects out of 1000 (max. 8388607)
- 304 compressed objects within 4 object streams
+ 365 PDF objects out of 1000 (max. 8388607)
+ 307 compressed objects within 4 object streams
  68 named destinations out of 1000 (max. 500000)
  23750 words of extra memory for PDF output out of 24883 (max. 10000000)
 

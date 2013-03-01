@@ -13,11 +13,15 @@ Instead of using this method, we will work in open loop and register the data of
 
 \section{Image rendering techniques}
 
-Current AFMs give discrete data about the cantilever's position; therefore, we'll need to use image processing algorithms to generate images. The process of restoring is called inpainting. Indeed, it is mainly used to restore missing pieces in old paintings or photos. The principle behind inpainting is to fill a patch with its surroundings. An example of inpainting is removing an undesirable object from a picture. 
+Current AFMs give discrete data about the cantilever's position; therefore, we'll need to use image processing algorithms to generate images. 
 
 \subsection{Inpainting algorithms}
 
-A common algorithm in image processing is to use heat equations to fill out patches of missing data on an image. The heat equation will distribute pixel value on its sides. The heat equation represents the distribution of heat in a region over time.
+Reconstructing missing parts of images was first developed for restoring photographs and paintings or remove undesirable data like text and publicity. The art of restoration was performed manually. Nowadays, tools like Photoshop or Gimp are widely used in the media. It can be used to produce special effects 
+\cite{richard2001fast}.
+
+This process is called inpainting. The principle behind it is to fill a patch with its surroundings. Mathematicians have developed wide range of algorithms to solve that kind of problems. We will investigate a special case of partial differential equations (PDE): heat equations. 
+The heat equation is a PDE that represents the distribution of heat in a region over time. 
 
 \begin{equation}\label{eqn:heateq}
 \frac{\partial u}{\partial t} - \alpha \nabla^2 u = 0
@@ -26,20 +30,21 @@ A common algorithm in image processing is to use heat equations to fill out patc
 
 $\alpha$ is the thermal diffusivity - that is interpreted as a "thermal inertia modulus" - and $u$ is the temperature over space and time (i.e. $u(x,y,z,t)$). A high thermal diffusivity implies that the heat moves rapidly.
 
-The algorithm has been implemented by /TRAVIS on MATLAB.
+The algorithm has been implemented by Travis Meyer on MATLAB.
 
 \cite{aubert2006mathematical} shows that heat equations are powerful to fill out these patches of missing data, but it smooths data on sharp edges(high frequency data). One of the effect is that edges are blurred out by the algorithm.
+
+/INSERT inpaing example
 
 
 \subsection{OpenGL}
 
-In this section, we see how to render images with OpenGL(Open Graphics Library). It is an API (Application Programming Interface) developed by Silicon Graphics to hide the complexities of interfacing with different 3D accelerators and mainly used for 3D modeling in video games and simulations. OpenGL leverages the fact that GPUs are optimized to render triangles.
+In this section, we see how to render images with OpenGL(Open Graphics Library). It is an API (Application Programming Interface) developed by Silicon Graphics to hide the complexities of interfacing with different 3D accelerators and mainly used for 3D modeling in video games and simulations. OpenGL leverages the fact that GPUs are optimized to render triangle. Before drawing our data, the GPU will enter in the tessellation process. It will optimize the rendering by using the repetition of a geometric shape (triangle). The more complex the shape the harder it will be for the GPU to process it. If we already pre-process the data into triangles,  we will minimize processing costs. \cite{abobegpu}
 
 \subsubsection{Triangulation with Delaunay}
 
-The first problems we'll face when trying to plot our cloud of points is to know how to generate triangles. Indeed, OpenGL can only render triangles from a triplet of points. An unordered list of points will not be ordered by OpenGL. We'll need sophisticated algorithms like Delaunay triangulation to obtain those.
+The first problems we'll face when trying to plot our cloud of points is to know how to generate triangles. Indeed, OpenGL can only render triangles from a triplet of points. An unordered list of points will not be ordered by OpenGL. We'll need  algorithms like Delaunay triangulation to obtain those.
 The principle behind the Delaunay triangulation is to generate triangles from triplets of point. 
-
 
 The algorithm minimizes the angles of each triangle. The triangulation is successful if no vertex (i.e. 3-dimensional point) is in the interior of a triangle.
 
@@ -77,10 +82,9 @@ We can't just upload our data into the memory without any structure. We need to 
 
 After having allocated and created this chunk of data, we need to map it to make it readable to the GPU. OpenGL has API calls for that application.
 
-The advantage of this implementation is that you directly pull your data to a shared memory between the CPU and the GPU. Your CPU will spend less cycles making API calls thus improving the performances of the program. The power of the VBOs is that you just need to upload your data and your display function will just bind the VBO. Our performances have improved from 3FPS to 130FPS.
+The advantage of this implementation is that you directly pull your data to a shared memory between the CPU and the GPU. Your CPU will spend less cycles making API calls thus improving the performances of the program. The power of the VBOs is that you just need to upload your data and your display function will just bind the VBO. Our performances have improved from 3FPS to 130FPS for 100'000 data points. Having a high FPS makes the animations smoother.
 
-When we render 3D models from AFM scan we'll see that VBOs have smoothers animations.
-
+Table  ~\ref{table:nonlin} show the non-linearity of our implementation. We see that Delaunay triangulation doesn't scale well for 1'000'000 points. In AFM scans we will rarely sample 1'000'000 datapoints. The limits of our AFM is 100'000 kHz. If we take 10 seconds scans at the limit rate, we observe that the computation time is still way below the scanning time. 
 
 \begin{table}[ht]
 \caption{Rendering results[ms]} % title of Table
