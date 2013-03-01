@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.11.6)  28 FEB 2013 21:42
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.11.6)  28 FEB 2013 22:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -899,7 +899,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip61
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 89.
+Package hyperref Info: Option `colorlinks' set `true' on input line 91.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2011/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
@@ -1429,14 +1429,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 21.
 
-[4] <images/triangulation.png, id=233, 895.345pt x 437.635pt>
+Underfull \vbox (badness 6047) has occurred while \output is active []
+
+ [4]
+<images/triangulation.png, id=235, 895.345pt x 437.635pt>
 File: images/triangulation.png Graphic file (type png)
 
 <use images/triangulation.png>
-Package pdftex.def Info: images/triangulation.png used on input line 58.
+Package pdftex.def Info: images/triangulation.png used on input line 56.
 (pdftex.def)             Requested size: 447.6714pt x 218.81696pt.
 
-Overfull \hbox (29.98494pt too wide) in paragraph at lines 58--59
+Overfull \hbox (29.98494pt too wide) in paragraph at lines 56--57
  [][] 
  []
 
@@ -1448,22 +1451,29 @@ Package epstopdf Info: Source file: <images/delaunay.eps>
 (epstopdf)                    size: 12396 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/delaunay-eps-conver
 ted-to.pdf images/delaunay.eps>
-(epstopdf)             \includegraphics on input line 67.
+(epstopdf)             \includegraphics on input line 65.
 Package epstopdf Info: Output file is already uptodate.
-<images/delaunay-eps-converted-to.pdf, id=235, 1148.29pt x 429.605pt>
+<images/delaunay-eps-converted-to.pdf, id=237, 1148.29pt x 429.605pt>
 File: images/delaunay-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/delaunay-eps-converted-to.pdf>
 Package pdftex.def Info: images/delaunay-eps-converted-to.pdf used on input lin
-e 67.
+e 65.
 (pdftex.def)             Requested size: 344.48965pt x 128.88249pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5 <./images/triangulation.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<images/3drendering.png, id=243, 360.34625pt x 301.125pt>
+File: images/3drendering.png Graphic file (type png)
 
- [6 <./images/delaunay-eps-converted-to.pdf>]
+<use images/3drendering.png>
+Package pdftex.def Info: images/3drendering.png used on input line 72.
+(pdftex.def)             Requested size: 288.27739pt x 240.90031pt.
+
+Underfull \vbox (badness 3148) has occurred while \output is active []
+
+ [6 <./images/delaunay-eps-converted-to.pdf> <./images/3drendering.png>]
 Package epstopdf Info: Source file: <images/memory.eps>
 (epstopdf)                    date: 2013-02-28 14:36:10
 (epstopdf)                    size: 56409 bytes
@@ -1472,17 +1482,21 @@ Package epstopdf Info: Source file: <images/memory.eps>
 (epstopdf)                    size: 14410 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/memory-eps-converte
 d-to.pdf images/memory.eps>
-(epstopdf)             \includegraphics on input line 93.
+(epstopdf)             \includegraphics on input line 98.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/memory-eps-converted-to.pdf, id=262, 1122.1925pt x 1013.7875pt>
+<images/memory-eps-converted-to.pdf, id=264, 1122.1925pt x 1013.7875pt>
 File: images/memory-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/memory-eps-converted-to.pdf>
 Package pdftex.def Info: images/memory-eps-converted-to.pdf used on input line 
-93.
+98.
 (pdftex.def)             Requested size: 224.43452pt x 202.7539pt.
-) [7 <./images/memory-eps-converted-to.pdf>] [8]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7])
+[8 <./images/memory-eps-converted-to.pdf>]
 \openout2 = `main/zaxis.aux'.
 
  (./main/zaxis.tex
@@ -1497,7 +1511,7 @@ Package epstopdf Info: Source file: <images/tiltcircles.eps>
 verted-to.pdf images/tiltcircles.eps>
 (epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
-<images/tiltcircles-eps-converted-to.pdf, id=281, 528.97626pt x 514.92375pt>
+<images/tiltcircles-eps-converted-to.pdf, id=284, 528.97626pt x 514.92375pt>
 File: images/tiltcircles-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/tiltcircles-eps-converted-to.pdf>
@@ -1521,7 +1535,7 @@ converted-to.pdf images/spiralztiltout.eps>
 (epstopdf)             \includegraphics on input line 56.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/spiralztiltout-eps-converted-to.pdf, id=297, 825.0825pt x 456.70625pt>
+<images/spiralztiltout-eps-converted-to.pdf, id=300, 825.0825pt x 456.70625pt>
 File: images/spiralztiltout-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/spiralztiltout-eps-converted-to.pdf>
@@ -1540,7 +1554,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 65.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/tiltcorrectiongraph-eps-converted-to.pdf, id=298, 784.9325pt x 303.1325
+<images/tiltcorrectiongraph-eps-converted-to.pdf, id=301, 784.9325pt x 303.1325
 pt>
 File: images/tiltcorrectiongraph-eps-converted-to.pdf Graphic file (type pdf)
  <use images/tiltcorrectiongraph-eps-converted-to.pdf>
@@ -1589,15 +1603,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
 Package rerunfilecheck Info: File `my_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: C0880AA3A837F1C86C6BB589DC3396B3;1147.
+(rerunfilecheck)             Checksum: 720485964930BBA85B911E25ACF89DAD;1147.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
  ) 
 Here is how much of TeX's memory you used:
- 20771 strings out of 493633
- 357787 string characters out of 3143377
- 572081 words of memory out of 3000000
- 23300 multiletter control sequences out of 15000+200000
- 91476 words of font info for 211 fonts, out of 3000000 for 9000
+ 20786 strings out of 493633
+ 358017 string characters out of 3143377
+ 572141 words of memory out of 3000000
+ 23305 multiletter control sequences out of 15000+200000
+ 92016 words of font info for 217 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  58i,14n,77p,768b,1082s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
@@ -1610,10 +1624,10 @@ f-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2011/texmf-dist
 /fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2011/texmf-dist/f
 onts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2011/texmf-dist/fon
 ts/type1/public/cm-super/sfss2074.pfb>
-Output written on my_thesis.pdf (31 pages, 852772 bytes).
+Output written on my_thesis.pdf (31 pages, 919262 bytes).
 PDF statistics:
- 386 PDF objects out of 1000 (max. 8388607)
- 321 compressed objects within 4 object streams
- 70 named destinations out of 1000 (max. 500000)
- 23760 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 389 PDF objects out of 1000 (max. 8388607)
+ 323 compressed objects within 4 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 23765 words of extra memory for PDF output out of 24883 (max. 10000000)
 

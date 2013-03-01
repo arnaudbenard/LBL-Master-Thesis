@@ -37,8 +37,6 @@ The algorithm has been implemented by Travis Meyer on MATLAB. This algorithm wil
 
 \cite{aubert2006mathematical} shows that heat equations are powerful to fill out these patches of missing data, but it smooths data on sharp edges(high frequency data). One of the effect is that edges are blurred out by the algorithm.
 
-/INSERT inpaing example
-
 
 \subsection{OpenGL}
 
@@ -69,6 +67,13 @@ With this method we can connect the points on a 2D plane. In the figure  ~\ref{t
   \label{triangulation3d}
 \end{figure}
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.8]{images/3drendering.png}
+    \caption{3d rending of 1.2M points}
+  \label{rendering3d}
+\end{figure}
+
 \subsubsection{Immediate mode vs VBO}
 
 We'll investigate two ways to render our surface with OpenGL: the immediate mode and vertex buffer objects.
@@ -79,7 +84,7 @@ The following code is an example of the immediate mode for a simple triangle. Th
 
 This implementation is easy to understand and debug. Unfortunately, it is not the most efficient one. 
 
-If we try to display a significant number of triangles (> 10'000 vertices), the CPU will be the bottle neck. The GPU doesn't start rendering data before glEnd. Thus, the CPU is spoon-feeding the GPU by transferring the data triangle by triangle. Moreover, the number of API calls is proportional to the number of triangles. I.e. if you have 10 triangles you will make (10*(2+3+3)) 80 API calls \cite{opengllegacy}. In conclusion, if you want to render less than 10'000 vertices, code a quick implementation and are not planning on making a lot of changes in your rendering, the immediate mode is the way to go.
+If we try to display a significant number of triangles (> 10'000 vertices), the CPU will be the bottle neck. The GPU doesn't start rendering data before the last callback ($glEnd()$). Thus, the CPU is spoon-feeding the GPU by transferring the data triangle by triangle. Moreover, the number of API calls is proportional to the number of triangles. I.e. if you have 10 triangles you will make (10*(2+3+3)) 80 API calls \cite{opengllegacy}. In conclusion, if you want to render less than 10'000 vertices, code a quick implementation and are not planning on making a lot of changes in your rendering, the immediate mode is the way to go.
 
 
 One of the problem we have encountered with the immediate mode is the transfer from the system memory to the GPU.  We've seen there is a bottle neck in the transfer. With 10'000 points we can only have 3 frames per seconds. It means that our computer takes 300ms to upload our data to the GPU.
