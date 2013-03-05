@@ -9,9 +9,6 @@ Many people have improved the bandwidth of their AFM by designing a dual integra
 
 /PREVIOUS METHOD OF TILT
 
-
-
-
 \section{Double PID}
 
 The principal feature of an AFM is it's probing system. \cite{jeong:093706} The feedback control system is designed to adjust the motion of the tip on the z-axis. It will adjust the tip-to-sample distance. We have developed a dual-actuator control system. 
@@ -25,30 +22,31 @@ We put a piezo-electrical ceramics on top of the X-Y scanner. This device will w
   \label{DoublePid}
 \end{figure}
 
-
-
 \section{Tilt compensation}
 
-If the probe/sample angle is not perpendicular, we observe a tilt on the surface. This tilt is problematic when it becomes larger than the features. Flattening algorithms restore the image and put the data on the same level. This technique works if the range of the tip is large enough. We have decided to take another approach and to dynamically compensate for the tilt.
+In theory, the mounted sample should be flat: parallel to the XY-Scanner. If the probe/sample angle is not perpendicular, we observe a tilt on the surface. This tilt is problematic when it becomes larger than the features. There are multiple ways to compensate for this. The most common technique is to use post processing to adjust the acquired data. Flattening algorithms or first-order planefitting restore the image and put the data on the same level. This technique works if the range of the tip is large enough. We have decided to take another approach and to dynamically compensate for the tilt. Before performing our scan, we will do a first scan to compute the tilt of the sample by considering our tilt as a 3D plane. Then, we'll generate a tilt correction signal that will be added to z scan output.
 
-First, we scan the surface of the sample with a circle pattern. It gives us informations about the general topography of the surface. Then, we compute the plane equation of the surface by applying a fit in Igor Pro.
+We use a circle pattern to scan the surface of the sample. The radius of the circle is equal to the scan size. It gives us informations about the general topography of the surface. Then, we compute the plane equation of the surface by applying a fit in Igor Pro. This fit will generate a plane that models the tilted surface. The input of this fit are the theoretical X-Y output waves of the circle pattern: a sinus and a cosines. The data on the z axis is the height.
 
 \begin{equation}\label{eqn:planeeq}
 z = a_1 x + a_2 y + a_3 
 \end{equation}
 
-We find the coefficients by minimizing the values of Chi-Square. Then, we generate the waves to send to the controller the following way.
+The coefficients by minimizing the values of Chi-Square (error function). Then, we generate the waves to send to the controller the following way.
 
 \begin{equation}\label{eqn:sendwave}
 wavetosend = a_1 wavex + a_2 wavey 
 \end{equation}
+
+Wavex and wavey are the output of our scan pattern. With this method, we can do a tilt correction with any scan pattern.
+
 
 \subsection{Experiment}
 
 Wavex and wavey are the x,y components of our scan pattern. The scan pattern for an Archimedean spiral is defined by the equation  ~\ref{eqarchimedean}.
 
 \begin{equation}\label{eqarchimedean}
-x(t)= \alpha \sqrt{t} cos(\beta \sqrt{t})
+x(t)= \alpha \sqrt{t} cos(\beta \sqrt{t})\\
 y(t)= \alpha \sqrt{t} sin(\beta \sqrt{t})
 \end{equation}
 
@@ -78,7 +76,7 @@ $a_1$ & $a_2$ & $a_3$ \\ [0.5ex] % inserts table
 \label{table:planefit} % is used to refer this table in the text
 \end{table}
 
-The size of the scan is still 30 um and the spiral has 80 loops. The scan pattern we are going to send to the controller is generated with the previously computed planefit coefficients. 
+The size of the scan is still 30 $\mu m$ and the spiral has 80 loops. The scan pattern we are going to send to the controller is generated with the previously computed planefit coefficients. 
 
 \begin{figure}[H]
   \centering

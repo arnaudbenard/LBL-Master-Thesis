@@ -15,9 +15,10 @@
 \contentsline {chapter}{\numberline {3}Techniques for fast z feedback}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}Double PID}{9}{section.3.1}
 \contentsline {section}{\numberline {3.2}Tilt compensation}{10}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Experiment}{10}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}Experiment}{11}{subsection.3.2.1}
 \contentsline {chapter}{\numberline {4}Results}{13}{chapter.4}
 \contentsline {section}{\numberline {4.1}Calcite experiment}{13}{section.4.1}
-\contentsline {section}{\numberline {4.2}Soft sample}{13}{section.4.2}
-\contentsline {chapter}{\numberline {A}An appendix}{15}{appendix.A}
-\contentsline {chapter}{Bibliography}{17}{appendix*.17}
+\contentsline {chapter}{\numberline {A}Programming}{15}{appendix.A}
+\contentsline {section}{\numberline {A.1}Structure of the Spiral Scan program}{15}{section.A.1}
+\contentsline {section}{\numberline {A.2}Tips for Igor Pro}{15}{section.A.2}
+\contentsline {chapter}{Bibliography}{18}{appendix*.18}

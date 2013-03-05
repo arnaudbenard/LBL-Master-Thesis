@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.11.6)  4 MAR 2013 11:38
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.11.6)  4 MAR 2013 22:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -899,7 +899,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip61
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 91.
+Package hyperref Info: Option `colorlinks' set `true' on input line 92.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2011/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
@@ -1296,37 +1296,37 @@ LaTeX Info: Redefining \nameref on input line 18.
 
  ABD: EveryShipout initializing macros
 (./head/titlepage.tex
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 4.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 6.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 13
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 14
 .
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 13.
+(Font)              scaled to size 10.07397pt on input line 14.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 13.
+(Font)              scaled to size 7.63599pt on input line 14.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 13.
+(Font)              scaled to size 5.51999pt on input line 14.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 13.
+(Font)              scaled to size 10.07397pt on input line 14.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 13.
+(Font)              scaled to size 7.63599pt on input line 14.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 13.
+(Font)              scaled to size 5.51999pt on input line 14.
 
-<images/epfl.pdf, id=87, 574.94798pt x 275.429pt>
+<images/epfl.pdf, id=91, 574.94798pt x 275.429pt>
 File: images/epfl.pdf Graphic file (type pdf)
  <use images/epfl.pdf>
-Package pdftex.def Info: images/epfl.pdf used on input line 14.
+Package pdftex.def Info: images/epfl.pdf used on input line 15.
 (pdftex.def)             Requested size: 113.81102pt x 54.51746pt.
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 13--40
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 14--41
  [][] 
  []
 
@@ -1432,7 +1432,7 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
 Underfull \vbox (badness 6047) has occurred while \output is active []
 
  [4]
-<images/triangulation.png, id=237, 895.345pt x 437.635pt>
+<images/triangulation.png, id=244, 895.345pt x 437.635pt>
 File: images/triangulation.png Graphic file (type png)
 
 <use images/triangulation.png>
@@ -1453,7 +1453,7 @@ Package epstopdf Info: Source file: <images/delaunay.eps>
 ted-to.pdf images/delaunay.eps>
 (epstopdf)             \includegraphics on input line 65.
 Package epstopdf Info: Output file is already uptodate.
-<images/delaunay-eps-converted-to.pdf, id=239, 1148.29pt x 429.605pt>
+<images/delaunay-eps-converted-to.pdf, id=246, 1148.29pt x 429.605pt>
 File: images/delaunay-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/delaunay-eps-converted-to.pdf>
@@ -1464,7 +1464,7 @@ e 65.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5 <./images/triangulation.png>]
-<images/3drendering.png, id=245, 360.34625pt x 301.125pt>
+<images/3drendering.png, id=252, 360.34625pt x 301.125pt>
 File: images/3drendering.png Graphic file (type png)
 
 <use images/3drendering.png>
@@ -1485,7 +1485,7 @@ d-to.pdf images/memory.eps>
 (epstopdf)             \includegraphics on input line 98.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/memory-eps-converted-to.pdf, id=266, 1122.1925pt x 1013.7875pt>
+<images/memory-eps-converted-to.pdf, id=273, 1122.1925pt x 1013.7875pt>
 File: images/memory-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/memory-eps-converted-to.pdf>
@@ -1502,7 +1502,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  (./main/zaxis.tex
 Chapter 3.
 
-Overfull \hbox (20.34236pt too wide) in paragraph at lines 16--17
+Overfull \hbox (20.34236pt too wide) in paragraph at lines 14--15
 \T1/futs/m/n/10.95 (-20) The prin-ci-pal fea-ture of an AFM is it's prob-ing sy
 s-tem. [[]]
  []
@@ -1515,14 +1515,14 @@ Package epstopdf Info: Source file: <images/doublePID.eps>
 (epstopdf)                    size: 15509 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/doublePID-eps-conve
 rted-to.pdf images/doublePID.eps>
-(epstopdf)             \includegraphics on input line 22.
+(epstopdf)             \includegraphics on input line 20.
 Package epstopdf Info: Output file is already uptodate.
-<images/doublePID-eps-converted-to.pdf, id=288, 891.33pt x 519.9425pt>
+<images/doublePID-eps-converted-to.pdf, id=295, 891.33pt x 519.9425pt>
 File: images/doublePID-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/doublePID-eps-converted-to.pdf>
 Package pdftex.def Info: images/doublePID-eps-converted-to.pdf used on input li
-ne 22.
+ne 20.
 (pdftex.def)             Requested size: 267.40106pt x 155.98395pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1532,6 +1532,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
+[10 <./images/doublePID-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/tiltcircles.eps>
 (epstopdf)                    date: 2013-02-27 19:46:01
 (epstopdf)                    size: 1165410 bytes
@@ -1540,17 +1541,16 @@ Package epstopdf Info: Source file: <images/tiltcircles.eps>
 (epstopdf)                    size: 69407 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/tiltcircles-eps-con
 verted-to.pdf images/tiltcircles.eps>
-(epstopdf)             \includegraphics on input line 59.
+(epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/tiltcircles-eps-converted-to.pdf, id=298, 528.97626pt x 514.92375pt>
+<images/tiltcircles-eps-converted-to.pdf, id=321, 528.97626pt x 514.92375pt>
 File: images/tiltcircles-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/tiltcircles-eps-converted-to.pdf>
 Package pdftex.def Info: images/tiltcircles-eps-converted-to.pdf used on input 
-line 59.
+line 60.
 (pdftex.def)             Requested size: 158.69409pt x 154.4783pt.
- [10 <./images/doublePID-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/spiralztiltout.eps>
 (epstopdf)                    date: 2013-02-26 16:27:12
 (epstopdf)                    size: 2221555 bytes
@@ -1560,15 +1560,15 @@ Package epstopdf Info: Source file: <images/spiralztiltout.eps>
 (epstopdf)                    size: 53330 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/spiralztiltout-eps-
 converted-to.pdf images/spiralztiltout.eps>
-(epstopdf)             \includegraphics on input line 84.
+(epstopdf)             \includegraphics on input line 85.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/spiralztiltout-eps-converted-to.pdf, id=316, 825.0825pt x 456.70625pt>
+<images/spiralztiltout-eps-converted-to.pdf, id=322, 825.0825pt x 456.70625pt>
 File: images/spiralztiltout-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/spiralztiltout-eps-converted-to.pdf>
 Package pdftex.def Info: images/spiralztiltout-eps-converted-to.pdf used on inp
-ut line 84.
+ut line 85.
 (pdftex.def)             Requested size: 82.51308pt x 45.6733pt.
 Package epstopdf Info: Source file: <images/tiltcorrectiongraph.eps>
 (epstopdf)                    date: 2013-02-27 18:30:21
@@ -1579,37 +1579,60 @@ o.pdf>
 (epstopdf)                    size: 139111 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/tiltcorrectiongraph
 -eps-converted-to.pdf images/tiltcorrectiongraph.eps>
-(epstopdf)             \includegraphics on input line 93.
+(epstopdf)             \includegraphics on input line 94.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/tiltcorrectiongraph-eps-converted-to.pdf, id=317, 784.9325pt x 303.1325
+<images/tiltcorrectiongraph-eps-converted-to.pdf, id=323, 784.9325pt x 303.1325
 pt>
 File: images/tiltcorrectiongraph-eps-converted-to.pdf Graphic file (type pdf)
  <use images/tiltcorrectiongraph-eps-converted-to.pdf>
 Package pdftex.def Info: images/tiltcorrectiongraph-eps-converted-to.pdf used o
-n input line 93.
+n input line 94.
 (pdftex.def)             Requested size: 78.49783pt x 30.31502pt.
-) [11 <./images/tiltcircles-eps-converted-to.pdf> <./images/spiralztiltout-eps-
-converted-to.pdf> <./images/tiltcorrectiongraph-eps-converted-to.pdf>]
+ [11 <./images/tiltcircles-eps-converted-to.pdf> <./images/spiralztiltout-eps-c
+onverted-to.pdf>])
+[12 <./images/tiltcorrectiongraph-eps-converted-to.pdf>]
 \openout2 = `main/experiments.aux'.
 
- (./main/experiments.tex
-[12
 
-
-
-]
+(./main/experiments.tex
 Chapter 4.
-) [13]
+
+Overfull \hbox (108.82301pt too wide) in paragraph at lines 7--8
+\T1/futs/m/n/10.95 (-20) More-over, it is abun-dant and ge-o-log-i-cally im-por
+-tant material.[[]]
+ []
+
+
+Overfull \hbox (8.39787pt too wide) in paragraph at lines 9--10
+[]\T1/futs/m/n/10.95 (-20) In this ex-per-i-ment, we should ob-serve [[]] 
+ []
+
+<images/006_X10s50l10m_MOv2_17.png, id=354, 513.92pt x 513.92pt>
+File: images/006_X10s50l10m_MOv2_17.png Graphic file (type png)
+
+<use images/006_X10s50l10m_MOv2_17.png>
+Package pdftex.def Info: images/006_X10s50l10m_MOv2_17.png used on input line 2
+2.
+(pdftex.def)             Requested size: 256.95937pt x 256.95937pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13
+
+
+
+])
+[14 <./images/006_X10s50l10m_MOv2_17.png (PNG copy)>]
 \openout2 = `tail/appendix.aux'.
 
- (./tail/appendix.tex [14
+ (./tail/appendix.tex
+Appendix A.
+) [15
 
 
 
 ]
-Appendix A.
-) [15]
 \openout2 = `tail/biblio.aux'.
 
  (./tail/biblio.tex (./my_thesis.bbl [16
@@ -1622,12 +1645,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--14
 78e5247b9e212ea639b4d7-[]8000 .
  []
 
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 32.
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--64
+(/usr/local/texlive/2011/texmf-dist/tex/latex/fourier/ts1futs.fd
+File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
+) [17]
+Underfull \hbox (badness 10000) in paragraph at lines 84--90
 []
  []
 
-)) [17]
+)) [18]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
  (./my_thesis.aux (./head/dedication.aux) (./head/preface.aux)
@@ -1637,19 +1664,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
 Package rerunfilecheck Info: File `my_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A789FF3AF3B5F477A090C13629BDE33A;1147.
+(rerunfilecheck)             Checksum: 1A0A3EEB15FA4865546635B078ADBED4;1238.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
  ) 
 Here is how much of TeX's memory you used:
- 20807 strings out of 493633
- 358405 string characters out of 3143377
- 574423 words of memory out of 3000000
- 23313 multiletter control sequences out of 15000+200000
- 92447 words of font info for 222 fonts, out of 3000000 for 9000
+ 20856 strings out of 493633
+ 359273 string characters out of 3143377
+ 576815 words of memory out of 3000000
+ 23343 multiletter control sequences out of 15000+200000
+ 93598 words of font info for 229 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 58i,14n,77p,768b,1082s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 58i,14n,77p,847b,1084s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
 exlive/2011/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
+live/2011/texmf-dist/fonts/type1/public/fourier/fourier-alt.pfb></usr/local/tex
 live/2011/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/te
 xlive/2011/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/tex
 live/2011/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/20
@@ -1658,10 +1686,10 @@ f-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2011/texmf-dist
 /fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2011/texmf-dist/f
 onts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2011/texmf-dist/fon
 ts/type1/public/cm-super/sfss2074.pfb>
-Output written on my_thesis.pdf (33 pages, 936717 bytes).
+Output written on my_thesis.pdf (34 pages, 1075784 bytes).
 PDF statistics:
- 419 PDF objects out of 1000 (max. 8388607)
- 347 compressed objects within 4 object streams
- 77 named destinations out of 1000 (max. 500000)
- 23770 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 445 PDF objects out of 1000 (max. 8388607)
+ 370 compressed objects within 4 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 24295 words of extra memory for PDF output out of 24883 (max. 10000000)
 
