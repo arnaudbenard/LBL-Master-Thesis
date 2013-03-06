@@ -3,7 +3,7 @@
 
 The most common way to render gridded data is using raster scan patterns. This technique steers the tip of the AFM on specific points of the grid. Past AFM research has been focused on improving those position controllers. Indeed, the AFM precision depends from the quality of the closed loop feedback on XY. These improvements, however, didn't solve fundamental problems with raster scanning. Most of the data is thrown away (border) and the actual position on the XY plane is inaccurate - and directly correlated with the efficiency of the position controller.
 
-First, we discuss using sensor data instead of theoretical one and its implications in non-raster scanning. Then, we investigate how to render images from sparse data with Delaunay triangulation and inpainting. 
+First, we discuss using sensor data instead of theoretical one and its implications in non-raster scanning. Then, we review how to render images from sparse data with Delaunay triangulation and inpainting. 
 
 \section{Sensor data}
  
@@ -11,8 +11,7 @@ Current AFMs run in closed loop: position controllers on the XY axis are needed 
 
 Instead of using this method, we will work in open loop and register the data of the position sensors. One of the advantage of using sensor data is that we don't need accurate position controllers: it has no impact on our data. Instead of position the tip on an exact position, we're embracing its inaccuracy. The precision of our system is limited by the sensors and not the feedback on XY. Our current setup (Asylum Research MFP3D) uses capacity sensors.
 
-If we use sensor data, we don't acquire it on specific points on a grid. Therefore we need image processing algorithms to render missing parts of our scan.  The easiest way is to have a linear gradient between the closest points. We will see in the next section how to find these points. We will link these points together with triangles. Another way is to use image processing algorithms.
-
+If we use sensor data, we don't acquire specific points on a grid. Therefore we need image processing algorithms to render missing parts of our scan.  The easiest way is to have a linear gradient between the closest points. We will see in the next section how to find these points. 
 
 \section{Image rendering techniques}
 
@@ -20,8 +19,7 @@ Current AFMs give discrete data about the cantilever's position; therefore, we'l
 
 \subsection{Inpainting algorithms}
 
-Reconstructing missing parts of images was first developed for restoring photographs and paintings or remove undesirable data like text and publicity. The art of restoration was performed manually. Nowadays, tools like Photoshop or Gimp are widely used in the media. It can be used to produce special effects 
-\cite{richard2001fast}.
+Reconstructing missing parts of images was first developed for restoring photographs and paintings or remove undesirable data like text and publicity. The art of restoration was performed manually. Nowadays, tools like Photoshop or Gimp are widely used in the media. It can also be used to produce special effects \cite{richard2001fast}.
 
 This process is called inpainting. The principle behind it is to fill a patch with its surroundings. Mathematicians have developed wide range of algorithms to solve that kind of problems. We will investigate a special case of partial differential equations (PDE): heat equations. 
 The heat equation is a PDE that represents the distribution of heat in a region over time. 
@@ -29,7 +27,6 @@ The heat equation is a PDE that represents the distribution of heat in a region 
 \begin{equation}\label{eqn:heateq}
 \frac{\partial u}{\partial t} - \alpha \nabla^2 u = 0
 \end{equation}
-
 
 $\alpha$ is the thermal diffusivity - that is interpreted as a "thermal inertia modulus" - and $u$ is the temperature over space and time (i.e. $u(x,y,z,t)$). A high thermal diffusivity implies that the heat moves rapidly.
 
@@ -40,16 +37,15 @@ The algorithm has been implemented by Travis Meyer on MATLAB. This algorithm wil
 
 \subsection{OpenGL}
 
-In this section, we see how to render images with OpenGL(Open Graphics Library). It is an API (Application Programming Interface) developed by Silicon Graphics to hide the complexities of interfacing with different 3D accelerators and mainly used for 3D modeling in video games and simulations. OpenGL leverages the fact that GPUs are optimized to render triangle. Before drawing our data, the GPU will enter in the tessellation process. It will optimize the rendering by using the repetition of a geometric shape (triangle). The more complex the shape the harder it will be for the GPU to process it. If we already pre-process the data into triangles,  we will minimize processing costs. \cite{abobegpu}
+In this section, we see how to render images with OpenGL(Open Graphics Library). It is an API (Application Programming Interface) developed by Silicon Graphics to hide the complexities of interfacing with different 3D accelerators and mainly used for 3D modeling in video games and simulations. OpenGL leverages the fact that GPUs are designed to render triangle. It optimizes the rendering by using the repetition of a geometric shape (tessellation). The more complex the shape the harder it will be for the GPU to process it. If we already pre-process the data into triangles, we minimize processing costs. \cite{abobegpu}
 
 \subsubsection{Triangulation with Delaunay}
 
-The first problems we'll face when trying to plot our cloud of points is to know how to generate triangles. Indeed, OpenGL can only render triangles from a triplet of points. An unordered list of points will not be ordered by OpenGL. We'll need  algorithms like Delaunay triangulation to obtain those.
-The principle behind the Delaunay triangulation is to generate triangles from triplets of point. 
+The first problems we face how to generate triangles from sparse data. Indeed, OpenGL can only render triangles from a triplet of points. An unordered list of points will not be ordered by OpenGL. We need efficient algorithms like Delaunay triangulation.
 
-The algorithm minimizes the angles of each triangle. The triangulation is successful if no vertex (i.e. 3-dimensional point) is in the interior of a triangle.
+The algorithm minimizes the angles of each triangle. The triangulation is successful if no vertex (i.e. 3-dimensional point) is inside a triangle.
 
-Triangle.c is a library developed in C by Jonathan Shewchuk \cite{shewchuk96b} to generate Delaunay triangulations. The Figure ~\ref{triangulation2d} shows the effect of the program on a spiral scan.  We will discuss later about spiral scanning. The input data has 20'000 points and the program generates 38'784 triangles. 
+Jonathan Shewchuk \cite{shewchuk96b} has developed a library, triangle.c, to compute Delaunay triangulations and other meshes. The Figure ~\ref{triangulation2d} shows the effect of the program on a spiral scan.  We will discuss later about spiral scanning. The input data has 20'000 points and the program generates 38'784 triangles. 
 
 \begin{figure}[H]
   \centering
@@ -59,7 +55,8 @@ Triangle.c is a library developed in C by Jonathan Shewchuk \cite{shewchuk96b} t
 \end{figure}
 
 
-With this method we can connect the points on a 2D plane. In the figure  ~\ref{triangulation3d}  We use the z-axis data to compute the height of each of our point and render 3D models of our scans. To add colors to our data, OpenGL will create a linear gradient between each of the data points.
+With this method we can connect the points on a 2D plane. In the figure  ~\ref{triangulation3d}, we use the z-axis data to compute the height of each of our point and render 3D models of our scans. To add colors to our data, OpenGL will create a linear gradient between each of the data points.
+
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.3]{images/delaunay.eps}
@@ -76,18 +73,15 @@ With this method we can connect the points on a 2D plane. In the figure  ~\ref{t
 
 \subsubsection{Immediate mode vs VBO}
 
-We'll investigate two ways to render our surface with OpenGL: the immediate mode and vertex buffer objects.
+There are two ways to render our surface with OpenGL: the immediate mode and vertex buffer objects.
 
-The immediate mode is the simplest implementation of OpenGL. Indeed, we render  every frame. If we rotate the our 3D model, we'll have to regenerate the latter. The power of the immediate mode is its simple implementation (no initialization and extra code). Moreover, it is easier to debug. For a small number of vertices (< 10'000) the immediate mode is appropriate. \cite{opengl1} states that the immediate mode is more convenient and less overhead than other implementations (Vertex Buffer Objects)
+The immediate mode is the simplest implementation of OpenGL. Indeed, we render every frame. If we rotate the our 3D model, we'll have to regenerate the latter. The power of the immediate mode is its simple implementation (no initialization and extra code). Moreover, it is easier to debug. For a small number of vertices (< 10'000) the immediate mode is appropriate. \cite{opengl1} states that the immediate mode is more convenient and less overhead than other implementations (Vertex Buffer Objects).
 
-The following code is an example of the immediate mode for a simple triangle. The display function is called when GLUT(OpenGL Utility Toolkit) determines that the windows needs to be redisplayed. Action like rotation, translation or resizing of the model will trigger the display event. Each time the display function will be called, the program will upload the vertices to the GPU.
+The display function is called when GLUT(OpenGL Utility Toolkit) determines that the windows needs to be redisplayed. Action like rotation, translation or resizing of the model will trigger the display event. Each time the display function will be called, the program will upload the vertices to the GPU.
 
-This implementation is easy to understand and debug. Unfortunately, it is not the most efficient one. 
+If we try to display a significant number of triangles (> 10'000 vertices), the CPU will be the bottleneck. The GPU doesn't start rendering data before the last callback ($glEnd()$). Thus, the CPU is spoon-feeding the GPU by transferring the data triangle by triangle. Moreover, the number of API calls is proportional to the number of triangles. I.e. if you have 10 triangles you will make (10*(2+3+3)) 80 API calls \cite{opengllegacy}. In conclusion, if you want to render less than 10'000 vertices, code a quick implementation and are not planning on making a lot of changes in your rendering, the immediate mode is the way to go.
 
-If we try to display a significant number of triangles (> 10'000 vertices), the CPU will be the bottle neck. The GPU doesn't start rendering data before the last callback ($glEnd()$). Thus, the CPU is spoon-feeding the GPU by transferring the data triangle by triangle. Moreover, the number of API calls is proportional to the number of triangles. I.e. if you have 10 triangles you will make (10*(2+3+3)) 80 API calls \cite{opengllegacy}. In conclusion, if you want to render less than 10'000 vertices, code a quick implementation and are not planning on making a lot of changes in your rendering, the immediate mode is the way to go.
-
-
-One of the problem we have encountered with the immediate mode is the transfer from the system memory to the GPU.  We've seen there is a bottle neck in the transfer. With 10'000 points we can only have 3 frames per seconds. It means that our computer takes 300ms to upload our data to the GPU.
+One of the problem we have encountered with the immediate mode is the transfer from the system memory to the GPU.  We've seen there is a bottle neck in the transfer. With 10'000 points we can only have 3 frames per seconds. It means that our computer takes 300 ms for the whole process.
 
 Instead of transferring the data from the memory to the GPU, the GPU could read the memory of the program. Buffer objects have been created to allow the GPU to have access to the memory. The process of reading the memory from the GPU is called Direct Memory Access (DMA). A buffer object is a contiguous untyped memory which the CPU and the GPU have access to.
 
@@ -103,9 +97,9 @@ We can't just upload our data into the memory without any structure. We need to 
 
 After having allocated and created this chunk of data, we need to map it to make it readable to the GPU. OpenGL has API calls for that application.
 
-The advantage of this implementation is that you directly pull your data to a shared memory between the CPU and the GPU. Your CPU will spend less cycles making API calls thus improving the performances of the program. The power of the VBOs is that you just need to upload your data and your display function will just bind the VBO. Our performances have improved from 3FPS to 130FPS for 100'000 data points. Having a high FPS makes the animations smoother.
+The advantage of this implementation is that you directly pull your data to a shared memory between the CPU and the GPU. Your CPU will spend less cycles making API calls thus improving the performances of the program. The power of the VBOs is that you just need to upload your data and your display function will just bind the VBO. Our performances have improved from 3FPS to 130FPS for 100'000 data points. Having a higher FPS count makes the animations smoother.
 
-Table  ~\ref{table:nonlin} show the non-linearity of our implementation. We see that Delaunay triangulation doesn't scale well for 1'000'000 points. In AFM scans we will rarely sample 1'000'000 datapoints. The limits of our AFM is 100'000 kHz. If we take 10 seconds scans at the limit rate, we observe that the computation time is still way below the scanning time. 
+Table  ~\ref{table:nonlin} shows the non-linearity of our implementation. We see that Delaunay triangulation doesn't scale well for 1'000'000 points. In AFM scans we will rarely sample 1'000'000 datapoints. The limits of our AFM is 100'000 kHz. If we take 10 seconds scans at the limit rate, we observe that the computation time is still way below the scanning time. 
 
 \begin{table}[ht]
 \caption{Rendering results[ms]} % title of Table

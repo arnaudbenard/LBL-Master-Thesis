@@ -1,113 +1,89 @@
-\begin{thebibliography}{15}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\begin{thebibliography}{10}
 
-\bibitem[Abobe(2013)]{abobegpu}
+\bibitem{abobegpu}
 Abobe.
 \newblock Tips for optimizing gpu rendering performance.
 \newblock 2013.
-\newblock URL
-  \url{http://help.adobe.com/en_US/as3/mobile/WS5d37564e2b3bb78e5247b9e212ea639b4d7-8000.html}.
 
-\bibitem[Aubert and Kornprobst(2006)]{aubert2006mathematical}
+\bibitem{aubert2006mathematical}
 Gilles Aubert and Pierre Kornprobst.
-\newblock \emph{Mathematical problems in image processing: partial differential
+\newblock {\em Mathematical problems in image processing: partial differential
   equations and the calculus of variations}, volume 147.
 \newblock Springer, 2006.
 
-\bibitem[Binnig et~al.(1986)Binnig, Quate, and Gerber]{binnig1986atomic}
+\bibitem{binnig1986atomic}
 Gerd Binnig, Calvin~F Quate, and Ch~Gerber.
 \newblock Atomic force microscope.
-\newblock \emph{Physical review letters}, 56\penalty0 (9):\penalty0 930--933,
-  1986.
+\newblock {\em Physical review letters}, 56(9):930--933, 1986.
 
-\bibitem[Hillner et~al.(1992{\natexlab{a}})Hillner, Gratz, Manne, and
-  Hansma]{hillner1992atomic}
+\bibitem{hillner1992atomic}
 PE~Hillner, AJ~Gratz, S~Manne, and PK~Hansma.
 \newblock Atomic-scale imaging of calcite growth and dissolution in real time.
-\newblock \emph{Geology}, 20\penalty0 (4):\penalty0 359--362,
-  1992{\natexlab{a}}.
+\newblock {\em Geology}, 20(4):359--362, 1992.
 
-\bibitem[Hillner et~al.(1992{\natexlab{b}})Hillner, Manne, Gratz, and
-  Hansma]{Hillner19921387}
+\bibitem{Hillner19921387}
 P.E. Hillner, S.~Manne, A.J. Gratz, and P.K. Hansma.
 \newblock Afm images of dissolution and growth on a calcite crystal.
-\newblock \emph{Ultramicroscopy}, 42â€“44, Part 2\penalty0 (0):\penalty0
-  1387 -- 1393, 1992{\natexlab{b}}.
-\newblock ISSN 0304-3991.
-\newblock \doi{10.1016/0304-3991(92)90454-R}.
-\newblock URL
-  \url{http://www.sciencedirect.com/science/article/pii/030439919290454R}.
+\newblock {\em Ultramicroscopy}, 42â€“44, Part 2(0):1387 -- 1393, 1992.
 
-\bibitem[Huang and Andersson(2011)]{nonrasterdata}
+\bibitem{nonrasterdata}
 Peng Huang and S.B. Andersson.
 \newblock Generating images from non-raster data in afm.
-\newblock In \emph{American Control Conference (ACC), 2011}, pages 2246 --2251,
+\newblock In {\em American Control Conference (ACC), 2011}, pages 2246 --2251,
   29 2011-july 1 2011.
 
-\bibitem[Jeong et~al.(2007)Jeong, Jayanth, and Menq]{jeong:093706}
+\bibitem{jeong:093706}
 Younkoo Jeong, G.~R. Jayanth, and Chia-Hsiang Menq.
 \newblock Control of tip-to-sample distance in atomic force microscopy: A
   dual-actuator tip-motion control scheme.
-\newblock \emph{Review of Scientific Instruments}, 78\penalty0 (9):\penalty0
-  093706, 2007.
-\newblock \doi{10.1063/1.2785158}.
-\newblock URL \url{http://link.aip.org/link/?RSI/78/093706/1}.
+\newblock {\em Review of Scientific Instruments}, 78(9):093706, 2007.
 
-\bibitem[Kilgard(2008)]{opengl1}
+\bibitem{opengl1}
 Mark~J. Kilgard.
 \newblock Modern opengl usage: Using vertex buffer objects well.
 \newblock Technical report, 2008.
 
-\bibitem[Liang et~al.(1996)Liang, Baer, McCoy, Amonette, and
-  Lafemina]{liang1996dissolution}
+\bibitem{liang1996dissolution}
 Yong Liang, Donald~R Baer, James~M McCoy, James~E Amonette, and John~P
   Lafemina.
 \newblock Dissolution kinetics at the calcite-water interface.
-\newblock \emph{Geochimica et Cosmochimica Acta}, 60\penalty0 (23):\penalty0
-  4883--4887, 1996.
+\newblock {\em Geochimica et Cosmochimica Acta}, 60(23):4883--4887, 1996.
 
-\bibitem[Mahmood and Moheimani(2009)]{mahmood2009fast}
+\bibitem{mahmood2009fast}
 IA~Mahmood and SO~Reza Moheimani.
 \newblock Fast spiral-scan atomic force microscopy.
-\newblock \emph{Nanotechnology}, 20\penalty0 (36):\penalty0 365503, 2009.
+\newblock {\em Nanotechnology}, 20(36):365503, 2009.
 
-\bibitem[OpenGL(2012)]{opengllegacy}
+\bibitem{opengllegacy}
 OpenGL, 2012.
-\newblock URL \url{http://www.opengl.org/wiki/Legacy_OpenGL}.
 
-\bibitem[Richard and Chang(2001)]{richard2001fast}
+\bibitem{richard2001fast}
 Manuel M Oliveira Brian~Bowen Richard and McKenna Yu-Sung Chang.
 \newblock Fast digital image inpainting.
-\newblock In \emph{Appeared in the Proceedings of the International Conference
+\newblock In {\em Appeared in the Proceedings of the International Conference
   on Visualization, Imaging and Image Processing (VIIP 2001), Marbella, Spain},
   2001.
 
-\bibitem[Shewchuk(1996)]{shewchuk96b}
+\bibitem{shewchuk96b}
 Jonathan~Richard Shewchuk.
 \newblock Triangle: {E}ngineering a {2D} {Q}uality {M}esh {G}enerator and
   {D}elaunay {T}riangulator.
-\newblock In Ming~C. Lin and Dinesh Manocha, editors, \emph{Applied
-  Computational Geometry: Towards Geometric Engineering}, volume 1148 of
-  \emph{Lecture Notes in Computer Science}, pages 203--222. Springer-Verlag,
-  May 1996.
+\newblock In Ming~C. Lin and Dinesh Manocha, editors, {\em Applied
+  Computational Geometry: Towards Geometric Engineering}, volume 1148 of {\em
+  Lecture Notes in Computer Science}, pages 203--222. Springer-Verlag, May
+  1996.
 \newblock From the First ACM Workshop on Applied Computational Geometry.
 
-\bibitem[Sulchek et~al.(1999)Sulchek, Minne, Adams, Fletcher, Atalar, Quate,
-  and Adderton]{sulchek1999dual}
+\bibitem{sulchek1999dual}
 T~Sulchek, SC~Minne, JD~Adams, DA~Fletcher, A~Atalar, CF~Quate, and
   DM~Adderton.
 \newblock Dual integrated actuators for extended range high speed atomic force
   microscopy.
-\newblock \emph{Applied physics letters}, 75\penalty0 (11):\penalty0
-  1637--1639, 1999.
+\newblock {\em Applied physics letters}, 75(11):1637--1639, 1999.
 
-\bibitem[Yong et~al.(2010)Yong, Moheimani, and Petersen]{yong2010high}
+\bibitem{yong2010high}
 YK~Yong, SOR Moheimani, and IR~Petersen.
 \newblock High-speed cycloid-scan atomic force microscopy.
-\newblock \emph{Nanotechnology}, 21\penalty0 (36):\penalty0 365503, 2010.
+\newblock {\em Nanotechnology}, 21(36):365503, 2010.
 
 \end{thebibliography}

@@ -10,51 +10,51 @@ A level-1 auxiliary file: main/zaxis.aux
 A level-1 auxiliary file: main/experiments.aux
 A level-1 auxiliary file: tail/appendix.aux
 A level-1 auxiliary file: tail/biblio.aux
-The style file: plainnat.bst
+The style file: plain.bst
 Database file #1: tail/bibliography.bib
 Warning--entry type for "opengllegacy" isn't style-file defined
 --line 56 of file tail/bibliography.bib
 Warning--empty journal in abobegpu
 Warning--empty institution in opengl1
 You've used 15 entries,
-            2773 wiz_defined-function locations,
-            710 strings with 7795 characters,
-and the built_in function-call counts, 7300 in all, are:
-= -- 648
-> -- 414
-< -- 12
-+ -- 141
-- -- 125
-* -- 610
-:= -- 1116
-add.period$ -- 52
+            2118 wiz_defined-function locations,
+            607 strings with 6661 characters,
+and the built_in function-call counts, 5277 in all, are:
+= -- 505
+> -- 254
+< -- 4
++ -- 99
+- -- 84
+* -- 392
+:= -- 875
+add.period$ -- 45
 call.type$ -- 15
 change.case$ -- 85
-chr.to.int$ -- 14
-cite$ -- 32
-duplicate$ -- 329
-empty$ -- 596
-format.name$ -- 148
-if$ -- 1532
-int.to.chr$ -- 2
-int.to.str$ -- 1
+chr.to.int$ -- 0
+cite$ -- 17
+duplicate$ -- 191
+empty$ -- 415
+format.name$ -- 84
+if$ -- 1096
+int.to.chr$ -- 0
+int.to.str$ -- 15
 missing$ -- 14
-newline$ -- 89
-num.names$ -- 62
-pop$ -- 167
+newline$ -- 77
+num.names$ -- 32
+pop$ -- 89
 preamble$ -- 1
 purify$ -- 71
 quote$ -- 0
-skip$ -- 257
+skip$ -- 139
 stack$ -- 0
-substring$ -- 284
-swap$ -- 44
+substring$ -- 347
+swap$ -- 40
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 160
+type$ -- 58
 warning$ -- 2
-while$ -- 62
-width$ -- 0
-write$ -- 211
+while$ -- 48
+width$ -- 17
+write$ -- 162
 (There were 3 warnings)

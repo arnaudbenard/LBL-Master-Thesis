@@ -1,19 +1,15 @@
 %!TEX root = ../my_thesis.tex
 \chapter{Techniques for fast z feedback}
 
-Several people have improved the AFM feedback loop by implementing model based controller or high frequency actuators. The drawback with these actuators is the decrease in the positioning range.
-/CURRENT FEEDBACK SCHEME
+Implementing model based controller or high frequency actuators improves the AFM feedback loop\cite{sulchek1999dual}. The drawback with these actuators is the decrease in the positioning range.
 
-We have decided to improve the bandwidth and the scan range of our device. 
-Many people have improved the bandwidth of their AFM by designing a dual integrated actuators system \cite{sulchek1999dual}. Most of them have introduced an external piezoelectrical actuator on top of the cantilever. With this scheme, we can combine the advantages of a high bandwidth from the piezo-electrical actuator and the long range of the tip.
-
-/PREVIOUS METHOD OF TILT
+We improve the bandwidth and the scan range of our device. Past research has introduced an external piezoelectrical actuator on top of the cantilever. With this scheme, we can combine the advantages of a high bandwidth from the piezo-electrical actuator and the long range of the tip.
 
 \section{Double PID}
 
-The principal feature of an AFM is it's probing system. \cite{jeong:093706} The feedback control system is designed to adjust the motion of the tip on the z-axis. It will adjust the tip-to-sample distance. We have developed a dual-actuator control system. 
+The principal feature of an AFM is it's probing system. \cite{jeong:093706} The feedback control system is designed to adjust the motion of the tip on the z-axis. It will adjust the tip-to-sample distance. 
 
-We put a piezo-electrical ceramics on top of the X-Y scanner. This device will work with the scanner to achieve a larger bandwidth. Indeed, it picks up high spatial frequency topography. 
+We have developed a dual-actuator control system. We put a piezo-electrical ceramics on top of the X-Y scanner. This device will work with the scanner to achieve a larger bandwidth. Indeed, it picks up high spatial frequency topography. 
 
 \begin{figure}[H]
   \centering
@@ -26,7 +22,7 @@ We need a high-voltage amplifier to operate the small piezoelectric device.
 
 \section{Tilt compensation}
 
-In theory, the mounted sample should be flat: parallel to the XY-Scanner. If the probe/sample angle is not perpendicular, we observe a tilt on the surface. This tilt is problematic when it becomes larger than the features. There are multiple ways to compensate for this. The most common technique is to use post processing to adjust the acquired data. Flattening algorithms or first-order planefitting restore the image and put the data on the same level. This technique works if the range of the tip is large enough. We have decided to take another approach and to dynamically compensate for the tilt. Before performing our scan, we will do a first scan to compute the tilt of the sample by considering our tilt as a 3D plane. Then, we'll generate a tilt correction signal that will be added to z scan output.
+In theory, the mounted sample should be flat: parallel to the XY-Scanner. If the probe/sample angle is not perpendicular, we observe a tilt on the surface. This tilt is problematic when it becomes larger than the features. There are multiple ways to compensate for this. The most common technique is to use post-processing to adjust the image. Flattening algorithms or first-order planef itting restore the image and put the data on the same level. This technique works if the range of the tip is large enough. We have decided to take another approach and to dynamically compensate for the tilt. Before performing our scan, we will do a first scan to compute the tilt of the sample by considering our tilt as a 3D plane. Then, we'll generate a tilt correction signal that will be added to z scan output.
 
 We use a circle pattern to scan the surface of the sample. The radius of the circle is equal to the scan size. It gives us informations about the general topography of the surface. Then, we compute the plane equation of the surface by applying a fit in Igor Pro. This fit will generate a plane that models the tilted surface. The input of this fit are the theoretical X-Y output waves of the circle pattern: a sinus and a cosines. The data on the z axis is the height.
 
@@ -52,7 +48,7 @@ x(t)= \alpha \sqrt{t} cos(\beta \sqrt{t})\\
 y(t)= \alpha \sqrt{t} sin(\beta \sqrt{t})
 \end{equation}
 
-We took a calibration sample to test the efficiency of our method. The size or our scan is 30um. We see on the figure  ~\ref{spiraheight30uv2} that the surface has a tilt. The small spikes on the curve represent the pyramids on the sample.
+We took a calibration sample to test the efficiency of our method. The size or our scan is 30 $\mu m$. We see on the figure  ~\ref{spiraheight30uv2} that the surface has a tilt. The small spikes on the curve represent the pyramids on the sample.
 
 \begin{figure}[ht]
 \begin{minipage}[b]{0.45\linewidth}
@@ -112,7 +108,7 @@ We have calibrated the small piezoelectric ceramic and found that a step of 5V i
 \end{minipage}
 \end{figure}
 
-The tilt compensation will take a load off the small fast piezoelectrical ceramics. The Figure ~\ref{spiralzfast} shows the efficiency of our method. Indeed, the fast piezo was previously saturating. The piezos was trying to reach features that are larger than his range. If we use the tilt correction, we see that our piezo has no problem reaching those features.
+The tilt compensation takes a load off the small fast piezoelectrical ceramics. The Figure ~\ref{spiralzfast} shows the efficiency of our method. Indeed, the fast piezo was previously saturating. The piezos was trying to reach features that are larger than his range. If we use the tilt correction, we see that our piezo has no problem reaching those features.
 
 
 \begin{figure}[H]
