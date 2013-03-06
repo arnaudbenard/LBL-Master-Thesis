@@ -22,6 +22,8 @@ We put a piezo-electrical ceramics on top of the X-Y scanner. This device will w
   \label{DoublePid}
 \end{figure}
 
+We need a high-voltage amplifier to operate the small piezoelectric device. 
+
 \section{Tilt compensation}
 
 In theory, the mounted sample should be flat: parallel to the XY-Scanner. If the probe/sample angle is not perpendicular, we observe a tilt on the surface. This tilt is problematic when it becomes larger than the features. There are multiple ways to compensate for this. The most common technique is to use post processing to adjust the acquired data. Flattening algorithms or first-order planefitting restore the image and put the data on the same level. This technique works if the range of the tip is large enough. We have decided to take another approach and to dynamically compensate for the tilt. Before performing our scan, we will do a first scan to compute the tilt of the sample by considering our tilt as a 3D plane. Then, we'll generate a tilt correction signal that will be added to z scan output.
@@ -50,14 +52,22 @@ x(t)= \alpha \sqrt{t} cos(\beta \sqrt{t})\\
 y(t)= \alpha \sqrt{t} sin(\beta \sqrt{t})
 \end{equation}
 
-We took a calibration sample to test the efficiency of our method. The size or our scan is 30um. We see on the figure  ~\ref{tiltcircle} that the surface has a tilt. The small spikes on the curve represent the pyramids on the sample.
+We took a calibration sample to test the efficiency of our method. The size or our scan is 30um. We see on the figure  ~\ref{spiraheight30uv2} that the surface has a tilt. The small spikes on the curve represent the pyramids on the sample.
 
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[scale=0.3]{images/tiltcircles.eps}
-    \caption{Output of the tilt pattern}
-  \label{tiltcircle}
+\begin{figure}[ht]
+\begin{minipage}[b]{0.45\linewidth}
+\centering
+\includegraphics[width=\textwidth]{images/spiraheight30uv2.eps}
+\caption{default}
+\label{spiraheight30uv2}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.45\linewidth}
+\centering
+\includegraphics[width=\textwidth]{images/xsenvsysen30u.eps}
+\caption{default}
+\label{xsenvsysen30u}
+\end{minipage}
 \end{figure}
 
 Then we compute our fitting algorithm on the x,y and z data.
@@ -80,19 +90,36 @@ The size of the scan is still 30 $\mu m$ and the spiral has 80 loops. The scan p
 
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.1]{images/spiralztiltout.eps}
+  \includegraphics[scale=0.4]{images/spiralztiltout.eps}
     \caption{Input of the tilt compensation}
   \label{spiralztiltout}
 \end{figure}
 
+We have calibrated the small piezoelectric ceramic and found that a step of 5V is equal to 90nm.
+\begin{figure}[ht]
+\begin{minipage}[b]{0.45\linewidth}
+\centering
+\includegraphics[width=\textwidth]{images/Calib1vPP_HeightMap.eps}
+\caption{default}
+\label{fig:figure1}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.45\linewidth}
+\centering
+\includegraphics[width=\textwidth]{images/Calib1VppHisto.eps}
+\caption{default}
+\label{fig:figure2}
+\end{minipage}
+\end{figure}
+
+The tilt compensation will take a load off the small fast piezoelectrical ceramics. The Figure ~\ref{spiralzfast} shows the efficiency of our method. Indeed, the fast piezo was previously saturating. The piezos was trying to reach features that are larger than his range. If we use the tilt correction, we see that our piezo has no problem reaching those features.
 
 
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.1]{images/tiltcorrectiongraph.eps}
+  \includegraphics[scale=0.4]{images/tiltcorrectiongraph.eps}
     \caption{Output of the fast piezo}
   \label{spiralzfast}
 \end{figure}
 
 
-The tilt compensation will take a load off the small fast piezoelectrical ceramics. The Figure ~\ref{spiralzfast} shows the efficiency of our method. Indeed, the fast piezo was previously saturating. The piezos was trying to reach features that are larger than his range. If we use the tilt correction, we see that our piezo has no problem reaching those features.

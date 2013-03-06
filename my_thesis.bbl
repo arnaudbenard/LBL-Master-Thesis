@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -18,6 +18,12 @@ Gilles Aubert and Pierre Kornprobst.
   equations and the calculus of variations}, volume 147.
 \newblock Springer, 2006.
 
+\bibitem[Binnig et~al.(1986)Binnig, Quate, and Gerber]{binnig1986atomic}
+Gerd Binnig, Calvin~F Quate, and Ch~Gerber.
+\newblock Atomic force microscope.
+\newblock \emph{Physical review letters}, 56\penalty0 (9):\penalty0 930--933,
+  1986.
+
 \bibitem[Hillner et~al.(1992{\natexlab{a}})Hillner, Gratz, Manne, and
   Hansma]{hillner1992atomic}
 PE~Hillner, AJ~Gratz, S~Manne, and PK~Hansma.
@@ -35,6 +41,12 @@ P.E. Hillner, S.~Manne, A.J. Gratz, and P.K. Hansma.
 \newblock \doi{10.1016/0304-3991(92)90454-R}.
 \newblock URL
   \url{http://www.sciencedirect.com/science/article/pii/030439919290454R}.
+
+\bibitem[Huang and Andersson(2011)]{nonrasterdata}
+Peng Huang and S.B. Andersson.
+\newblock Generating images from non-raster data in afm.
+\newblock In \emph{American Control Conference (ACC), 2011}, pages 2246 --2251,
+  29 2011-july 1 2011.
 
 \bibitem[Jeong et~al.(2007)Jeong, Jayanth, and Menq]{jeong:093706}
 Younkoo Jeong, G.~R. Jayanth, and Chia-Hsiang Menq.
@@ -57,6 +69,11 @@ Yong Liang, Donald~R Baer, James~M McCoy, James~E Amonette, and John~P
 \newblock Dissolution kinetics at the calcite-water interface.
 \newblock \emph{Geochimica et Cosmochimica Acta}, 60\penalty0 (23):\penalty0
   4883--4887, 1996.
+
+\bibitem[Mahmood and Moheimani(2009)]{mahmood2009fast}
+IA~Mahmood and SO~Reza Moheimani.
+\newblock Fast spiral-scan atomic force microscopy.
+\newblock \emph{Nanotechnology}, 20\penalty0 (36):\penalty0 365503, 2009.
 
 \bibitem[OpenGL(2012)]{opengllegacy}
 OpenGL, 2012.
@@ -87,5 +104,10 @@ T~Sulchek, SC~Minne, JD~Adams, DA~Fletcher, A~Atalar, CF~Quate, and
   microscopy.
 \newblock \emph{Applied physics letters}, 75\penalty0 (11):\penalty0
   1637--1639, 1999.
+
+\bibitem[Yong et~al.(2010)Yong, Moheimani, and Petersen]{yong2010high}
+YK~Yong, SOR Moheimani, and IR~Petersen.
+\newblock High-speed cycloid-scan atomic force microscopy.
+\newblock \emph{Nanotechnology}, 21\penalty0 (36):\penalty0 365503, 2010.
 
 \end{thebibliography}

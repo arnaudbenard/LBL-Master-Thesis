@@ -1,20 +1,15 @@
 %!TEX root = ../my_thesis.tex
 \chapter{Introduction}
 
-Many methods exist to observe objects too small for the naked eye. Optical microscopy was one of the first developed technique (17th century) to see visible lights with a system of magnifying lenses. One of the advantage of optical microscopy is that you can record images at the video rate, but it still has a low resolution.
-Electron microscope can acquire data faster because of the speed of the electron beam, but the raster scan pattern is a serious hindrance(speed). Atomic Force Microscope are slower than electron microscopes mainly because of its bulky mechanics (inertia). Toshi Ando /INSERT REF developed small fast piezos that can reach /INSERT VALUE. All of those techniques display data on a grid. We will see how we can use non-raster scan pattern to improve the bandwidth on the XY-plane. Also, we have developed image processing algorithms to render non-gridded data. Finally, we will investigate new ways to go beyond the limitations on the z-axis with tilt corrections and dual actuators feedback on z.
+In 1986, a group of scientist from IBM research developed the first Atomic Force Microscope.\cite{binnig1986atomic} The original idea is to measure forces between a sharp tip and a sample. Using a XY-scanner to move the sample on the horizontal plane allows to acquire data on different areas of the sample and generate images. 
+
+The most conventional way to scan is with a raster pattern. Because of its limited bandwidth, fast raster scans generate distortions in the image.\cite{yong2010high} Spiral pattern allows to generate high-quality images at higher scan frequencies than the raster one. \cite{mahmood2009fast}. Moreover, this method reduces the number of sample acquired. \cite{nonrasterdata}
+
+With raster scanning, the data is evenly distributed in space. Generating an image is trivial. Spiral scan, however, needs new techniques to render images. Fortunately, image processing algorithms like inpainting \cite{richard2001fast} or Delaunay triangulation have been developed to generate images from sparse data.\cite{nonrasterdata}.
+
+The bandwidth on the z-axis control loop is limited by the dynamics of the z scanner.\cite{jeong:093706} We can achieve higher frequencies by using a small piezoelectric ceramic.\cite{sulchek1999dual}
 
 
-
-Limitations
-
-Microscopy:
-	- optical -> video rate but crappy resolution
-	- EM -> raster scan can slow electron beam fast
-	- AFM -> slow mostly because of bulky mechanics: intertia (mass of the system), toshi ando small piezos (small range) but fast
-
-Using spiral has been shown to be better(demands less BW x,y) but need display of non gridded data (lower res. freq. system)
-
-z is still limiting to go on large scales (x,y)
+In this thesis, we will see how we can use non-raster scan pattern to improve the bandwidth on the XY-plane. Also, we have developed image processing algorithms to render non-gridded data. Finally, we will investigate new ways to go beyond the limitations on the z-axis with tilt correction and dual actuators feedback on z.
 
 
