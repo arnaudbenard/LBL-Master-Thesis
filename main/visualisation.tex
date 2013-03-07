@@ -1,8 +1,6 @@
 %!TEX root = ../my_thesis.tex
 \chapter{Visualization of non-gridded data}
 
-The most common way to render gridded data is using raster scan patterns. This technique steers the tip of the AFM on specific points of the grid. Past AFM research has been focused on improving those position controllers. Indeed, the AFM precision depends from the quality of the closed loop feedback on XY. These improvements, however, didn't solve fundamental problems with raster scanning. Most of the data is thrown away (border) and the actual position on the XY plane is inaccurate - and directly correlated with the efficiency of the position controller.
-
 First, we discuss using sensor data instead of theoretical one and its implications in non-raster scanning. Then, we review how to render images from sparse data with Delaunay triangulation and inpainting. 
 
 \section{Sensor data}
@@ -47,13 +45,12 @@ The algorithm minimizes the angles of each triangle. The triangulation is succes
 
 Jonathan Shewchuk \cite{shewchuk96b} has developed a library, triangle.c, to compute Delaunay triangulations and other meshes. The Figure ~\ref{triangulation2d} shows the effect of the program on a spiral scan.  We will discuss later about spiral scanning. The input data has 20'000 points and the program generates 38'784 triangles. 
 
-\begin{figure}[H]
+\begin{figure}[!ht]
   \centering
-  \includegraphics[scale=0.5]{images/triangulation.png}
+  \includegraphics[scale=0.45]{images/triangulation.png}
     \caption{Delaunay triangulation on spiral scan and closeup}
   \label{triangulation2d}
 \end{figure}
-
 
 With this method we can connect the points on a 2D plane. In the figure  ~\ref{triangulation3d}, we use the z-axis data to compute the height of each of our point and render 3D models of our scans. To add colors to our data, OpenGL will create a linear gradient between each of the data points.
 
@@ -71,7 +68,7 @@ With this method we can connect the points on a 2D plane. In the figure  ~\ref{t
   \label{rendering3d}
 \end{figure}
 
-\subsubsection{Immediate mode vs VBO}
+\subsubsection{Immediate mode vs Vertex Buffer Objects}
 
 There are two ways to render our surface with OpenGL: the immediate mode and vertex buffer objects.
 
@@ -87,13 +84,13 @@ Instead of transferring the data from the memory to the GPU, the GPU could read 
 
 We can't just upload our data into the memory without any structure. We need to map the data and make it readable for the GPU. We store our data in a vertex array object.
 
+
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.2]{images/memory.eps}
-    \caption{Memory for the VAO}
-  \label{memoryVAO}
+  \includegraphics[scale=0.4]{images/openglVBO.eps}
+    \caption{Workflow of the immediate mode and the vertex buffer objects}
+  \label{openglVBO}
 \end{figure}
-
 
 After having allocated and created this chunk of data, we need to map it to make it readable to the GPU. OpenGL has API calls for that application.
 

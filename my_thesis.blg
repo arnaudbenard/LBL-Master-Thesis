@@ -16,45 +16,45 @@ Warning--entry type for "opengllegacy" isn't style-file defined
 --line 56 of file tail/bibliography.bib
 Warning--empty journal in abobegpu
 Warning--empty institution in opengl1
-You've used 14 entries,
+You've used 16 entries,
             2118 wiz_defined-function locations,
-            600 strings with 6472 characters,
-and the built_in function-call counts, 4856 in all, are:
-= -- 465
-> -- 231
+            616 strings with 6861 characters,
+and the built_in function-call counts, 5509 in all, are:
+= -- 528
+> -- 266
 < -- 4
-+ -- 90
-- -- 76
-* -- 354
-:= -- 805
-add.period$ -- 42
-call.type$ -- 14
-change.case$ -- 78
++ -- 104
+- -- 88
+* -- 407
+:= -- 920
+add.period$ -- 48
+call.type$ -- 16
+change.case$ -- 89
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 180
-empty$ -- 384
-format.name$ -- 76
-if$ -- 1010
+cite$ -- 18
+duplicate$ -- 202
+empty$ -- 432
+format.name$ -- 88
+if$ -- 1140
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 13
-newline$ -- 72
-num.names$ -- 30
-pop$ -- 84
+int.to.str$ -- 16
+missing$ -- 15
+newline$ -- 82
+num.names$ -- 34
+pop$ -- 91
 preamble$ -- 1
-purify$ -- 65
+purify$ -- 74
 quote$ -- 0
-skip$ -- 132
+skip$ -- 147
 stack$ -- 0
-substring$ -- 309
-swap$ -- 39
+substring$ -- 347
+swap$ -- 41
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 54
+type$ -- 62
 warning$ -- 2
-while$ -- 45
-width$ -- 16
-write$ -- 151
+while$ -- 52
+width$ -- 18
+write$ -- 173
 (There were 3 warnings)

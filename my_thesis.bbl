@@ -16,6 +16,12 @@ Gerd Binnig, Calvin~F Quate, and Ch~Gerber.
 \newblock Atomic force microscope.
 \newblock {\em Physical review letters}, 56(9):930--933, 1986.
 
+\bibitem{hansma1988scanning}
+PK~Hansma, VB~Elings, O~Marti, CE~Bracker, et~al.
+\newblock Scanning tunneling microscopy and atomic force microscopy:
+  application to biology and technology.
+\newblock {\em Science (New York, NY)}, 242(4876):209, 1988.
+
 \bibitem{hillner1992atomic}
 PE~Hillner, AJ~Gratz, S~Manne, and PK~Hansma.
 \newblock Atomic-scale imaging of calcite growth and dissolution in real time.
@@ -51,6 +57,12 @@ IA~Mahmood and SO~Reza Moheimani.
 
 \bibitem{opengllegacy}
 OpenGL, 2012.
+
+\bibitem{radmacher1997measuring}
+Manfred Radmacher.
+\newblock Measuring the elastic properties of biological samples with the afm.
+\newblock {\em Engineering in Medicine and Biology Magazine, IEEE},
+  16(2):47--57, 1997.
 
 \bibitem{richard2001fast}
 Manuel M Oliveira Brian~Bowen Richard and McKenna Yu-Sung Chang.

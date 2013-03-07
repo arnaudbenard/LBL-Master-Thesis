@@ -2,9 +2,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Delaunay triangulation on spiral scan and closeup\relax }}{5}{figure.caption.7}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Delaunay triangulation: From 2D to 3D\relax }}{6}{figure.caption.8}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Delaunay triangulation: From 2D to 3D\relax }}{5}{figure.caption.8}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces 3d rending of 1.2M points\relax }}{6}{figure.caption.9}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Memory for the VAO\relax }}{7}{figure.caption.10}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Workflow of the immediate mode and the vertex buffer objects\relax }}{7}{figure.caption.10}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Double PID\relax }}{9}{figure.caption.12}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Height of the tilt correction\relax }}{11}{figure.caption.13}
@@ -20,3 +20,4 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Calcite dissolution\relax }}{16}{figure.caption.20}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {A.1}{\ignorespaces Flowchart of the spiral scanning program\relax }}{17}{figure.caption.21}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Memory for the VAO\relax }}{18}{figure.caption.22}
