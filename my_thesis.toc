@@ -21,4 +21,4 @@
 \contentsline {chapter}{\numberline {A}Programming}{17}{appendix.A}
 \contentsline {section}{\numberline {A.1}Structure of the Spiral Scan program}{17}{section.A.1}
 \contentsline {section}{\numberline {A.2}Tips for Igor Pro}{18}{section.A.2}
-\contentsline {chapter}{Bibliography}{20}{appendix*.20}
+\contentsline {chapter}{Bibliography}{20}{appendix*.22}

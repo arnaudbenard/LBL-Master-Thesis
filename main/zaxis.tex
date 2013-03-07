@@ -54,14 +54,14 @@ We took a calibration sample to test the efficiency of our method. The size or o
 \begin{minipage}[b]{0.45\linewidth}
 \centering
 \includegraphics[width=\textwidth]{images/spiraheight30uv2.eps}
-\caption{default}
+\caption{Height of the tilt correction}
 \label{spiraheight30uv2}
 \end{minipage}
 \hspace{0.5cm}
 \begin{minipage}[b]{0.45\linewidth}
 \centering
 \includegraphics[width=\textwidth]{images/xsenvsysen30u.eps}
-\caption{default}
+\caption{Path on the XY plane}
 \label{xsenvsysen30u}
 \end{minipage}
 \end{figure}
@@ -82,6 +82,14 @@ $a_1$ & $a_2$ & $a_3$ \\ [0.5ex] % inserts table
 \label{table:planefit} % is used to refer this table in the text
 \end{table}
 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.4]{images/outputz.eps}
+    \caption{Asylum}
+  \label{outputz}
+\end{figure}
+
 The size of the scan is still 30 $\mu m$ and the spiral has 80 loops. The scan pattern we are going to send to the controller is generated with the previously computed planefit coefficients. 
 
 \begin{figure}[H]
@@ -91,19 +99,19 @@ The size of the scan is still 30 $\mu m$ and the spiral has 80 loops. The scan p
   \label{spiralztiltout}
 \end{figure}
 
-We have calibrated the small piezoelectric ceramic and found that a step of 5V is equal to 90nm.
+We have calibrated the small piezoelectric ceramic and found that a step of 5V is equal to 90 nm.
 \begin{figure}[ht]
 \begin{minipage}[b]{0.45\linewidth}
 \centering
 \includegraphics[width=\textwidth]{images/Calib1vPP_HeightMap.eps}
-\caption{default}
+\caption{Height of the calibration}
 \label{fig:figure1}
 \end{minipage}
 \hspace{0.5cm}
 \begin{minipage}[b]{0.45\linewidth}
 \centering
 \includegraphics[width=\textwidth]{images/Calib1VppHisto.eps}
-\caption{default}
+\caption{Histogram of the calibration}
 \label{fig:figure2}
 \end{minipage}
 \end{figure}
@@ -118,4 +126,21 @@ The tilt compensation takes a load off the small fast piezoelectrical ceramics. 
   \label{spiralzfast}
 \end{figure}
 
+We can see the effect of the tilt correction on the following figure.
+
+\begin{figure}[ht]
+\begin{minipage}[b]{0.45\linewidth}
+\centering
+\includegraphics[width=\textwidth]{images/TiltSession0226_27.png}
+\caption{Before the tilt correction}
+\label{tiltbefore}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.45\linewidth}
+\centering
+\includegraphics[width=\textwidth]{images/TiltSession0226wc_35.png}
+\caption{After the tilt correction}
+\label{tiltafter}
+\end{minipage}
+\end{figure}
 
