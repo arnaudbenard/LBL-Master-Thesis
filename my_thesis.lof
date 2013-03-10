@@ -1,23 +1,31 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Delaunay triangulation on spiral scan and closeup\relax }}{5}{figure.caption.7}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Delaunay triangulation: From 2D to 3D\relax }}{5}{figure.caption.8}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces 3d rending of 1.2M points\relax }}{6}{figure.caption.9}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Workflow of the immediate mode and the vertex buffer objects\relax }}{7}{figure.caption.10}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The first image shows that we don't have enough informations to fill out all the pixels. We need to project the data on the neighbours. Finally, the heat equation inpainting will spread the weighted data on the missing spots.\relax }}{4}{figure.caption.7}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The \relax }}{5}{figure.caption.8}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Before and after triangulation. This image is rendered by using the triangle.c library.\relax }}{5}{figure.caption.9}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Delaunay triangulation: From 2D to 3D\relax }}{6}{figure.caption.10}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces 3d rending of 1.2M points\relax }}{6}{figure.caption.11}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Workflow of the immediate mode and the vertex buffer objects\relax }}{7}{figure.caption.12}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Double PID\relax }}{9}{figure.caption.12}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Height of the tilt correction\relax }}{11}{figure.caption.13}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Path on the XY plane\relax }}{11}{figure.caption.13}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Asylum\relax }}{11}{figure.caption.15}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Input of the tilt compensation\relax }}{12}{figure.caption.16}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Height of the calibration\relax }}{12}{figure.caption.17}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Histogram of the calibration\relax }}{12}{figure.caption.17}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Output of the fast piezo\relax }}{13}{figure.caption.18}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Before the tilt correction\relax }}{13}{figure.caption.19}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces After the tilt correction\relax }}{13}{figure.caption.19}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Normal AFM setup\relax }}{10}{figure.caption.14}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Double PID\relax }}{10}{figure.caption.15}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Asylum\relax }}{11}{figure.caption.16}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Calcite dissolution\relax }}{16}{figure.caption.20}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \relax }}{14}{figure.caption.17}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces A really Awesome Image\relax }}{14}{figure.caption.17}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces A really Awesome Image\relax }}{14}{figure.caption.17}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces A really Awesome Image\relax }}{14}{figure.caption.18}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces A really Awesome Image\relax }}{14}{figure.caption.18}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces A really Awesome Image\relax }}{14}{figure.caption.18}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Height of the tilt correction\relax }}{15}{figure.caption.19}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Path on the XY plane\relax }}{15}{figure.caption.19}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Input of the tilt compensation\relax }}{15}{figure.caption.21}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Height of the calibration\relax }}{16}{figure.caption.22}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Histogram of the calibration\relax }}{16}{figure.caption.22}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Output of the fast piezo\relax }}{16}{figure.caption.23}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Before the tilt correction\relax }}{17}{figure.caption.24}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces After the tilt correction\relax }}{17}{figure.caption.24}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Flowchart of the spiral scanning program\relax }}{17}{figure.caption.21}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Memory for the VAO\relax }}{18}{figure.caption.22}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Flowchart of the spiral scanning program\relax }}{19}{figure.caption.25}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Memory for the VAO\relax }}{20}{figure.caption.26}

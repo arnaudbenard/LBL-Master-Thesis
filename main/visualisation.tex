@@ -2,18 +2,14 @@
 \chapter{Visualization of non-gridded data}
 
 First, we discuss using sensor data instead of theoretical one and its implications in non-raster scanning. Then, we review how to render images from sparse data with Delaunay triangulation and inpainting. 
-
-\section{Sensor data}
  
-Current AFMs run in closed loop: position controllers on the XY axis are needed to steer the tip at the right position. 
+Current AFMs run in closed loop: position controllers on the XY axis are needed to steer the tip at the right position. Instead of using this method, we will work in open loop and register the data of the position sensors. One of the advantage of using sensor data is that we don't need accurate position controllers: it has no impact on our data. Instead of position the tip on an exact position, we're embracing its inaccuracy. The precision of our system is limited by the sensors and not the feedback on XY. Our current setup (Asylum Research MFP3D) uses inductive sensors.
 
-Instead of using this method, we will work in open loop and register the data of the position sensors. One of the advantage of using sensor data is that we don't need accurate position controllers: it has no impact on our data. Instead of position the tip on an exact position, we're embracing its inaccuracy. The precision of our system is limited by the sensors and not the feedback on XY. Our current setup (Asylum Research MFP3D) uses capacity sensors.
-
-If we use sensor data, we don't acquire specific points on a grid. Therefore we need image processing algorithms to render missing parts of our scan.  The easiest way is to have a linear gradient between the closest points. We will see in the next section how to find these points. 
+Using this technique frees us from raster scan but as  we don't acquire specific points on a grid, we need image processing algorithms to render missing parts of our scan.  The easiest way is to have a linear gradient between the closest points. We will see in the next section how to find these points. 
 
 \section{Image rendering techniques}
 
-Current AFMs give discrete data about the cantilever's position; therefore, we'll need to use image processing algorithms to generate images. 
+We will see two ways to render images from sparse data: inpainting and OpenGL.
 
 \subsection{Inpainting algorithms}
 
@@ -28,40 +24,56 @@ The heat equation is a PDE that represents the distribution of heat in a region 
 
 $\alpha$ is the thermal diffusivity - that is interpreted as a "thermal inertia modulus" - and $u$ is the temperature over space and time (i.e. $u(x,y,z,t)$). A high thermal diffusivity implies that the heat moves rapidly.
 
-The algorithm has been implemented by Travis Meyer on MATLAB. This algorithm will spread out the information of each point on missing parts of our grid.
+The algorithm has been implemented on Matlab by the Paul Ashby Group at LBNL which developed inpainting for AFM in collaboration with Prof. A. Bertozzi of UCLA. This algorithm will spread out the information of each point on missing parts of our grid.
 
-\cite{aubert2006mathematical} shows that heat equations are powerful to fill out these patches of missing data, but it smooths data on sharp edges(high frequency data). One of the effect is that edges are blurred out by the algorithm.
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[scale=0.3]{images/inpainting3step.eps}
+    \caption{The first image shows that we don't have enough informations to fill out all the pixels. We need to project the data on the neighbours. Finally, the heat equation inpainting will spread the weighted data on the missing spots.}
+  \label{inpainting3step}
+\end{figure}
+
+Literature shows that heat equations are powerful to fill out these patches of missing data, but it smooths data on sharp edges(high frequency data)\cite{aubert2006mathematical} . One of the effect is that edges are blurred out by the algorithm.
 
 
 \subsection{OpenGL}
 
 In this section, we see how to render images with OpenGL(Open Graphics Library). It is an API (Application Programming Interface) developed by Silicon Graphics to hide the complexities of interfacing with different 3D accelerators and mainly used for 3D modeling in video games and simulations. OpenGL leverages the fact that GPUs are designed to render triangle. It optimizes the rendering by using the repetition of a geometric shape (tessellation). The more complex the shape the harder it will be for the GPU to process it. If we already pre-process the data into triangles, we minimize processing costs. \cite{abobegpu}
 
+The flow of our program is described by the Fig ~\ref{fig:timelinerendering}. First, we take the X, Y, Z data and generate a list of triplets of points (triangles). Then, we render this list with OpenGL. We will see two methods to render to list of triplets: immediate mode and Vertex Buffer Objects.
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[scale=0.40]{images/timelinerendering.eps}
+    \caption{The }
+  \label{fig:timelinerendering}
+\end{figure}
+
+
 \subsubsection{Triangulation with Delaunay}
 
-The first problems we face how to generate triangles from sparse data. Indeed, OpenGL can only render triangles from a triplet of points. An unordered list of points will not be ordered by OpenGL. We need efficient algorithms like Delaunay triangulation.
+The first problems we face how to generate triangles from sparse data. Indeed, OpenGL can only render triangles from a triplet of points. If we render the X, Y, Z data without preprocessing, OpenGL will generate triplets from the closest index in the list. We need efficient algorithms like Delaunay triangulation to take into account the X, Y position of the point and not the index.
 
 The algorithm minimizes the angles of each triangle. The triangulation is successful if no vertex (i.e. 3-dimensional point) is inside a triangle.
 
 Jonathan Shewchuk \cite{shewchuk96b} has developed a library, triangle.c, to compute Delaunay triangulations and other meshes. The Figure ~\ref{triangulation2d} shows the effect of the program on a spiral scan.  We will discuss later about spiral scanning. The input data has 20'000 points and the program generates 38'784 triangles. 
-
 \begin{figure}[!ht]
   \centering
   \includegraphics[scale=0.45]{images/triangulation.png}
-    \caption{Delaunay triangulation on spiral scan and closeup}
+    \caption{Before and after triangulation. This image is rendered by using the triangle.c library.}
   \label{triangulation2d}
 \end{figure}
 
 With this method we can connect the points on a 2D plane. In the figure  ~\ref{triangulation3d}, we use the z-axis data to compute the height of each of our point and render 3D models of our scans. To add colors to our data, OpenGL will create a linear gradient between each of the data points.
 
-\begin{figure}[H]
+\begin{figure}[!ht]
   \centering
-  \includegraphics[scale=0.3]{images/delaunay.eps}
+  \includegraphics[scale=0.2]{images/delaunay.eps}
     \caption{Delaunay triangulation: From 2D to 3D}
   \label{triangulation3d}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=0.8]{images/3drendering.png}
     \caption{3d rending of 1.2M points}
@@ -101,16 +113,16 @@ Table  ~\ref{table:nonlin} shows the non-linearity of our implementation. We see
 \begin{table}[ht]
 \caption{Rendering results[ms]} % title of Table
 \centering % used for centering table
-\begin{tabular}{c c c} % centered columns (4 columns)
+\begin{tabular}{c |c c| c } % centered columns (4 columns)
 \hline\hline %inserts double horizontal lines
- Nb of points & Delaunay & VBO \\ [0.5ex] % inserts table 
+ Nb of points & Delaunay & VBO & Total time\\ [0.5ex] % inserts table 
 %heading
 \hline % inserts single horizontal line
 
-1000 & 2.9 & 23.9 \\
-10000 & 8.1	&	27 	\\
-100000 & 66.9 & 181 \\
-1000000 & 640.7	& 267 \\[1ex]
+1000 & 2.9 & 23.9 & 26.8 \\
+10000 & 8.1	&	27 	& 35.1\\
+100000 & 66.9 & 181 & 247.9 \\
+1000000 & 640.7	& 267 & 907.7\\[1ex]
 
 
 \hline %inserts single line

@@ -5,17 +5,16 @@
 \BOOKMARK [0][-]{chapter*.5}{List of tables}{}% 5
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 6
 \BOOKMARK [0][-]{chapter.2}{Visualization of non-gridded data}{}% 7
-\BOOKMARK [1][-]{section.2.1}{Sensor data}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.2}{Image rendering techniques}{chapter.2}% 9
-\BOOKMARK [2][-]{subsection.2.2.1}{Inpainting algorithms}{section.2.2}% 10
-\BOOKMARK [2][-]{subsection.2.2.2}{OpenGL}{section.2.2}% 11
-\BOOKMARK [0][-]{chapter.3}{Techniques for fast z feedback}{}% 12
-\BOOKMARK [1][-]{section.3.1}{Double PID}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.2}{Tilt compensation}{chapter.3}% 14
-\BOOKMARK [2][-]{subsection.3.2.1}{Experiment}{section.3.2}% 15
-\BOOKMARK [0][-]{chapter.4}{Results}{}% 16
-\BOOKMARK [1][-]{section.4.1}{Calcite experiment}{chapter.4}% 17
-\BOOKMARK [0][-]{appendix.A}{Programming}{}% 18
-\BOOKMARK [1][-]{section.A.1}{Structure of the Spiral Scan program}{appendix.A}% 19
-\BOOKMARK [1][-]{section.A.2}{Other figures}{appendix.A}% 20
-\BOOKMARK [0][-]{appendix*.23}{Bibliography}{}% 21
+\BOOKMARK [1][-]{section.2.1}{Image rendering techniques}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.1.1}{Inpainting algorithms}{section.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.1.2}{OpenGL}{section.2.1}% 10
+\BOOKMARK [0][-]{chapter.3}{Techniques for fast z feedback}{}% 11
+\BOOKMARK [1][-]{section.3.1}{Double PID}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.2}{Tilt compensation}{chapter.3}% 13
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 14
+\BOOKMARK [1][-]{section.4.1}{Calcite experiment}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.2}{Tilt correction}{chapter.4}% 16
+\BOOKMARK [0][-]{appendix.A}{Programming}{}% 17
+\BOOKMARK [1][-]{section.A.1}{Structure of the Spiral Scan program}{appendix.A}% 18
+\BOOKMARK [1][-]{section.A.2}{Other figures}{appendix.A}% 19
+\BOOKMARK [0][-]{appendix*.27}{Bibliography}{}% 20

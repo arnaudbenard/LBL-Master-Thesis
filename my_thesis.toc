@@ -6,19 +6,18 @@
 \contentsline {chapter}{List of tables}{xiii}{chapter*.5}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Visualization of non-gridded data}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Sensor data}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Image rendering techniques}{3}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Inpainting algorithms}{3}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}OpenGL}{4}{subsection.2.2.2}
-\contentsline {subsubsection}{Triangulation with Delaunay}{4}{subsection.2.2.2}
-\contentsline {subsubsection}{Immediate mode vs Vertex Buffer Objects}{6}{figure.caption.9}
+\contentsline {section}{\numberline {2.1}Image rendering techniques}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Inpainting algorithms}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}OpenGL}{4}{subsection.2.1.2}
+\contentsline {subsubsection}{Triangulation with Delaunay}{5}{figure.caption.8}
+\contentsline {subsubsection}{Immediate mode vs Vertex Buffer Objects}{6}{figure.caption.11}
 \contentsline {chapter}{\numberline {3}Techniques for fast z feedback}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}Double PID}{9}{section.3.1}
 \contentsline {section}{\numberline {3.2}Tilt compensation}{10}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Experiment}{10}{subsection.3.2.1}
-\contentsline {chapter}{\numberline {4}Results}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Calcite experiment}{15}{section.4.1}
-\contentsline {chapter}{\numberline {A}Programming}{17}{appendix.A}
-\contentsline {section}{\numberline {A.1}Structure of the Spiral Scan program}{17}{section.A.1}
-\contentsline {section}{\numberline {A.2}Other figures}{18}{section.A.2}
-\contentsline {chapter}{Bibliography}{20}{appendix*.23}
+\contentsline {chapter}{\numberline {4}Results}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}Calcite experiment}{13}{section.4.1}
+\contentsline {section}{\numberline {4.2}Tilt correction}{14}{section.4.2}
+\contentsline {chapter}{\numberline {A}Programming}{19}{appendix.A}
+\contentsline {section}{\numberline {A.1}Structure of the Spiral Scan program}{19}{section.A.1}
+\contentsline {section}{\numberline {A.2}Other figures}{20}{section.A.2}
+\contentsline {chapter}{Bibliography}{22}{appendix*.27}
