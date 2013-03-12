@@ -1,20 +1,20 @@
-\BOOKMARK [0][-]{chapter*.1}{Acknowledgements}{}% 1
-\BOOKMARK [0][-]{chapter*.2}{Preface}{}% 2
-\BOOKMARK [0][-]{chapter*.3}{Abstract \(English\)}{}% 3
-\BOOKMARK [0][-]{chapter*.4}{List of figures}{}% 4
-\BOOKMARK [0][-]{chapter*.5}{List of tables}{}% 5
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 6
-\BOOKMARK [0][-]{chapter.2}{Visualization of non-gridded data}{}% 7
-\BOOKMARK [1][-]{section.2.1}{Image rendering techniques}{chapter.2}% 8
-\BOOKMARK [2][-]{subsection.2.1.1}{Inpainting algorithms}{section.2.1}% 9
-\BOOKMARK [2][-]{subsection.2.1.2}{OpenGL}{section.2.1}% 10
-\BOOKMARK [0][-]{chapter.3}{Techniques for fast z feedback}{}% 11
-\BOOKMARK [1][-]{section.3.1}{Double PID}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.2}{Tilt compensation}{chapter.3}% 13
-\BOOKMARK [0][-]{chapter.4}{Results}{}% 14
-\BOOKMARK [1][-]{section.4.1}{Calcite experiment}{chapter.4}% 15
-\BOOKMARK [1][-]{section.4.2}{Tilt correction}{chapter.4}% 16
-\BOOKMARK [0][-]{appendix.A}{Programming}{}% 17
-\BOOKMARK [1][-]{section.A.1}{Structure of the Spiral Scan program}{appendix.A}% 18
-\BOOKMARK [1][-]{section.A.2}{Other figures}{appendix.A}% 19
-\BOOKMARK [0][-]{appendix*.27}{Bibliography}{}% 20
+\BOOKMARK [0][-]{chapter*.1}{Summary}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{List of figures}{}% 2
+\BOOKMARK [0][-]{chapter*.3}{List of tables}{}% 3
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 4
+\BOOKMARK [0][-]{chapter.2}{Visualization of non-gridded data}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Image rendering techniques}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.1.1}{Inpainting algorithms}{section.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.1.2}{OpenGL}{section.2.1}% 8
+\BOOKMARK [0][-]{chapter.3}{Techniques for fast z feedback}{}% 9
+\BOOKMARK [1][-]{section.3.1}{Dual actuators system}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.2}{Tilt compensation}{chapter.3}% 11
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 12
+\BOOKMARK [1][-]{section.4.1}{Calcite experiment}{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.2}{Tilt correction}{chapter.4}% 14
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 15
+\BOOKMARK [0][-]{appendix.A}{Programming}{}% 16
+\BOOKMARK [1][-]{section.A.1}{Structure of the Spiral Scan program}{appendix.A}% 17
+\BOOKMARK [1][-]{section.A.2}{User interface Igor Pro}{appendix.A}% 18
+\BOOKMARK [1][-]{section.A.3}{Other figures}{appendix.A}% 19
+\BOOKMARK [0][-]{appendix*.29}{Bibliography}{}% 20

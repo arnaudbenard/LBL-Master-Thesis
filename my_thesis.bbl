@@ -16,6 +16,12 @@ Gerd Binnig, Calvin~F Quate, and Ch~Gerber.
 \newblock Atomic force microscope.
 \newblock {\em Physical review letters}, 56(9):930--933, 1986.
 
+\bibitem{el2004dual}
+Khalid El~Rifai, Osamah El~Rifai, and Kamal Youcef-Toumi.
+\newblock On dual actuation in atomic force microscopes.
+\newblock In {\em American Control Conference, 2004. Proceedings of the 2004},
+  volume~4, pages 3128--3133. IEEE, 2004.
+
 \bibitem{hansma1988scanning}
 PK~Hansma, VB~Elings, O~Marti, CE~Bracker, et~al.
 \newblock Scanning tunneling microscopy and atomic force microscopy:
@@ -55,8 +61,19 @@ IA~Mahmood and SO~Reza Moheimani.
 \newblock Fast spiral-scan atomic force microscopy.
 \newblock {\em Nanotechnology}, 20(36):365503, 2009.
 
+\bibitem{Morse200251}
+John~W Morse and Rolf~S Arvidson.
+\newblock The dissolution kinetics of major sedimentary carbonate minerals.
+\newblock {\em Earth-Science Reviews}, 58(1â€“2):51 -- 84, 2002.
+
 \bibitem{opengllegacy}
 OpenGL, 2012.
+
+\bibitem{paquette1995relationship}
+Jeanne Paquette and Richard~J Reeder.
+\newblock Relationship between surface structure, growth mechanism, and trace
+  element incorporation in calcite.
+\newblock {\em Geochimica et Cosmochimica Acta}, 59(4):735--749, 1995.
 
 \bibitem{radmacher1997measuring}
 Manfred Radmacher.
@@ -80,6 +97,12 @@ Jonathan~Richard Shewchuk.
   Lecture Notes in Computer Science}, pages 203--222. Springer-Verlag, May
   1996.
 \newblock From the First ACM Workshop on Applied Computational Geometry.
+
+\bibitem{shiraki2000dissolution}
+Ryoji Shiraki, Peter~A Rock, and William~H Casey.
+\newblock Dissolution kinetics of calcite in 0.1 m nacl solution at room
+  temperature: An atomic force microscopic (afm) study.
+\newblock {\em Aquatic Geochemistry}, 6(1):87--108, 2000.
 
 \bibitem{sulchek1999dual}
 T~Sulchek, SC~Minne, JD~Adams, DA~Fletcher, A~Atalar, CF~Quate, and
