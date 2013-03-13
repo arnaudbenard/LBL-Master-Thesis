@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.11.6)  12 MAR 2013 10:39
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.11.6)  13 MAR 2013 16:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1178,9 +1178,9 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count149
 ))
-(./my_thesis.aux (./head/summary.aux) (./main/introduction.aux)
-(./main/visualisation.aux) (./main/zaxis.aux) (./main/experiments.aux)
-(./main/conclusion.aux) (./tail/appendix.aux) (./tail/biblio.aux))
+(./my_thesis.aux (./main/introduction.aux) (./main/visualisation.aux)
+(./main/zaxis.aux) (./main/experiments.aux) (./main/conclusion.aux)
+(./tail/appendix.aux) (./tail/biblio.aux))
 \openout1 = `my_thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -1327,19 +1327,34 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 14.
 
-<images/epfl.pdf, id=87, 574.94798pt x 275.429pt>
+<images/epfl.pdf, id=83, 574.94798pt x 275.429pt>
 File: images/epfl.pdf Graphic file (type pdf)
  <use images/epfl.pdf>
 Package pdftex.def Info: images/epfl.pdf used on input line 17.
 (pdftex.def)             Requested size: 113.81102pt x 54.51746pt.
 
-<images/lbnl.pdf, id=88, 93.34875pt x 58.2175pt>
+<images/lbnl.pdf, id=84, 93.34875pt x 58.2175pt>
 File: images/lbnl.pdf Graphic file (type pdf)
  <use images/lbnl.pdf>
 Package pdftex.def Info: images/lbnl.pdf used on input line 17.
 (pdftex.def)             Requested size: 113.81102pt x 70.9817pt.
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 14--35
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+
+ []
+
+
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 14--33
  [][] 
  []
 
@@ -1351,7 +1366,7 @@ Overfull \hbox (23.99998pt too wide) in paragraph at lines 14--35
 
 {/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
 s/epfl.pdf, page is rotated 90 degrees> <./images/lbnl.pdf>])
-<Berkeleyproposal.pdf, id=108, page=1, 614.295pt x 794.97pt>
+<Berkeleyproposal.pdf, id=103, page=1, 614.295pt x 794.97pt>
 File: Berkeleyproposal.pdf Graphic file (type pdf)
 
 <use Berkeleyproposal.pdf, page 1>
@@ -1376,7 +1391,7 @@ File: Berkeleyproposal.pdf Graphic file (type pdf)
 Package pdftex.def Info: Berkeleyproposal.pdf, page1 used on input line 16.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [2 <./Berkeleyproposal.pdf>]
-<Berkeleyproposal.pdf, id=135, page=2, 614.295pt x 794.97pt>
+<Berkeleyproposal.pdf, id=130, page=2, 614.295pt x 794.97pt>
 File: Berkeleyproposal.pdf Graphic file (type pdf)
 
 <use Berkeleyproposal.pdf, page 2>
@@ -1392,82 +1407,107 @@ File: Berkeleyproposal.pdf Graphic file (type pdf)
 Package pdftex.def Info: Berkeleyproposal.pdf, page2 used on input line 16.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [3 <./Berkeleyproposal.pdf>]
-\openout2 = `head/summary.aux'.
+<summaryPDM.pdf, id=145, page=1, 597.23125pt x 845.1575pt>
+File: summaryPDM.pdf Graphic file (type pdf)
 
+<use summaryPDM.pdf, page 1>
+Package pdftex.def Info: summaryPDM.pdf, page1 used on input line 17.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: summaryPDM.pdf Graphic file (type pdf)
+ <use summaryPDM.pdf, page 1>
+Package pdftex.def Info: summaryPDM.pdf, page1 used on input line 17.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: summaryPDM.pdf Graphic file (type pdf)
 
-(./head/summary.tex [4
+<use summaryPDM.pdf, page 1>
+Package pdftex.def Info: summaryPDM.pdf, page1 used on input line 17.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: summaryPDM.pdf Graphic file (type pdf)
+ <use summaryPDM.pdf, page 1>
+Package pdftex.def Info: summaryPDM.pdf, page1 used on input line 17.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: summaryPDM.pdf Graphic file (type pdf)
 
-
-]
+<use summaryPDM.pdf, page 1>
+Package pdftex.def Info: summaryPDM.pdf, page1 used on input line 17.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [4 <./summaryPDM.pdf>]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 5.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 5.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 22.88956pt on input line 5.
+(Font)              scaled to size 22.88956pt on input line 20.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 5.
+(Font)              scaled to size 15.89755pt on input line 20.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 5.
+(Font)              scaled to size 11.03998pt on input line 20.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 22.88956pt on input line 5.
+(Font)              scaled to size 22.88956pt on input line 20.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 5.
+(Font)              scaled to size 15.89755pt on input line 20.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 5.
-) [5
-
-] [6
-
-
-] (./my_thesis.toc)
+(Font)              scaled to size 11.03998pt on input line 20.
+ (./my_thesis.toc)
 \tf@toc=\write5
 \openout5 = `my_thesis.toc'.
 
- [7] [8
+ [5
+
+]
+[6
 
 ] (./my_thesis.lof)
 \tf@lof=\write6
 \openout6 = `my_thesis.lof'.
 
-
-[9] [10
+ [7] [8
 
 ] (./my_thesis.lot)
 \tf@lot=\write7
 \openout7 = `my_thesis.lot'.
 
- [11] [12
+ [9] [10
 
 ]
 \openout2 = `main/introduction.aux'.
 
- (./main/introduction.tex
+
+(./main/introduction.tex
 Chapter 1.
-)
+
+Overfull \hbox (2.09392pt too wide) in paragraph at lines 4--5
+\T1/futs/m/n/10.95 (-20) In 1986, a group of sci-en-tists from IBM re-search de
+-vel-oped the first Atomic Force Microscope.[[]]
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1
 
 
-]
+])
 [2]
 \openout2 = `main/visualisation.aux'.
 
  (./main/visualisation.tex
 Chapter 2.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 8.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 15.
+<images/sensorsmfp3d.jpg, id=326, 301.125pt x 218.8175pt>
+File: images/sensorsmfp3d.jpg Graphic file (type jpg)
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+<use images/sensorsmfp3d.jpg>
+Package pdftex.def Info: images/sensorsmfp3d.jpg used on input line 9.
+(pdftex.def)             Requested size: 301.12425pt x 218.81696pt.
  [3
 
 
 
-]
+ <./images/sensorsmfp3d.jpg>]
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 16.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 20.
 Package epstopdf Info: Source file: <images/inpainting3step.eps>
 (epstopdf)                    date: 2013-03-07 12:34:35
 (epstopdf)                    size: 97458 bytes
@@ -1477,16 +1517,17 @@ f>
 (epstopdf)                    size: 22092 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/inpainting3step-eps
 -converted-to.pdf images/inpainting3step.eps>
-(epstopdf)             \includegraphics on input line 32.
+(epstopdf)             \includegraphics on input line 38.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/inpainting3step-eps-converted-to.pdf, id=295, 1304.875pt x 417.56pt>
+<images/inpainting3step-eps-converted-to.pdf, id=336, 1304.875pt x 417.56pt>
 File: images/inpainting3step-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/inpainting3step-eps-converted-to.pdf>
 Package pdftex.def Info: images/inpainting3step-eps-converted-to.pdf used on in
-put line 32.
+put line 38.
 (pdftex.def)             Requested size: 391.46552pt x 125.26895pt.
+ [4]
 Package epstopdf Info: Source file: <images/timelinerendering.eps>
 (epstopdf)                    date: 2013-03-07 10:20:00
 (epstopdf)                    size: 51714 bytes
@@ -1496,23 +1537,25 @@ pdf>
 (epstopdf)                    size: 14887 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/timelinerendering-e
 ps-converted-to.pdf images/timelinerendering.eps>
-(epstopdf)             \includegraphics on input line 48.
+(epstopdf)             \includegraphics on input line 54.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/timelinerendering-eps-converted-to.pdf, id=299, 688.5725pt x 232.87pt>
+<images/timelinerendering-eps-converted-to.pdf, id=348, 688.5725pt x 232.87pt>
 File: images/timelinerendering-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/timelinerendering-eps-converted-to.pdf>
 Package pdftex.def Info: images/timelinerendering-eps-converted-to.pdf used on 
-input line 48.
+input line 54.
 (pdftex.def)             Requested size: 275.4241pt x 93.14633pt.
- [4 <./images/inpainting3step-eps-converted-to.pdf>]
-<images/triangulation.png, id=322, 895.345pt x 437.635pt>
+
+<images/triangulation.png, id=351, 895.345pt x 437.635pt>
 File: images/triangulation.png Graphic file (type png)
 
 <use images/triangulation.png>
-Package pdftex.def Info: images/triangulation.png used on input line 63.
+Package pdftex.def Info: images/triangulation.png used on input line 69.
 (pdftex.def)             Requested size: 402.90154pt x 196.93393pt.
+ [5 <./images/inpainting3step-eps-converted-to.pdf> <./images/timelinerendering
+-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/delaunay.eps>
 (epstopdf)                    date: 2013-02-28 21:38:40
 (epstopdf)                    size: 41277 bytes
@@ -1521,25 +1564,24 @@ Package epstopdf Info: Source file: <images/delaunay.eps>
 (epstopdf)                    size: 12396 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/delaunay-eps-conver
 ted-to.pdf images/delaunay.eps>
-(epstopdf)             \includegraphics on input line 72.
+(epstopdf)             \includegraphics on input line 78.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/delaunay-eps-converted-to.pdf, id=324, 1148.29pt x 429.605pt>
+<images/delaunay-eps-converted-to.pdf, id=380, 1148.29pt x 429.605pt>
 File: images/delaunay-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/delaunay-eps-converted-to.pdf>
 Package pdftex.def Info: images/delaunay-eps-converted-to.pdf used on input lin
-e 72.
+e 78.
 (pdftex.def)             Requested size: 229.65393pt x 85.91946pt.
 
-<images/3drendering.png, id=325, 360.34625pt x 301.125pt>
+<images/3drendering.png, id=381, 360.34625pt x 301.125pt>
 File: images/3drendering.png Graphic file (type png)
 
 <use images/3drendering.png>
-Package pdftex.def Info: images/3drendering.png used on input line 79.
+Package pdftex.def Info: images/3drendering.png used on input line 85.
 (pdftex.def)             Requested size: 288.27739pt x 240.90031pt.
- [5 <./images/timelinerendering-eps-converted-to.pdf> <./images/triangulation.p
-ng>] [6 <./images/delaunay-eps-converted-to.pdf> <./images/3drendering.png>]
+ [6 <./images/triangulation.png> <./images/delaunay-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/openglVBO.eps>
 (epstopdf)                    date: 2013-03-06 16:45:55
 (epstopdf)                    size: 56197 bytes
@@ -1548,20 +1590,24 @@ Package epstopdf Info: Source file: <images/openglVBO.eps>
 (epstopdf)                    size: 15009 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/openglVBO-eps-conve
 rted-to.pdf images/openglVBO.eps>
-(epstopdf)             \includegraphics on input line 103.
+(epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/openglVBO-eps-converted-to.pdf, id=363, 967.615pt x 519.9425pt>
+<images/openglVBO-eps-converted-to.pdf, id=403, 967.615pt x 519.9425pt>
 File: images/openglVBO-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/openglVBO-eps-converted-to.pdf>
 Package pdftex.def Info: images/openglVBO-eps-converted-to.pdf used on input li
-ne 103.
+ne 104.
 (pdftex.def)             Requested size: 387.03915pt x 207.97331pt.
- [7 <./images/openglVBO-eps-converted-to.pdf>]) [8]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./images/3drendering.png>]) [8 <./images/openglVBO-eps-converted-to.pdf>]
 \openout2 = `main/zaxis.aux'.
 
- (./main/zaxis.tex
+
+(./main/zaxis.tex
 Chapter 3.
 Package epstopdf Info: Source file: <images/normalafm.eps>
 (epstopdf)                    date: 2013-03-08 17:01:44
@@ -1571,15 +1617,23 @@ Package epstopdf Info: Source file: <images/normalafm.eps>
 (epstopdf)                    size: 13582 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/normalafm-eps-conve
 rted-to.pdf images/normalafm.eps>
-(epstopdf)             \includegraphics on input line 16.
+(epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
-<images/normalafm-eps-converted-to.pdf, id=387, 536.0025pt x 566.115pt>
+<images/normalafm-eps-converted-to.pdf, id=429, 536.0025pt x 566.115pt>
 File: images/normalafm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/normalafm-eps-converted-to.pdf>
 Package pdftex.def Info: images/normalafm-eps-converted-to.pdf used on input li
-ne 16.
+ne 14.
 (pdftex.def)             Requested size: 160.80199pt x 169.8358pt.
+
+Underfull \vbox (badness 5519) has occurred while \output is active []
+
+ [9
+
+
+
+ <./images/normalafm-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/doublePID.eps>
 (epstopdf)                    date: 2013-03-03 15:31:29
 (epstopdf)                    size: 56105 bytes
@@ -1588,28 +1642,20 @@ Package epstopdf Info: Source file: <images/doublePID.eps>
 (epstopdf)                    size: 15509 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/doublePID-eps-conve
 rted-to.pdf images/doublePID.eps>
-(epstopdf)             \includegraphics on input line 27.
+(epstopdf)             \includegraphics on input line 25.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/doublePID-eps-converted-to.pdf, id=390, 891.33pt x 519.9425pt>
+<images/doublePID-eps-converted-to.pdf, id=447, 891.33pt x 519.9425pt>
 File: images/doublePID-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/doublePID-eps-converted-to.pdf>
 Package pdftex.def Info: images/doublePID-eps-converted-to.pdf used on input li
-ne 27.
+ne 25.
 (pdftex.def)             Requested size: 267.40106pt x 155.98395pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9
-
-
-
-]
-Underfull \vbox (badness 5091) has occurred while \output is active []
-
- [10 <./images/normalafm-eps-converted-to.pdf> <./images/doublePID-eps-converte
-d-to.pdf>]
+ [10 <./images/doublePID-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/outputz.eps>
 (epstopdf)                    date: 2013-03-06 16:40:47
 (epstopdf)                    size: 46278 bytes
@@ -1618,15 +1664,15 @@ Package epstopdf Info: Source file: <images/outputz.eps>
 (epstopdf)                    size: 13571 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/outputz-eps-convert
 ed-to.pdf images/outputz.eps>
-(epstopdf)             \includegraphics on input line 57.
+(epstopdf)             \includegraphics on input line 55.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/outputz-eps-converted-to.pdf, id=419, 873.2625pt x 277.035pt>
+<images/outputz-eps-converted-to.pdf, id=463, 873.2625pt x 277.035pt>
 File: images/outputz-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/outputz-eps-converted-to.pdf>
 Package pdftex.def Info: images/outputz-eps-converted-to.pdf used on input line
- 57.
+ 55.
 (pdftex.def)             Requested size: 349.29881pt x 110.81203pt.
 ) [11 <./images/outputz-eps-converted-to.pdf>]
 \openout2 = `main/experiments.aux'.
@@ -1637,7 +1683,8 @@ Package pdftex.def Info: images/outputz-eps-converted-to.pdf used on input line
 
 ]
 Chapter 4.
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 9.
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 10.
+
 (/usr/local/texlive/2011/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 )
@@ -1650,15 +1697,15 @@ f>
 (epstopdf)                    size: 12018 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/calcitegeometry-eps
 -converted-to.pdf images/calcitegeometry.eps>
-(epstopdf)             \includegraphics on input line 13.
+(epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/calcitegeometry-eps-converted-to.pdf, id=446, 770.88pt x 686.565pt>
+<images/calcitegeometry-eps-converted-to.pdf, id=491, 770.88pt x 686.565pt>
 File: images/calcitegeometry-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/calcitegeometry-eps-converted-to.pdf>
 Package pdftex.def Info: images/calcitegeometry-eps-converted-to.pdf used on in
-put line 13.
+put line 14.
 (pdftex.def)             Requested size: 231.26578pt x 205.97108pt.
 Package epstopdf Info: Source file: <images/calcitesetup.eps>
 (epstopdf)                    date: 2013-03-10 17:01:41
@@ -1668,70 +1715,70 @@ Package epstopdf Info: Source file: <images/calcitesetup.eps>
 (epstopdf)                    size: 70149 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/calcitesetup-eps-co
 nverted-to.pdf images/calcitesetup.eps>
-(epstopdf)             \includegraphics on input line 25.
+(epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/calcitesetup-eps-converted-to.pdf, id=448, 955.57pt x 367.3725pt>
+<images/calcitesetup-eps-converted-to.pdf, id=493, 955.57pt x 367.3725pt>
 File: images/calcitesetup-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/calcitesetup-eps-converted-to.pdf>
 Package pdftex.def Info: images/calcitesetup-eps-converted-to.pdf used on input
- line 25.
+ line 26.
 (pdftex.def)             Requested size: 382.22122pt x 146.94638pt.
  [13 <./images/calcitegeometry-eps-converted-to.pdf>] <images/calciteangle.png,
- id=471, 511.9125pt x 513.92pt>
+ id=514, 511.9125pt x 513.92pt>
 File: images/calciteangle.png Graphic file (type png)
 
 <use images/calciteangle.png>
-Package pdftex.def Info: images/calciteangle.png used on input line 33.
+Package pdftex.def Info: images/calciteangle.png used on input line 34.
 (pdftex.def)             Requested size: 204.76137pt x 205.56435pt.
 
-<images/006_X10s50l10m_MOv2_17.png, id=473, 513.92pt x 513.92pt>
+<images/006_X10s50l10m_MOv2_17.png, id=516, 513.92pt x 513.92pt>
 File: images/006_X10s50l10m_MOv2_17.png Graphic file (type png)
 
 <use images/006_X10s50l10m_MOv2_17.png>
 Package pdftex.def Info: images/006_X10s50l10m_MOv2_17.png used on input line 4
-4.
+5.
 (pdftex.def)             Requested size: 133.66272pt x 133.66309pt.
 
-<images/006_X10s50l10m_MOv2_122.png, id=474, 513.92pt x 513.92pt>
+<images/006_X10s50l10m_MOv2_122.png, id=517, 513.92pt x 513.92pt>
 File: images/006_X10s50l10m_MOv2_122.png Graphic file (type png)
 
 <use images/006_X10s50l10m_MOv2_122.png>
 Package pdftex.def Info: images/006_X10s50l10m_MOv2_122.png used on input line 
-47.
+49.
 (pdftex.def)             Requested size: 133.66272pt x 133.66309pt.
 
-<images/006_X10s50l10m_MOv2_290.png, id=475, 513.92pt x 513.92pt>
+<images/006_X10s50l10m_MOv2_290.png, id=518, 513.92pt x 513.92pt>
 File: images/006_X10s50l10m_MOv2_290.png Graphic file (type png)
 
 <use images/006_X10s50l10m_MOv2_290.png>
 Package pdftex.def Info: images/006_X10s50l10m_MOv2_290.png used on input line 
-50.
+53.
 (pdftex.def)             Requested size: 133.66272pt x 133.66309pt.
 
-<images/006_X10s50l10m_MOv2_457.png, id=476, 513.92pt x 513.92pt>
+<images/006_X10s50l10m_MOv2_457.png, id=519, 513.92pt x 513.92pt>
 File: images/006_X10s50l10m_MOv2_457.png Graphic file (type png)
 
 <use images/006_X10s50l10m_MOv2_457.png>
 Package pdftex.def Info: images/006_X10s50l10m_MOv2_457.png used on input line 
-59.
+64.
 (pdftex.def)             Requested size: 133.66272pt x 133.66309pt.
 
-<images/006_X10s50l10m_MOv2_698.png, id=477, 513.92pt x 513.92pt>
+<images/006_X10s50l10m_MOv2_698.png, id=520, 513.92pt x 513.92pt>
 File: images/006_X10s50l10m_MOv2_698.png Graphic file (type png)
 
 <use images/006_X10s50l10m_MOv2_698.png>
 Package pdftex.def Info: images/006_X10s50l10m_MOv2_698.png used on input line 
-62.
+68.
 (pdftex.def)             Requested size: 133.66272pt x 133.66309pt.
 
-<images/006_X10s50l10m_MOv2_1007.png, id=478, 513.92pt x 513.92pt>
+<images/006_X10s50l10m_MOv2_1007.png, id=521, 513.92pt x 513.92pt>
 File: images/006_X10s50l10m_MOv2_1007.png Graphic file (type png)
 
 <use images/006_X10s50l10m_MOv2_1007.png>
 Package pdftex.def Info: images/006_X10s50l10m_MOv2_1007.png used on input line
- 65.
+ 72.
 (pdftex.def)             Requested size: 133.66272pt x 133.66309pt.
  [14 <./images/calcitesetup-eps-converted-to.pdf> <./images/calciteangle.png>]
 Package epstopdf Info: Source file: <images/tiltbigpicture.eps>
@@ -1743,28 +1790,25 @@ Package epstopdf Info: Source file: <images/tiltbigpicture.eps>
 (epstopdf)                    size: 970538 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/tiltbigpicture-eps-
 converted-to.pdf images/tiltbigpicture.eps>
-(epstopdf)             \includegraphics on input line 90.
+(epstopdf)             \includegraphics on input line 98.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/tiltbigpicture-eps-converted-to.pdf, id=503, 3842.355pt x 1413.28pt>
+<images/tiltbigpicture-eps-converted-to.pdf, id=546, 3842.355pt x 1413.28pt>
 File: images/tiltbigpicture-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/tiltbigpicture-eps-converted-to.pdf>
 Package pdftex.def Info: images/tiltbigpicture-eps-converted-to.pdf used on inp
-ut line 90.
+ut line 98.
 (pdftex.def)             Requested size: 768.4574pt x 282.65099pt.
 
-Overfull \hbox (350.77094pt too wide) in paragraph at lines 90--91
+Overfull \hbox (350.77094pt too wide) in paragraph at lines 98--99
  [][] 
  []
 
-
-Underfull \vbox (badness 4556) has occurred while \output is active []
-
- [15 <./images/006_X10s50l10m_MOv2_17.png (PNG copy)> <./images/006_X10s50l10m_
-MOv2_122.png (PNG copy)> <./images/006_X10s50l10m_MOv2_290.png (PNG copy)> <./i
-mages/006_X10s50l10m_MOv2_457.png (PNG copy)> <./images/006_X10s50l10m_MOv2_698
-.png (PNG copy)> <./images/006_X10s50l10m_MOv2_1007.png (PNG copy)>]
+[15 <./images/006_X10s50l10m_MOv2_17.png (PNG copy)> <./images/006_X10s50l10m_M
+Ov2_122.png (PNG copy)> <./images/006_X10s50l10m_MOv2_290.png (PNG copy)> <./im
+ages/006_X10s50l10m_MOv2_457.png (PNG copy)> <./images/006_X10s50l10m_MOv2_698.
+png (PNG copy)> <./images/006_X10s50l10m_MOv2_1007.png (PNG copy)>]
 Package epstopdf Info: Source file: <images/spiralztiltout.eps>
 (epstopdf)                    date: 2013-02-26 16:27:12
 (epstopdf)                    size: 2221555 bytes
@@ -1774,15 +1818,15 @@ Package epstopdf Info: Source file: <images/spiralztiltout.eps>
 (epstopdf)                    size: 53330 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/spiralztiltout-eps-
 converted-to.pdf images/spiralztiltout.eps>
-(epstopdf)             \includegraphics on input line 114.
+(epstopdf)             \includegraphics on input line 122.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/spiralztiltout-eps-converted-to.pdf, id=512, 825.0825pt x 456.70625pt>
+<images/spiralztiltout-eps-converted-to.pdf, id=556, 825.0825pt x 456.70625pt>
 File: images/spiralztiltout-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/spiralztiltout-eps-converted-to.pdf>
 Package pdftex.def Info: images/spiralztiltout-eps-converted-to.pdf used on inp
-ut line 114.
+ut line 122.
 (pdftex.def)             Requested size: 247.52666pt x 137.01292pt.
 Package epstopdf Info: Source file: <images/Calib1vPP_HeightMap.eps>
 (epstopdf)                    date: 2013-02-26 16:21:16
@@ -1793,15 +1837,15 @@ o.pdf>
 (epstopdf)                    size: 11758 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Calib1vPP_HeightMap
 -eps-converted-to.pdf images/Calib1vPP_HeightMap.eps>
-(epstopdf)             \includegraphics on input line 123.
+(epstopdf)             \includegraphics on input line 131.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Calib1vPP_HeightMap-eps-converted-to.pdf, id=513, 327.2225pt x 250.9375
+<images/Calib1vPP_HeightMap-eps-converted-to.pdf, id=557, 327.2225pt x 250.9375
 pt>
 File: images/Calib1vPP_HeightMap-eps-converted-to.pdf Graphic file (type pdf)
  <use images/Calib1vPP_HeightMap-eps-converted-to.pdf>
 Package pdftex.def Info: images/Calib1vPP_HeightMap-eps-converted-to.pdf used o
-n input line 123.
+n input line 131.
 (pdftex.def)             Requested size: 187.95763pt x 144.1386pt.
 Package epstopdf Info: Source file: <images/Calib1VppHisto.eps>
 (epstopdf)                    date: 2013-02-26 16:21:18
@@ -1812,32 +1856,32 @@ Package epstopdf Info: Source file: <images/Calib1VppHisto.eps>
 (epstopdf)                    size: 9749 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Calib1VppHisto-eps-
 converted-to.pdf images/Calib1VppHisto.eps>
-(epstopdf)             \includegraphics on input line 130.
+(epstopdf)             \includegraphics on input line 138.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/Calib1VppHisto-eps-converted-to.pdf, id=514, 213.79875pt x 141.52875pt>
+<images/Calib1VppHisto-eps-converted-to.pdf, id=558, 213.79875pt x 141.52875pt>
 File: images/Calib1VppHisto-eps-converted-to.pdf Graphic file (type pdf)
 <use images/Calib1VppHisto-eps-converted-to.pdf>
 Package pdftex.def Info: images/Calib1VppHisto-eps-converted-to.pdf used on inp
-ut line 130.
+ut line 138.
 (pdftex.def)             Requested size: 187.95763pt x 124.42258pt.
 
 Underfull \vbox (badness 1199) has occurred while \output is active []
 
  [16 <./images/tiltbigpicture-eps-converted-to.pdf> <./images/spiralztiltout-ep
-s-converted-to.pdf>] <images/TiltSession0226_27.png, id=550, 405.66292pt x 404.
+s-converted-to.pdf>] <images/TiltSession0226_27.png, id=594, 405.66292pt x 404.
 712pt>
 File: images/TiltSession0226_27.png Graphic file (type png)
 
 <use images/TiltSession0226_27.png>
-Package pdftex.def Info: images/TiltSession0226_27.png used on input line 141.
+Package pdftex.def Info: images/TiltSession0226_27.png used on input line 149.
 (pdftex.def)             Requested size: 187.95763pt x 187.516pt.
 
-<images/TiltSession0226wc_35.png, id=551, 405.66292pt x 404.712pt>
+<images/TiltSession0226wc_35.png, id=595, 405.66292pt x 404.712pt>
 File: images/TiltSession0226wc_35.png Graphic file (type png)
 
 <use images/TiltSession0226wc_35.png>
-Package pdftex.def Info: images/TiltSession0226wc_35.png used on input line 147
+Package pdftex.def Info: images/TiltSession0226wc_35.png used on input line 155
 .
 (pdftex.def)             Requested size: 187.95763pt x 187.516pt.
 ) [17 <./images/Calib1vPP_HeightMap-eps-converted-to.pdf> <./images/Calib1VppHi
@@ -1873,7 +1917,7 @@ hart-eps-converted-to.pdf images/generalprogramflowchart.eps>
 (epstopdf)             \includegraphics on input line 10.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/generalprogramflowchart-eps-converted-to.pdf, id=581, 752.8125pt x 688.
+<images/generalprogramflowchart-eps-converted-to.pdf, id=625, 752.8125pt x 688.
 5725pt>
 File: images/generalprogramflowchart-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -1892,32 +1936,27 @@ nverted-to.pdf images/functioncall.eps>
 (epstopdf)             \includegraphics on input line 16.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/functioncall-eps-converted-to.pdf, id=582, 1188.44pt x 1471.4975pt>
+<images/functioncall-eps-converted-to.pdf, id=626, 1188.44pt x 1471.4975pt>
 File: images/functioncall-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/functioncall-eps-converted-to.pdf>
 Package pdftex.def Info: images/functioncall-eps-converted-to.pdf used on input
  line 16.
-(pdftex.def)             Requested size: 594.21855pt x 735.74696pt.
-
-Overfull \hbox (176.53209pt too wide) in paragraph at lines 16--17
- [][] 
- []
-
+(pdftex.def)             Requested size: 415.96024pt x 515.03185pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21 <./images/generalprogramflowchart-eps-converted-to.pdf>]
-Overfull \vbox (127.98033pt too high) has occurred while \output is active []
-
-
-[22 <./images/functioncall-eps-converted-to.pdf>]
-<images/AsylumGUI.png, id=611, 412.54124pt x 542.025pt>
+<images/AsylumGUI.png, id=642, 412.54124pt x 542.025pt>
 File: images/AsylumGUI.png Graphic file (type png)
 
 <use images/AsylumGUI.png>
 Package pdftex.def Info: images/AsylumGUI.png used on input line 25.
 (pdftex.def)             Requested size: 412.54024pt x 542.02367pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22 <./images/functioncall-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <images/memory.eps>
 (epstopdf)                    date: 2013-02-28 14:36:10
 (epstopdf)                    size: 56409 bytes
@@ -1929,7 +1968,7 @@ d-to.pdf images/memory.eps>
 (epstopdf)             \includegraphics on input line 35.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/memory-eps-converted-to.pdf, id=612, 1122.1925pt x 1013.7875pt>
+<images/memory-eps-converted-to.pdf, id=657, 1122.1925pt x 1013.7875pt>
 File: images/memory-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/memory-eps-converted-to.pdf>
@@ -1948,26 +1987,26 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ])) [26]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 52.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
  (./my_thesis.aux
-(./head/summary.aux) (./main/introduction.aux) (./main/visualisation.aux)
-(./main/zaxis.aux) (./main/experiments.aux) (./main/conclusion.aux)
-(./tail/appendix.aux) (./tail/biblio.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
+(./main/introduction.aux) (./main/visualisation.aux) (./main/zaxis.aux)
+(./main/experiments.aux) (./main/conclusion.aux) (./tail/appendix.aux)
+(./tail/biblio.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 52.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 52.
 Package rerunfilecheck Info: File `my_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 726E301A07A49E3D8C14D2F509248327;1192.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
+(rerunfilecheck)             Checksum: 5B564BC7C22446F5EC185C4839A29585;1148.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 52.
  ) 
 Here is how much of TeX's memory you used:
- 21331 strings out of 493633
- 368195 string characters out of 3143377
- 583107 words of memory out of 3000000
- 23797 multiletter control sequences out of 15000+200000
- 92248 words of font info for 214 fonts, out of 3000000 for 9000
+ 21345 strings out of 493633
+ 368406 string characters out of 3143377
+ 583726 words of memory out of 3000000
+ 23807 multiletter control sequences out of 15000+200000
+ 92143 words of font info for 220 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 58i,18n,77p,830b,1078s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 58i,18n,77p,833b,1078s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
 exlive/2011/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
 live/2011/texmf-dist/fonts/type1/public/fourier/fourier-alt.pfb></usr/local/tex
@@ -1976,13 +2015,12 @@ xlive/2011/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/tex
 live/2011/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/20
 11/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2011/texm
 f-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2011/texmf-dist
-/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2011/texmf-dist/f
-onts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2011/texmf-dist/fon
-ts/type1/public/cm-super/sfss2074.pfb>
-Output written on my_thesis.pdf (38 pages, 3223412 bytes).
+/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2011/texmf-dist/f
+onts/type1/public/cm-super/sfss2074.pfb>
+Output written on my_thesis.pdf (36 pages, 3630304 bytes).
 PDF statistics:
- 703 PDF objects out of 1000 (max. 8388607)
- 529 compressed objects within 6 object streams
+ 741 PDF objects out of 1000 (max. 8388607)
+ 554 compressed objects within 6 object streams
  109 named destinations out of 1000 (max. 500000)
- 24412 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 22376 words of extra memory for PDF output out of 24883 (max. 10000000)
 

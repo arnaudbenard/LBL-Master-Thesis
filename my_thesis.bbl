@@ -1,79 +1,19 @@
 \begin{thebibliography}{10}
 
-\bibitem{abobegpu}
-Abobe.
-\newblock Tips for optimizing gpu rendering performance.
+\bibitem{linkmpf3d}
+Asylum research.
+\newblock Mfp-3d stand alone atomic force microscope from asylum research.
 \newblock 2013.
 
-\bibitem{aubert2006mathematical}
-Gilles Aubert and Pierre Kornprobst.
-\newblock {\em Mathematical problems in image processing: partial differential
-  equations and the calculus of variations}, volume 147.
-\newblock Springer, 2006.
+\bibitem{yaldex}
+Yaldex.
+\newblock Server-side vertex arrays.
+\newblock 2013.
 
 \bibitem{binnig1986atomic}
 Gerd Binnig, Calvin~F Quate, and Ch~Gerber.
 \newblock Atomic force microscope.
 \newblock {\em Physical review letters}, 56(9):930--933, 1986.
-
-\bibitem{el2004dual}
-Khalid El~Rifai, Osamah El~Rifai, and Kamal Youcef-Toumi.
-\newblock On dual actuation in atomic force microscopes.
-\newblock In {\em American Control Conference, 2004. Proceedings of the 2004},
-  volume~4, pages 3128--3133. IEEE, 2004.
-
-\bibitem{hansma1988scanning}
-PK~Hansma, VB~Elings, O~Marti, CE~Bracker, et~al.
-\newblock Scanning tunneling microscopy and atomic force microscopy:
-  application to biology and technology.
-\newblock {\em Science (New York, NY)}, 242(4876):209, 1988.
-
-\bibitem{hillner1992atomic}
-PE~Hillner, AJ~Gratz, S~Manne, and PK~Hansma.
-\newblock Atomic-scale imaging of calcite growth and dissolution in real time.
-\newblock {\em Geology}, 20(4):359--362, 1992.
-
-\bibitem{nonrasterdata}
-Peng Huang and S.B. Andersson.
-\newblock Generating images from non-raster data in afm.
-\newblock In {\em American Control Conference (ACC), 2011}, pages 2246 --2251,
-  29 2011-july 1 2011.
-
-\bibitem{jeong:093706}
-Younkoo Jeong, G.~R. Jayanth, and Chia-Hsiang Menq.
-\newblock Control of tip-to-sample distance in atomic force microscopy: A
-  dual-actuator tip-motion control scheme.
-\newblock {\em Review of Scientific Instruments}, 78(9):093706, 2007.
-
-\bibitem{opengl1}
-Mark~J. Kilgard.
-\newblock Modern opengl usage: Using vertex buffer objects well.
-\newblock Technical report, 2008.
-
-\bibitem{liang1996dissolution}
-Yong Liang, Donald~R Baer, James~M McCoy, James~E Amonette, and John~P
-  Lafemina.
-\newblock Dissolution kinetics at the calcite-water interface.
-\newblock {\em Geochimica et Cosmochimica Acta}, 60(23):4883--4887, 1996.
-
-\bibitem{mahmood2009fast}
-IA~Mahmood and SO~Reza Moheimani.
-\newblock Fast spiral-scan atomic force microscopy.
-\newblock {\em Nanotechnology}, 20(36):365503, 2009.
-
-\bibitem{Morse200251}
-John~W Morse and Rolf~S Arvidson.
-\newblock The dissolution kinetics of major sedimentary carbonate minerals.
-\newblock {\em Earth-Science Reviews}, 58(1â€“2):51 -- 84, 2002.
-
-\bibitem{opengllegacy}
-OpenGL, 2012.
-
-\bibitem{paquette1995relationship}
-Jeanne Paquette and Richard~J Reeder.
-\newblock Relationship between surface structure, growth mechanism, and trace
-  element incorporation in calcite.
-\newblock {\em Geochimica et Cosmochimica Acta}, 59(4):735--749, 1995.
 
 \bibitem{radmacher1997measuring}
 Manfred Radmacher.
@@ -81,12 +21,58 @@ Manfred Radmacher.
 \newblock {\em Engineering in Medicine and Biology Magazine, IEEE},
   16(2):47--57, 1997.
 
+\bibitem{hansma1988scanning}
+PK~Hansma, VB~Elings, O~Marti, CE~Bracker, et~al.
+\newblock Scanning tunneling microscopy and atomic force microscopy:
+  application to biology and technology.
+\newblock {\em Science (New York, NY)}, 242(4876):209, 1988.
+
+\bibitem{yong2010high}
+YK~Yong, SOR Moheimani, and IR~Petersen.
+\newblock High-speed cycloid-scan atomic force microscopy.
+\newblock {\em Nanotechnology}, 21(36):365503, 2010.
+
+\bibitem{mahmood2009fast}
+IA~Mahmood and SO~Reza Moheimani.
+\newblock Fast spiral-scan atomic force microscopy.
+\newblock {\em Nanotechnology}, 20(36):365503, 2009.
+
+\bibitem{nonrasterdata}
+Peng Huang and S.B. Andersson.
+\newblock Generating images from non-raster data in afm.
+\newblock In {\em American Control Conference (ACC), 2011}, pages 2246 --2251,
+  29 2011-july 1 2011.
+
 \bibitem{richard2001fast}
 Manuel M Oliveira Brian~Bowen Richard and McKenna Yu-Sung Chang.
 \newblock Fast digital image inpainting.
 \newblock In {\em Appeared in the Proceedings of the International Conference
   on Visualization, Imaging and Image Processing (VIIP 2001), Marbella, Spain},
   2001.
+
+\bibitem{jeong:093706}
+Younkoo Jeong, G.~R. Jayanth, and Chia-Hsiang Menq.
+\newblock Control of tip-to-sample distance in atomic force microscopy: A
+  dual-actuator tip-motion control scheme.
+\newblock {\em Review of Scientific Instruments}, 78(9):093706, 2007.
+
+\bibitem{sulchek1999dual}
+T~Sulchek, SC~Minne, JD~Adams, DA~Fletcher, A~Atalar, CF~Quate, and
+  DM~Adderton.
+\newblock Dual integrated actuators for extended range high speed atomic force
+  microscopy.
+\newblock {\em Applied physics letters}, 75(11):1637--1639, 1999.
+
+\bibitem{aubert2006mathematical}
+Gilles Aubert and Pierre Kornprobst.
+\newblock {\em Mathematical problems in image processing: partial differential
+  equations and the calculus of variations}, volume 147.
+\newblock Springer, 2006.
+
+\bibitem{abobegpu}
+Abobe.
+\newblock Tips for optimizing gpu rendering performance.
+\newblock 2013.
 
 \bibitem{shewchuk96b}
 Jonathan~Richard Shewchuk.
@@ -98,22 +84,46 @@ Jonathan~Richard Shewchuk.
   1996.
 \newblock From the First ACM Workshop on Applied Computational Geometry.
 
+\bibitem{opengl1}
+Mark~J. Kilgard.
+\newblock Modern opengl usage: Using vertex buffer objects well.
+\newblock Technical report, 2008.
+
+\bibitem{opengllegacy}
+OpenGL, 2012.
+
+\bibitem{el2004dual}
+Khalid El~Rifai, Osamah El~Rifai, and Kamal Youcef-Toumi.
+\newblock On dual actuation in atomic force microscopes.
+\newblock In {\em American Control Conference, 2004. Proceedings of the 2004},
+  volume~4, pages 3128--3133. IEEE, 2004.
+
+\bibitem{hillner1992atomic}
+PE~Hillner, AJ~Gratz, S~Manne, and PK~Hansma.
+\newblock Atomic-scale imaging of calcite growth and dissolution in real time.
+\newblock {\em Geology}, 20(4):359--362, 1992.
+
+\bibitem{liang1996dissolution}
+Yong Liang, Donald~R Baer, James~M McCoy, James~E Amonette, and John~P
+  Lafemina.
+\newblock Dissolution kinetics at the calcite-water interface.
+\newblock {\em Geochimica et Cosmochimica Acta}, 60(23):4883--4887, 1996.
+
+\bibitem{paquette1995relationship}
+Jeanne Paquette and Richard~J Reeder.
+\newblock Relationship between surface structure, growth mechanism, and trace
+  element incorporation in calcite.
+\newblock {\em Geochimica et Cosmochimica Acta}, 59(4):735--749, 1995.
+
 \bibitem{shiraki2000dissolution}
 Ryoji Shiraki, Peter~A Rock, and William~H Casey.
 \newblock Dissolution kinetics of calcite in 0.1 m nacl solution at room
   temperature: An atomic force microscopic (afm) study.
 \newblock {\em Aquatic Geochemistry}, 6(1):87--108, 2000.
 
-\bibitem{sulchek1999dual}
-T~Sulchek, SC~Minne, JD~Adams, DA~Fletcher, A~Atalar, CF~Quate, and
-  DM~Adderton.
-\newblock Dual integrated actuators for extended range high speed atomic force
-  microscopy.
-\newblock {\em Applied physics letters}, 75(11):1637--1639, 1999.
-
-\bibitem{yong2010high}
-YK~Yong, SOR Moheimani, and IR~Petersen.
-\newblock High-speed cycloid-scan atomic force microscopy.
-\newblock {\em Nanotechnology}, 21(36):365503, 2010.
+\bibitem{Morse200251}
+John~W Morse and Rolf~S Arvidson.
+\newblock The dissolution kinetics of major sedimentary carbonate minerals.
+\newblock {\em Earth-Science Reviews}, 58(1â€“2):51 -- 84, 2002.
 
 \end{thebibliography}

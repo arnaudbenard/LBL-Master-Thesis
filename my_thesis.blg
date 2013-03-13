@@ -1,7 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2011)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: my_thesis.aux
-A level-1 auxiliary file: head/summary.aux
 A level-1 auxiliary file: main/introduction.aux
 A level-1 auxiliary file: main/visualisation.aux
 A level-1 auxiliary file: main/zaxis.aux
@@ -9,51 +8,53 @@ A level-1 auxiliary file: main/experiments.aux
 A level-1 auxiliary file: main/conclusion.aux
 A level-1 auxiliary file: tail/appendix.aux
 A level-1 auxiliary file: tail/biblio.aux
-The style file: plain.bst
+The style file: unsrt.bst
 Database file #1: tail/bibliography.bib
 Warning--entry type for "opengllegacy" isn't style-file defined
 --line 56 of file tail/bibliography.bib
+Warning--empty journal in linkmpf3d
+Warning--empty journal in yaldex
 Warning--empty journal in abobegpu
 Warning--empty institution in opengl1
-You've used 20 entries,
-            2118 wiz_defined-function locations,
-            643 strings with 7591 characters,
-and the built_in function-call counts, 7067 in all, are:
-= -- 691
-> -- 328
+You've used 22 entries,
+            1791 wiz_defined-function locations,
+            597 strings with 7225 characters,
+and the built_in function-call counts, 5231 in all, are:
+= -- 467
+> -- 210
 < -- 6
-+ -- 129
-- -- 108
-* -- 523
-:= -- 1163
-add.period$ -- 61
-call.type$ -- 20
-change.case$ -- 111
++ -- 79
+- -- 57
+* -- 363
+:= -- 810
+add.period$ -- 67
+call.type$ -- 22
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 22
-duplicate$ -- 260
-empty$ -- 556
-format.name$ -- 108
-if$ -- 1475
+cite$ -- 26
+duplicate$ -- 236
+empty$ -- 523
+format.name$ -- 57
+if$ -- 1170
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 19
-newline$ -- 102
-num.names$ -- 42
-pop$ -- 109
+int.to.str$ -- 22
+missing$ -- 21
+newline$ -- 112
+num.names$ -- 24
+pop$ -- 65
 preamble$ -- 1
-purify$ -- 92
+purify$ -- 0
 quote$ -- 0
-skip$ -- 192
+skip$ -- 118
 stack$ -- 0
-substring$ -- 476
+substring$ -- 375
 swap$ -- 58
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 78
-warning$ -- 2
-while$ -- 68
-width$ -- 22
-write$ -- 219
-(There were 3 warnings)
+type$ -- 0
+warning$ -- 4
+while$ -- 50
+width$ -- 24
+write$ -- 237
+(There were 5 warnings)

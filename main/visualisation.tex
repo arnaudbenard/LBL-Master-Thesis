@@ -1,29 +1,35 @@
 %!TEX root = ../my_thesis.tex
 \chapter{Visualization of non-gridded data}
  
-Current AFMs run in closed loop where position controllers on the XY axis are needed to steer the tip at the right position. Instead of using this method, we will work in open loop and register the data of the position sensors. One of the advantages of using sensor data is that we don't need accurate position controllers: it has no impact on our data. Instead of positioning the tip at an exact position, we're embracing its inaccuracy. The precision of our system is limited by the sensors and not the feedback on XY. Our current setup (Asylum Research MFP3D) uses inductive sensors.
+Current AFMs use position controllers on the XY axis to steer the tip at a specific position on the sample. The controller uses the position sensors to measure the error with the ideal position (PID). Then, it will force the tip to move at the corrected spot. 
+Instead of using this method, we work in open loop and only register the data of the position sensors. We don't try to adjust the position of the tip. We let it move freely and embrace its inaccuracy. One of the advantages of using this method is that we don't need any feedback system on X,Y and the precision of our system is greatly improved. Our current setup (Asylum Research MFP3D) uses inductive sensors(figure~\ref{fig:mfp3d}).
 
-Using this technique frees us from raster scan. We don't acquire specific points on a grid so we need image processing algorithms to render missing parts of our scan. We will see in the next section how to find these points. 
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[scale=1]{images/sensorsmfp3d.jpg}
+    \caption{The XY scanner uses inductive sensors that measure the exact position of each axis. \cite{linkmpf3d}}
+  \label{fig:mfp3d}
+\end{figure}
+
+Using this technique frees us from raster scan and allows us to explore new patterns (spiral). Because our data is not directly transposed on a grid  anymore, image processing algorithms are needed to render our scan. We will see in the next section methods to generate high-quality images from AFM's data.
 
 \section{Image rendering techniques}
 
-We are going to investigate the two following techniques: inpainting and OpenGL. The inpainting methods have been designed and implemented on Matlab by the Paul Ashby Group at LBNL in collaboration with Prof. A. Bertozzi of UCLA. We will briefly discuss its implications in AFM imaging.
-
-Then, we will discuss using OpenGL for the rendering. We will see different methods to implement this library and benchmark its performances.
-
+We are going to investigate the two following techniques: inpainting and OpenGL. The inpainting methods have been designed and implemented on Matlab by the Paul Ashby Group at LBNL in collaboration with Prof. A. Bertozzi of UCLA. Then, we will discuss using OpenGL for the rendering. We will see different methods to implement this library and benchmark its performance.
 
 \subsection{Inpainting algorithms}
 
-Reconstructing missing parts of images was first developed for restoring photographs and paintings or removing undesirable data like text and publicity. The art of restoration was performed manually. Nowadays, tools like Photoshop or Gimp are widely used in the media. It can also be used to produce special effects \cite{richard2001fast}.
+Reconstructing missing parts of images was first developed for restoring photographs and paintings. In the past, the art of restoration was performed manually. Nowadays, similar modern tools like Photoshop or Gimp are used in our mass media.\cite{richard2001fast}.
 
-This process is called inpainting. The principle behind it is to fill a patch with its surroundings. Mathematicians have developed a wide range of algorithms to solve that problem. We will investigate a special case of partial differential equations (PDE) called heat equations. 
+This process is called inpainting. The principle is to fill a patch with the information of its surroundings. Mathematicians have developed a wide range of algorithms to solve that problem. We will investigate inpainting based on a special case of partial differential equations (PDE) called heat equations. 
+
 The heat equation is a PDE that represents the distribution of heat in a region over time. 
 
 \begin{equation}\label{eqn:heateq}
 \frac{\partial u}{\partial t} - \alpha \nabla^2 u = 0
 \end{equation}
 
-$\alpha$ is the thermal diffusivity - that is interpreted as a "thermal inertia modulus" - and $u$ is the temperature over space and time (i.e. $u(x,y,z,t)$). A high thermal diffusivity implies that the heat moves rapidly.
+Where $\alpha$ is the thermal diffusivity - that is interpreted as a "thermal inertia modulus" - and $u$ is the temperature over space and time (i.e. $u(x,y,z,t)$). A high thermal diffusivity implies that the heat moves rapidly.
 
 This algorithm will spread out the information of each point onto missing parts of our grid.
 
@@ -34,14 +40,14 @@ This algorithm will spread out the information of each point onto missing parts 
   \label{inpainting3step}
 \end{figure}
 
-Literature shows that heat equations are powerful enough to fill out these patches of missing data, but they smooths the sharp edges(high frequency data)\cite{aubert2006mathematical}. These edges are blurred out by the algorithm.
+Literature shows that heat equations are powerful enough to fill out these patches of missing data, but they smooth sharp edges(high frequency data)\cite{aubert2006mathematical}. Indeed, the effect is that these edges are blurred out by the algorithm. Applications of this algorithm are shown in the chapter~\ref{chap:results}.
 
 
 \subsection{OpenGL}
 
-In this section, we will see how to render images with OpenGL(Open Graphics Library). It is an API (Application Programming Interface) developed by Silicon Graphics to hide the complexities of interfacing with different 3D accelerators and is mainly used for 3D modeling in video games and simulations. OpenGL leverages the fact that GPUs are designed to render triangles. It optimizes the rendering by using the repetition of a geometric shape (tessellation). The more complex the shape the harder it will be for the GPU to process it. If we already pre-process the data into triangles, we minimize processing costs. \cite{abobegpu}
+In this section, we will see how to render images with OpenGL(Open Graphics Library). It is an API (Application Programming Interface) developed by Silicon Graphics to hide the complexities of interfacing with different 3D accelerators and is mainly used for 3D modeling in video games and simulations. OpenGL leverages the fact that GPUs are designed to render triangles. Indeed, it optimizes the rendering by finding repetition of geometric shapes (tessellation) in the data. The more complex the shape the harder it will be for the GPU to process it. If we already pre-process the data into triangles, we minimize processing costs. \cite{abobegpu}
 
-The flow of our program is described by the Fig ~\ref{fig:timelinerendering}. First, we take the X, Y, Z data and generate a list of triplets of points (triangles). Then, we render this list with OpenGL. We will see two methods of rendering these triplets: immediate mode and Vertex Buffer Objects.
+We have designed a program that takes into account the preprocessing of the data. Most of the time, this data will be the information of the topography of the surface  (X,Y,Z axis). The flow of our program is described by the figure~\ref{fig:timelinerendering}. First, we take the X, Y, Z data and generate a list of triplets of points (triangles). Then, we render this list with one of the two following methods: immediate mode and Vertex Buffer Objects.
 
 \begin{figure}[!ht]
   \centering
@@ -83,32 +89,27 @@ With this method we can connect the points on a 2D plane. In the figure  ~\ref{t
 
 \subsubsection{Immediate mode vs Vertex Buffer Objects}
 
-We will discuss two ways to render our surface with OpenGL: the immediate mode and vertex buffer objects.
+The immediate mode is the simplest implementation of OpenGL. Indeed, we render every frame. Action like rotation, translation or resizing of the model will trigger a new frame generation. During this process, the program uploads the vertices to the graphic processing unit(GPU). The power of the immediate mode is its simple implementation (no initialization and extra code). Moreover, it is easier to debug. For a small number of vertices (< 10,000) the immediate mode is appropriate. \cite{opengl1} The problem with this method is that the program doesn't "remember" the data. For instance, a simple rotation shouldn't regenerate a frame but simply perform a change in the point of view.
 
-The immediate mode is the simplest implementation of OpenGL. Indeed, we render every frame. If we rotate our 3D model, we'll have to regenerate the frame. The power of the immediate mode is its simple implementation (no initialization and extra code). Moreover, it is easier to debug. For a small number of vertices (< 10,000) the immediate mode is appropriate. \cite{opengl1} states that the immediate mode is more convenient and less overhead than other implementations (Vertex Buffer Objects).
+If we try to display a significant number of triangles (> 10,000 vertices), the CPU will be the bottleneck. The GPU doesn't start rendering data before the last callback. Thus, the CPU is spoon-feeding the GPU by transferring the data triangle by triangle. Moreover, the number of API calls is proportional to the number of triangles. For instance, if you have 10 triangles you will make ($10*(2+3+3)$) 80 API calls \cite{opengllegacy}. In conclusion, if you want to render less than 10,000 vertices and are not planning to make a lot of changes in your rendering, the immediate mode is ideal.
 
-The display function is called when GLUT(OpenGL Utility Toolkit) determines that the window needs to be redisplayed. Action like rotation, translation or resizing of the model will trigger the display event. Each time the display function will be called, the program will upload the vertices to the graphic processing unit(GPU).
+One of the problems with the immediate mode is the transfer from the system memory to the GPU. With 10,000 points we can only have 3 frames per second which means that our computer takes 300 ms for the whole process.
 
-If we try to display a significant number of triangles (> 10,000 vertices), the CPU will be the bottleneck. The GPU doesn't start rendering data before the last callback. Thus, the CPU is spoon-feeding the GPU by transferring the data triangle by triangle. Moreover, the number of API calls is proportional to the number of triangles. For instance, if you have 10 triangles you will make (10*(2+3+3)) 80 API calls \cite{opengllegacy}. In conclusion, if you want to render less than 10,000 vertices and are not planning to make a lot of changes in your rendering, the immediate mode is ideal.
+Instead of transferring the data from the memory to the GPU, the GPU could read the memory of the program stack. Buffer objects have been created to allow the GPU to have access to that memory. A buffer object is a contiguous untyped memory which the CPU and the GPU both have access to. The process of reading the memory from the GPU is called Direct Memory Access (DMA). 
 
-One of the problems with the immediate mode is the transfer from the system memory to the GPU.  We've seen there is a bottle neck in the transfer. With 10,000 points we can only have 3 frames per second which means that our computer takes 300 ms for the whole process.
-
-Instead of transferring the data from the memory to the GPU, the GPU could read the memory of the program. Buffer objects have been created to allow the GPU to have access to that memory. The process of reading the memory from the GPU is called Direct Memory Access (DMA). A buffer object is a contiguous untyped memory which the CPU and the GPU both have access to.
-
-We can't just upload our data into the memory without any structure. We need to map the data and make it readable for the GPU. We store our data in a vertex array object.
-
+Unfortunately, we can't just upload our data into the memory without any preparation. We need to map the data and make it readable for the GPU which makes the implementation more complex.
 
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.4]{images/openglVBO.eps}
-    \caption{Workflow of the immediate mode and the vertex buffer objects}
+    \caption{Workflow of the immediate mode and the vertex buffer objects\cite{yaldex}}
   \label{openglVBO}
 \end{figure}
 
 
-The advantage of this implementation is that you directly pull your data to a shared memory between the CPU and the GPU. Your CPU will spend less cycles making API calls thus improving the performance of the program. The power of the VBOs is that you just need to upload your data and your display function will just bind the VBO. Our performance has improved from 3FPS to 130FPS for 100,000 data points. Having a higher FPS count makes the animations smoother.
+The advantage of this implementation is that you directly pull your data to a shared memory between the CPU and the GPU. Your CPU will spend less cycles making API calls thus improving the performance of the program. The power of the VBOs is that you just need to upload your data and your display function will just bind the VBO. In the figure~\ref{openglVBO}, we see the GPU has direct access to our data resulting. Our performance has improved from 3 frames per seconds (FPS) to 130FPS (100,000 points). 
 
-Table  ~\ref{table:nonlin} shows the non-linearity of our implementation. We see that Delaunay triangulation doesn't scale well for 1,000,000 points. In AFM scans we will rarely sample 1,000,000 datapoints. The limits of our AFM is 100,000 kHz. If we take 10 second scans at the limit rate, we observe that the computation time is still way below the scanning time. 
+The table~\ref{table:nonlin} shows the non-linearity of our implementation. We see that Delaunay triangulation doesn't scale well for 1,000,000 points. In AFM scans we will rarely sample 1,000,000 datapoints. The limits of our AFM is 100,000 kHz. If we take 10 second scans at the limit rate, we observe that the computation time is still way below the scanning time. 
 
 \begin{table}[ht]
 \caption{Rendering results[ms]} % title of Table

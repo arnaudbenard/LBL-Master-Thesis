@@ -1,4 +1,14 @@
 %!TEX root = ../my_thesis.tex
 \chapter{Conclusion}
 
-In this thesis, we saw different methods to improve AFM bandwidth and speed on the X,Y,Z axis. Also, we have developed new techniques to render images.
+In this thesis, we saw different methods to improve AFM bandwidth and speed on the X,Y,Z axis. 
+
+In the first part, we have discussed using spiral patterns instead of raster one. We have taken another approach and decided to use the data of the position sensors on the X,Y axis instead of steering the tip on specific position of the grid. Then, we have implemented advanced image processing algorithms to render images from the sparse data. We have shown that programming vertex buffer objects improve the performances of the rendering. Moreover, heat equations inpainting is a powerful tool to fill missing spots of an image.
+
+In the second part, we have investigated new ways to compensate for inaccuracies on the z-axis. Indeed, we have designed an algorithm to measure the tilt of a sample and dynamically compensate for it. Also, we have implemented a dual actuators system. This system has an additional high bandwidth piezoelectrical ceramic that can measure small features of the surface. When we use the dual actuator system and the small piezoelectrical ceramic, we can achieve higher bandwidth while keep the same amplitude range.
+
+Finally, we have designed two experiments to test our new implementations(tilt correction and dual actuator feedback). Our correction algorithm successfully compensated the tilt on the surface of a calibration grating. Also, we have imaged calcite dissolution with the dual actuator feedback. Future research should leverage these techniques to perform high speed scanning on more samples.
+
+
+\vspace{10 mm}
+Arnaud Benard, 03.13.2013

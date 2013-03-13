@@ -1,12 +1,13 @@
 %!TEX root = ../my_thesis.tex
 \chapter{Results}
+\label{chap:results}
 
 
 \section{Calcite experiment}
 
-In this experiment we've observed the dissolution of calcite ($CaCO_3$) with water. We have decided to choose this reaction because the chemical reaction leading to the dissolution is simple. Moreover, it is an abundant and geologically important material.\cite{hillner1992atomic}\cite{liang1996dissolution} \cite{paquette1995relationship}
+In this experiment we will observe the dissolution of calcite ($CaCO_3$) with water. We have decided to choose this reaction because the chemical reaction leading to the dissolution is simple. Moreover, it is an abundant and geologically important material.\cite{hillner1992atomic}\cite{liang1996dissolution} \cite{paquette1995relationship}
 
-The figure ~\ref{fig:calcitegeometry} shows the tilted shape of the calcite dissolution. One part has an angle of 78° and the other 102°\cite{shiraki2000dissolution} \cite{Morse200251}
+The figure ~\ref{fig:calcitegeometry} shows the tilted shape of calcite during dissolution. One part has an angle of 78° and the other 102°\cite{shiraki2000dissolution} \cite{Morse200251}.
 
 \begin{figure}[H]
   \centering
@@ -14,12 +15,12 @@ The figure ~\ref{fig:calcitegeometry} shows the tilted shape of the calcite diss
     \caption{Calcite geometry}
   \label{fig:calcitegeometry}
 \end{figure}
-We have used our double PID feedback system and /InsertTipType. Calcite dissolution is an interesting process to observe with a high speed AFM.
+We have used our dual actuators feedback system with a Budget Sensor Tap150-G cantilever. Calcite dissolution is an interesting process to observe with a high speed AFM.
 \begin{equation}\label{calcite}
 \centering
 	CaCO_3(calcite) + H_20 \rightarrow Ca^{2+} + HCO_3^- + OH^- 
 \end{equation}
-We have mounted our calcite sample on top of the fast piezo-electrical ceramics. Also, we have stuck a plastic cover underneath the piezo for the water. THe calcite will dissolve itself with the pattern shown on figure~\ref{fig:calcitegeometry}. It is linked to its original geometry.
+We have mounted our calcite sample on top of the fast piezoelectrical ceramics. Also, we have stuck a plastic cover underneath the piezo for the water. THe calcite will dissolve itself with the pattern shown on figure~\ref{fig:calcitegeometry}. It is linked to its original geometry.
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.4]{images/calcitesetup.eps}
@@ -35,19 +36,23 @@ We have imaged the same sample with different parameters including scan size, nu
   \label{fig:calciteangle}
 \end{figure}
 
-The figure ~\ref{fig:cd1} shows the evolution of the calcite. Every scan took 10 seconds over a surface of 10 $\mu m$. The scan pattern is an Archimidean spiral with 50 loops. We observe the evolution of the front wave over time. After a few minutes, the water will saturate the calcite and the reaction will stop. You can redo the experiment by removing the water and adding fresh water afterwards.
+The figure ~\ref{fig:cdtotal} shows the evolution of the calcite. Every scan took 10 seconds over a surface of 10 $\mu m$. The scan pattern is an Archimidean spiral with 50 loops and is rendered with heat equation inpainting. We observe the evolution of the front wave over time. After a dozen of minutes, the water will saturate the calcite and the reaction will stop. You can redo the experiment by removing the water and adding fresh water afterwards.
 
 
 \begin{figure}[!ht]
 \centering
 \minipage{0.32\textwidth}
   	\includegraphics[width=\linewidth]{images/006_X10s50l10m_MOv2_17.png}
+    \caption*{t=$t_0$} 
 \endminipage\hfill
 \minipage{0.32\textwidth}
   	\includegraphics[width=\linewidth]{images/006_X10s50l10m_MOv2_122.png}
+    \caption*{t=$t_0$+546s}
 \endminipage\hfill
 \minipage{0.32\textwidth}%
   	\includegraphics[width=\linewidth]{images/006_X10s50l10m_MOv2_290.png}
+    \caption*{t=$t_0$+1,366s} 
+
 \endminipage
 
 \end{figure}
@@ -57,14 +62,17 @@ The figure ~\ref{fig:cd1} shows the evolution of the calcite. Every scan took 10
 \centering
 \minipage{0.32\textwidth}
   	\includegraphics[width=\linewidth]{images/006_X10s50l10m_MOv2_457.png}
+    \caption*{t=$t_0$+2200s} 
 \endminipage\hfill
 \minipage{0.32\textwidth}
   	\includegraphics[width=\linewidth]{images/006_X10s50l10m_MOv2_698.png}
+    \caption*{t=$t_0$+3404s} 
 \endminipage\hfill
 \minipage{0.32\textwidth}%
   	\includegraphics[width=\linewidth]{images/006_X10s50l10m_MOv2_1007.png}
+    \caption*{t=$t_0$+5148s} 
 \endminipage
-\caption{Evolution of the calcite dissolution over time.} \label{fig:cd1}
+\caption{Evolution of the calcite dissolution over time. 10 $\mu m$ scan size and 50 loops.} \label{fig:cdtotal}
 
 \end{figure}
 
@@ -116,7 +124,7 @@ The figure~\ref{fig:spiralztiltout} shows the wave we are going to send to the m
   \label{fig:spiralztiltout}
 \end{figure}
 
-We have calibrated the small piezoelectric ceramic and found that a step of 5V is equal to 90 nm.
+We have calibrated the small piezoelectric ceramic and found that a step of 5V is equal to 90 nm (range of the piezo).
 \begin{figure}[!ht]
 \begin{minipage}[b]{0.45\linewidth}
 \centering
