@@ -3,12 +3,14 @@
 
 In this thesis, we saw different methods to improve AFM bandwidth and speed on the X,Y,Z axis. 
 
-In the first part, we have discussed using spiral patterns instead of raster one. We have taken another approach and decided to use the data of the position sensors on the X,Y axis instead of steering the tip on specific position of the grid. Then, we have implemented advanced image processing algorithms to render images from the sparse data. We have shown that programming vertex buffer objects improve the performances of the rendering. Moreover, heat equations inpainting is a powerful tool to fill missing spots of an image.
+In the first part, we have discussed using spiral patterns instead of raster one. Also, We have taken another approach and decided to use the data of the position sensors on the X,Y axis instead of using a standard closed loop feedback system. Then, we have implemented advanced image processing algorithms to render images from the sparse data. We have shown that programming vertex buffer objects improves the performances of the rendering and that heat equations inpainting is a powerful tool to fill missing spots of an image.
 
-In the second part, we have investigated new ways to compensate for inaccuracies on the z-axis. Indeed, we have designed an algorithm to measure the tilt of a sample and dynamically compensate for it. Also, we have implemented a dual actuators system. This system has an additional high bandwidth piezoelectrical ceramic that can measure small features of the surface. When we use the dual actuator system and the small piezoelectrical ceramic, we can achieve higher bandwidth while keep the same amplitude range.
+In the second part, we have investigated new ways to compensate for inaccuracies on the z-axis. Indeed, we have designed an algorithm to measure the tilt of a sample and dynamically compensate for it. Moreover, we have implemented a dual actuators system. This system has an additional high bandwidth piezoelectrical ceramic that can measure small features of the surface. When we use the dual actuator system and the small piezoelectrical ceramic, we can achieve higher bandwidth while keep the same amplitude range.
 
-Finally, we have designed two experiments to test our new implementations(tilt correction and dual actuator feedback). Our correction algorithm successfully compensated the tilt on the surface of a calibration grating. Also, we have imaged calcite dissolution with the dual actuator feedback. Future research should leverage these techniques to perform high speed scanning on more samples.
+Finally, we have designed two experiments to test our new implementations (tilt correction and dual actuator feedback). Our correction algorithm successfully compensated the tilt on the surface of a calibration grating. Also, we have imaged calcite dissolution with the dual actuator feedback. Future research should leverage these techniques to perform high speed scanning on more samples. It opens up a wide range of experiments in the field of biology.
 
+\section{Acknowledgments}
 
-\vspace{10 mm}
+I would like to thank Prof. Philippe Renaud, Dr. Paul Ashby and Dr. Dominik Ziegler for their guidance and support throughout this master's thesis. I would also like to thank Prof. Andrea Bertozzi, Dr. Travis Meyer and Dr. Christophe Brune of UCLA for their help. Finally, I would to thank Adrian Nievergelt for his support during his stay at the Lawrence Berkeley Laboratory.
+ \\ \\
 Arnaud Benard, 03.13.2013

@@ -1,17 +1,17 @@
 %!TEX root = ../my_thesis.tex
 \chapter{Visualization of non-gridded data}
  
-Current AFMs use position controllers on the XY axis to steer the tip at a specific position on the sample. The controller uses the position sensors to measure the error with the ideal position (PID). Then, it will force the tip to move at the corrected spot. 
-Instead of using this method, we work in open loop and only register the data of the position sensors. We don't try to adjust the position of the tip. We let it move freely and embrace its inaccuracy. One of the advantages of using this method is that we don't need any feedback system on X,Y and the precision of our system is greatly improved. Our current setup (Asylum Research MFP3D) uses inductive sensors(figure~\ref{fig:mfp3d}).
+Current AFMs use position controllers on the XY axis to steer the tip at a specific position on the sample. The controller uses the position sensors to measure the error with the ideal position. Then, it will force the tip to move at the corrected spot (PID). 
+Instead of using this method, we work in open loop and only register the data of the position sensors. We don't try to adjust the position of the tip. We let it move freely and embrace its inaccuracy. One of the advantages of using this method is that we don't need any feedback system on X,Y and the precision of our system is greatly improved. Our current setup (Asylum Research MFP3D) uses inductive sensors (Figure~\ref{fig:mfp3d}).
 
 \begin{figure}[!ht]
   \centering
   \includegraphics[scale=1]{images/sensorsmfp3d.jpg}
-    \caption{The XY scanner uses inductive sensors that measure the exact position of each axis. \cite{linkmpf3d}}
+    \caption{The XY scanner uses inductive sensors that measure the position of each axis. \cite{linkmpf3d}}
   \label{fig:mfp3d}
 \end{figure}
 
-Using this technique frees us from raster scan and allows us to explore new patterns (spiral). Because our data is not directly transposed on a grid  anymore, image processing algorithms are needed to render our scan. We will see in the next section methods to generate high-quality images from AFM's data.
+Using this technique frees us from raster scan and allows us to explore new patterns (Archimedean spiral). Because our data is not directly transposed on a grid  anymore, image processing algorithms are needed to render our scan. We will see in the next section methods to generate high-quality images from AFM's data.
 
 \section{Image rendering techniques}
 
@@ -40,7 +40,7 @@ This algorithm will spread out the information of each point onto missing parts 
   \label{inpainting3step}
 \end{figure}
 
-Literature shows that heat equations are powerful enough to fill out these patches of missing data, but they smooth sharp edges(high frequency data)\cite{aubert2006mathematical}. Indeed, the effect is that these edges are blurred out by the algorithm. Applications of this algorithm are shown in the chapter~\ref{chap:results}.
+Literature shows that heat equations are powerful enough to fill out these patches of missing data, but they smooth sharp edges(high frequency data)\cite{aubert2006mathematical}. Indeed, the effect is that these edges are blurred out by the algorithm. Applications of this algorithm are shown in the Chapter~\ref{chap:results}.
 
 
 \subsection{OpenGL}
@@ -52,7 +52,7 @@ We have designed a program that takes into account the preprocessing of the data
 \begin{figure}[!ht]
   \centering
   \includegraphics[scale=0.40]{images/timelinerendering.eps}
-    \caption{Workflow of the rendering program.}
+    \caption{Flow of the rendering program.}
   \label{fig:timelinerendering}
 \end{figure}
 
@@ -74,17 +74,19 @@ Jonathan Shewchuk \cite{shewchuk96b} has developed a library, triangle.c, to com
 With this method we can connect the points on a 2D plane. In the figure  ~\ref{triangulation3d}, we use the z-axis data to compute the height of each point and render 3D models of our scans. To add colors to our data, OpenGL will create a linear gradient between each of the data points.
 
 \begin{figure}[!ht]
-  \centering
-  \includegraphics[scale=0.2]{images/delaunay.eps}
+\begin{minipage}[b]{0.45\linewidth}
+\centering
+\includegraphics[width=\textwidth]{images/delaunay.eps}
     \caption{Delaunay triangulation: From 2D to 3D}
-  \label{triangulation3d}
-\end{figure}
-
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[scale=0.8]{images/3drendering.png}
-    \caption{OpenGL 3D rendering(1.2M points) of a calibration grating using spiral scans.}
-  \label{rendering3d}
+\label{triangulation3d}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.45\linewidth}
+\centering
+\includegraphics[width=\textwidth]{images/3drendering.png}
+    \caption{Rendered with OpenGL (1.2M points). The sample is a calibration grating scanned with a spiral pattern.}
+\label{rendering3d}
+\end{minipage}
 \end{figure}
 
 \subsubsection{Immediate mode vs Vertex Buffer Objects}

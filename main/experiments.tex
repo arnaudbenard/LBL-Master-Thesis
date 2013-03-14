@@ -7,7 +7,7 @@
 
 In this experiment we will observe the dissolution of calcite ($CaCO_3$) with water. We have decided to choose this reaction because the chemical reaction leading to the dissolution is simple. Moreover, it is an abundant and geologically important material.\cite{hillner1992atomic}\cite{liang1996dissolution} \cite{paquette1995relationship}
 
-The figure ~\ref{fig:calcitegeometry} shows the tilted shape of calcite during dissolution. One part has an angle of 78° and the other 102°\cite{shiraki2000dissolution} \cite{Morse200251}.
+The Figure~\ref{fig:calcitegeometry} shows the tilted shape of calcite during dissolution. One part has an angle of 78° and the other 102°\cite{shiraki2000dissolution} \cite{Morse200251}. The shape is tilted because of the different dissolution speed.
 
 \begin{figure}[H]
   \centering
@@ -20,7 +20,7 @@ We have used our dual actuators feedback system with a Budget Sensor Tap150-G ca
 \centering
 	CaCO_3(calcite) + H_20 \rightarrow Ca^{2+} + HCO_3^- + OH^- 
 \end{equation}
-We have mounted our calcite sample on top of the fast piezoelectrical ceramics. Also, we have stuck a plastic cover underneath the piezo for the water. THe calcite will dissolve itself with the pattern shown on figure~\ref{fig:calcitegeometry}. It is linked to its original geometry.
+We have mounted our calcite sample on top of the fast piezoelectrical ceramics. Also, we have stuck a plastic cover underneath the piezo for the water. The calcite will dissolve itself with the pattern shown on Figure~\ref{fig:calcitegeometry}. It is linked to its original geometry.
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.4]{images/calcitesetup.eps}
@@ -29,48 +29,44 @@ We have mounted our calcite sample on top of the fast piezoelectrical ceramics. 
 \end{figure}
 
 We have imaged the same sample with different parameters including scan size, number of spirals and scanning time.
-\begin{figure}[H]
-  \centering
-  \includegraphics[scale=0.4]{images/calciteangle.png}
-    \caption{5s per frame / 100 loops / 5 $\mu m$}
-  \label{fig:calciteangle}
-\end{figure}
-
-The figure ~\ref{fig:cdtotal} shows the evolution of the calcite. Every scan took 10 seconds over a surface of 10 $\mu m$. The scan pattern is an Archimidean spiral with 50 loops and is rendered with heat equation inpainting. We observe the evolution of the front wave over time. After a dozen of minutes, the water will saturate the calcite and the reaction will stop. You can redo the experiment by removing the water and adding fresh water afterwards.
 
 
 \begin{figure}[!ht]
 \centering
 \minipage{0.32\textwidth}
-  	\includegraphics[width=\linewidth]{images/006_X10s50l10m_MOv2_17.png}
+    \includegraphics[width=\linewidth]{images/calcite1.png}
     \caption*{t=$t_0$} 
 \endminipage\hfill
 \minipage{0.32\textwidth}
-  	\includegraphics[width=\linewidth]{images/006_X10s50l10m_MOv2_122.png}
-    \caption*{t=$t_0$+546s}
+    \includegraphics[width=\linewidth]{images/calcite2.png}
+    \caption*{t=$t_0$+25s} 
 \endminipage\hfill
 \minipage{0.32\textwidth}%
-  	\includegraphics[width=\linewidth]{images/006_X10s50l10m_MOv2_290.png}
-    \caption*{t=$t_0$+1,366s} 
-
+    \includegraphics[width=\linewidth]{images/calcite3.png}
+    \caption*{t=$t_0$+50s} 
 \endminipage
+\caption{Evolution of the calcite dissolution over time. 5 $\mu m$ scan size and 100 loops.} \label{fig:cdtotal1}
 
 \end{figure}
+The Figure~\ref{fig:cdtotal1} shows the evolution of the calcite. Every scan took 2.5 seconds over a surface of 5 $\mu m$. The scan pattern is an Archimidean spiral with 100 loops and is rendered with heat equation inpainting. We observe the evolution of the front wave over time. After a dozen of minutes, the water will saturate the calcite and the reaction will stop. You can redo the experiment by removing the water and adding fresh water afterwards (Figure~\ref{fig:cdtotal}).
 
 
 \begin{figure}[!ht]
 \centering
+
+
 \minipage{0.32\textwidth}
-  	\includegraphics[width=\linewidth]{images/006_X10s50l10m_MOv2_457.png}
-    \caption*{t=$t_0$+2200s} 
+    \includegraphics[width=\linewidth]{images/006_X10s50l10m_MOv2_17.png}
+    \caption*{t=$t_1$} 
 \endminipage\hfill
 \minipage{0.32\textwidth}
-  	\includegraphics[width=\linewidth]{images/006_X10s50l10m_MOv2_698.png}
-    \caption*{t=$t_0$+3404s} 
+    \includegraphics[width=\linewidth]{images/006_X10s50l10m_MOv2_122.png}
+    \caption*{t=$t_1$+546s}
 \endminipage\hfill
 \minipage{0.32\textwidth}%
-  	\includegraphics[width=\linewidth]{images/006_X10s50l10m_MOv2_1007.png}
-    \caption*{t=$t_0$+5148s} 
+    \includegraphics[width=\linewidth]{images/006_X10s50l10m_MOv2_290.png}
+    \caption*{t=$t_1$+1,366s} 
+
 \endminipage
 \caption{Evolution of the calcite dissolution over time. 10 $\mu m$ scan size and 50 loops.} \label{fig:cdtotal}
 
@@ -119,12 +115,13 @@ The figure~\ref{fig:spiralztiltout} shows the wave we are going to send to the m
 
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.3]{images/spiralztiltout.eps}
+  \includegraphics[scale=0.2]{images/spiralztiltout.eps}
     \caption{Input of the tilt compensation}
   \label{fig:spiralztiltout}
 \end{figure}
 
-We have calibrated the small piezoelectric ceramic and found that a step of 5V is equal to 90 nm (range of the piezo).
+We have calibrated the small piezoelectric ceramic and found that a step of 5V is equal to 180 nm(Input = 2 x calibrationV).
+
 \begin{figure}[!ht]
 \begin{minipage}[b]{0.45\linewidth}
 \centering
@@ -141,7 +138,7 @@ We have calibrated the small piezoelectric ceramic and found that a step of 5V i
 \end{minipage}
 \end{figure}
 
-The tilt compensation takes a load off the small fast piezoelectrical ceramics. The Figure~\ref{fig:tiltimages}  shows the efficiency of our method. Indeed, the fast piezo was previously saturating. The piezo was trying to reach features that are larger than its range. If we use the tilt correction, we see that our piezo has no problem reaching those features.
+The tilt compensation takes a load off the small fast piezoelectrical ceramics. The Figure~\ref{fig:tiltimages}  shows the efficiency of our method. Indeed, it was previously saturating. It was trying to reach features that are larger than its range. If we use the tilt correction, we see that it has no problem reaching those features.
 
 \begin{figure}[ht]
 \begin{minipage}[b]{0.45\linewidth}
@@ -154,7 +151,9 @@ The tilt compensation takes a load off the small fast piezoelectrical ceramics. 
 \centering
 \includegraphics[width=\textwidth]{images/TiltSession0226wc_35.png}
 \end{minipage}
-\caption{Before and after the tilt correction}
+\caption{Before and after the tilt correction. The size of the scan is 30 $\mu m$. It has 100 loops and lasted 7.5 seconds}
 \label{fig:tiltimages}
 \end{figure}
+
+
 

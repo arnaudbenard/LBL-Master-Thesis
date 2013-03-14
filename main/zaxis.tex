@@ -16,9 +16,9 @@ The figure ~\ref{fig:normalAFM} shows the most classic feedback loop in an AFM. 
   \label{fig:normalAFM}
 \end{figure}
 
-The problem with this system is that it can't pick up abrupt changes in the topography.\cite{jeong:093706} The bandwidth of the cantilever is not large enough. We could use a cantilever with a higher bandwidth, but the amplitude would be too small. We decided to take to the best of both systems and design a dual-actuator system. We use a standard cantilever to scan the surface and we will add a small piezoelectrical ceramic on top of the X-Y scanner. It enables the AFM to have a larger bandwidth thus allowing it to pick up high spatial frequency topography. 
+The problem with this system is that it can't pick up abrupt changes in the topography.\cite{jeong:093706} The bandwidth of the cantilever is not large enough. We could use a cantilever with a higher bandwidth, but the amplitude would be too small. We decided to take to the best of both systems and design a dual-actuator system. We use a standard cantilever to scan the surface and we will add a small piezoelectrical ceramic(Noliac ACtuators NAC2121) on top of the X-Y scanner. It enables the AFM to have a larger bandwidth thus allowing it to pick up high spatial frequency topography. 
 
-We design another feedback system in order to make the X,Y,Z scanner and the piezoelectrical ceramic work together. \cite{el2004dual}
+We design another feedback system in order to make the X,Y,Z scanner and the piezoelectrical ceramic work together. We need a high-voltage amplifier to operate the small piezoelectric device. \cite{el2004dual}
 
 \begin{figure}[H]
   \centering
@@ -27,7 +27,6 @@ We design another feedback system in order to make the X,Y,Z scanner and the pie
   \label{DoublePid}
 \end{figure}
 
-We need a high-voltage amplifier to operate the small piezoelectric device. 
 
 \section{Tilt compensation}
 \label{sec:tiltcompensation}
@@ -46,13 +45,11 @@ The coefficients are computed by minimizing the values of Chi-Square (error func
 wavetosend = a_1 wavex + a_2 wavey 
 \end{equation}
 
-Wavex and wavey are the output of our scan pattern. With this method, we can do a tilt correction with any scan pattern.
-
-Then, we send the previously computed wave to the controller.
+Wavex and wavey are the output of our scan pattern. With this method, we can do a tilt correction with any scan pattern. Then, the computed wave is sent to the Asylum Research controller. This wave drives the slow z scanner and compensate for the previously computed tilt (Figure~\ref{outputz}).
 
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.4]{images/outputz.eps}
-    \caption{Asylum}
+    \caption{The computed wave is sent to the outputz of the Asylum Research controller.}
   \label{outputz}
 \end{figure}
